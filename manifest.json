@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Chromium Clean Window",
+  "version": "0.1.0",
+  "description": "Toggle a live browser tab between the normal browser and a clean popup window.",
+  "background": {
+    "service_worker": "background.js"
+  }
+}
