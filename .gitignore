@@ -1,0 +1,18 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# VS Code local workspace settings
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node dependencies / build output
+# Not currently used, but ignored in case tooling is added later.
+node_modules/
+dist/
