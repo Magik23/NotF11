@@ -5,5 +5,8 @@
   "description": "Toggle a live browser tab between the normal browser and a clean popup window.",
   "background": {
     "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Chromium Clean Window"
   }
 }
