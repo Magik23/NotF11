@@ -1,6 +1,9 @@
 console.log("Chromium Clean Window service worker started.");
 
 const TOGGLE_COMMAND = "toggle-clean-window";
+const NEXT_CLEAN_TAB_COMMAND = "next-clean-tab";
+const PREVIOUS_CLEAN_TAB_COMMAND = "previous-clean-tab";
+
 const STORAGE_KEY = "cleanSessions";
 const TAB_GROUP_ID_NONE = -1;
 
@@ -41,6 +44,15 @@ async function getWindowIfExists(windowId) {
   } catch {
     return null;
   }
+}
+
+async function getFocusedTab() {
+  const tabs = await chrome.tabs.query({
+    active: true,
+    currentWindow: true
+  });
+
+  return tabs[0] ?? null;
 }
 
 async function pruneStaleSessions(sessions) {
@@ -238,10 +250,95 @@ function getReturnIndex(session, sourceTabs) {
     : Math.max(targetIndex, pinnedCount);
 }
 
+function findSwitchTargetId(
+  cleanTab,
+  session,
+  sourceTabs,
+  sessions,
+  direction
+) {
+  const sourceOrder = getSourceOrder(
+    session.sourceWindowId,
+    sourceTabs,
+    sessions
+  );
+
+  session.sourceOrder = [...sourceOrder];
+
+  /*
+   * Only tabs still physically present in the source
+   * browser are eligible.
+   *
+   * Tabs already detached into other clean popups
+   * are therefore skipped automatically.
+   */
+  const eligibleIds = new Set(
+    sourceTabs
+      .filter(
+        (tab) =>
+          tab.groupId === TAB_GROUP_ID_NONE
+      )
+      .map((tab) => tab.id)
+  );
+
+  if (eligibleIds.size === 0) {
+    return null;
+  }
+
+  let currentPosition =
+    sourceOrder.indexOf(cleanTab.id);
+
+  if (currentPosition === -1) {
+    currentPosition = Math.min(
+      session.originalIndex,
+      sourceOrder.length
+    );
+
+    sourceOrder.splice(
+      currentPosition,
+      0,
+      cleanTab.id
+    );
+
+    session.sourceOrder = [...sourceOrder];
+  }
+
+  for (
+    let step = 1;
+    step <= sourceOrder.length;
+    step += 1
+  ) {
+    const candidatePosition =
+      (
+        currentPosition +
+        direction * step +
+        sourceOrder.length
+      ) % sourceOrder.length;
+
+    const candidateId =
+      sourceOrder[candidatePosition];
+
+    if (eligibleIds.has(candidateId)) {
+      return candidateId;
+    }
+  }
+
+  return null;
+}
+
 async function enterCleanMode(
   activeTab,
-  sessions
+  sessions,
+  cleanGeometry = null
 ) {
+  if (
+    !activeTab ||
+    activeTab.id === undefined
+  ) {
+    console.log("No active tab found.");
+    return null;
+  }
+
   const sourceWindow =
     await chrome.windows.get(activeTab.windowId);
 
@@ -250,7 +347,7 @@ async function enterCleanMode(
       "Clean mode can only start from a normal browser window."
     );
 
-    return;
+    return null;
   }
 
   if (
@@ -260,7 +357,7 @@ async function enterCleanMode(
       "Grouped tabs are not supported yet."
     );
 
-    return;
+    return null;
   }
 
   const sourceTabs =
@@ -277,16 +374,26 @@ async function enterCleanMode(
   const sourceGeometry =
     getGeometry(sourceWindow);
 
+  /*
+   * Normal entry:
+   * use the source browser's current geometry.
+   *
+   * Clean-tab handoff:
+   * use the previous clean popup's current geometry.
+   */
+  const popupGeometry =
+    cleanGeometry ?? sourceGeometry;
+
   const createData = {
     tabId: activeTab.id,
     type: "popup",
     focused: true
   };
 
-  if (sourceGeometry) {
+  if (popupGeometry) {
     Object.assign(
       createData,
-      sourceGeometry
+      popupGeometry
     );
   }
 
@@ -315,36 +422,36 @@ async function enterCleanMode(
   await saveSessions(sessions);
 
   /*
-   * Chromium may adjust popup bounds during
-   * creation when the requested geometry touches
-   * a screen edge.
-   *
-   * Reapplying the bounds afterward preserves
-   * the exact geometry we already tested.
+   * Chromium may adjust popup bounds during creation
+   * at a screen edge. Reapply the requested bounds.
    */
-  if (sourceGeometry) {
+  if (popupGeometry) {
     await chrome.windows.update(
       popupWindow.id,
-      sourceGeometry
+      popupGeometry
     );
   }
 
   console.log(
     `Tab ${activeTab.id} entered clean mode from window ${sourceWindow.id}.`
   );
+
+  return popupWindow;
 }
 
 async function exitCleanMode(
   cleanTab,
   session,
-  sessions
+  sessions,
+  {
+    focusSource = true,
+    activateReturnedTab = true
+  } = {}
 ) {
   /*
-   * Chromium only permits tabs.move() to/from
-   * normal browser windows.
-   *
-   * So the clean tab first enters this temporary
-   * minimized normal bridge window.
+   * tabs.move() only supports moves to/from normal
+   * windows, so the popup tab first enters a
+   * temporary minimized normal bridge window.
    */
   const bridgeWindow =
     await chrome.windows.create({
@@ -363,10 +470,6 @@ async function exitCleanMode(
     );
   }
 
-  /*
-   * Make sure pinned state is preserved before
-   * the tab is moved back into a normal tab strip.
-   */
   await chrome.tabs.update(
     cleanTab.id,
     {
@@ -378,6 +481,8 @@ async function exitCleanMode(
     await getWindowIfExists(
       session.sourceWindowId
     );
+
+  let destinationWindowId;
 
   if (
     sourceWindow &&
@@ -402,28 +507,30 @@ async function exitCleanMode(
       }
     );
 
-    await chrome.tabs.update(
-      cleanTab.id,
-      {
-        active: true
-      }
-    );
+    destinationWindowId =
+      sourceWindow.id;
 
-    await chrome.windows.update(
-      sourceWindow.id,
-      {
-        focused: true
-      }
-    );
+    if (activateReturnedTab) {
+      await chrome.tabs.update(
+        cleanTab.id,
+        {
+          active: true
+        }
+      );
+    }
+
+    if (focusSource) {
+      await chrome.windows.update(
+        sourceWindow.id,
+        {
+          focused: true
+        }
+      );
+    }
   } else {
     /*
-     * This happens if the original source window
-     * was closed, or if its final remaining tab
-     * was detached and Chromium closed the empty
-     * normal browser window.
-     *
-     * In that case the bridge becomes the new
-     * source browser.
+     * If the original source browser disappeared,
+     * the bridge becomes its replacement.
      */
     const oldSourceWindowId =
       session.sourceWindowId;
@@ -442,24 +549,12 @@ async function exitCleanMode(
       );
     }
 
-    await chrome.windows.update(
-      bridgeWindow.id,
-      {
-        focused: true
-      }
-    );
-
-    await chrome.tabs.update(
-      cleanTab.id,
-      {
-        active: true
-      }
-    );
+    destinationWindowId =
+      bridgeWindow.id;
 
     /*
-     * Other clean tabs that came from the old
-     * source window now return to this replacement
-     * browser instead.
+     * Any sibling clean windows that belonged to
+     * the dead source browser now return here too.
      */
     for (
       const sibling of
@@ -474,6 +569,24 @@ async function exitCleanMode(
       }
     }
 
+    if (activateReturnedTab) {
+      await chrome.tabs.update(
+        cleanTab.id,
+        {
+          active: true
+        }
+      );
+    }
+
+    if (focusSource) {
+      await chrome.windows.update(
+        bridgeWindow.id,
+        {
+          focused: true
+        }
+      );
+    }
+
     console.log(
       `Source window ${oldSourceWindowId} no longer existed; window ${bridgeWindow.id} became the replacement source.`
     );
@@ -485,8 +598,217 @@ async function exitCleanMode(
 
   await saveSessions(sessions);
 
+  return destinationWindowId;
+}
+
+async function switchCleanTab(direction) {
+  const cleanTab =
+    await getFocusedTab();
+
+  if (
+    !cleanTab ||
+    cleanTab.id === undefined
+  ) {
+    console.log("No active tab found.");
+    return;
+  }
+
+  let sessions =
+    await loadSessions();
+
+  sessions =
+    await pruneStaleSessions(
+      sessions
+    );
+
+  const session =
+    sessions[keyForTab(cleanTab.id)];
+
+  if (
+    !session ||
+    session.popupWindowId !==
+      cleanTab.windowId
+  ) {
+    console.log(
+      "Tab switching is only available from a tracked clean popup."
+    );
+
+    return;
+  }
+
+  /*
+   * Capture the clean popup's CURRENT geometry.
+   *
+   * If the user moved or resized it, the next
+   * clean tab must appear exactly there.
+   */
+  const cleanPopup =
+    await getWindowIfExists(
+      session.popupWindowId
+    );
+
+  if (!cleanPopup) {
+    console.log(
+      "The clean popup no longer exists."
+    );
+
+    return;
+  }
+
+  const cleanGeometry =
+    getGeometry(cleanPopup);
+
+  /*
+   * Resolve the source browser by identity.
+   *
+   * Its own position may also have changed while
+   * the clean popup was open.
+   */
+  const sourceWindow =
+    await getWindowIfExists(
+      session.sourceWindowId
+    );
+
+  if (
+    !sourceWindow ||
+    sourceWindow.type !== "normal"
+  ) {
+    console.log(
+      "The source browser no longer exists. Toggle this clean tab home before switching tabs."
+    );
+
+    return;
+  }
+
+  const sourceTabs =
+    await chrome.tabs.query({
+      windowId: sourceWindow.id
+    });
+
+  const targetTabId =
+    findSwitchTargetId(
+      cleanTab,
+      session,
+      sourceTabs,
+      sessions,
+      direction
+    );
+
+  if (targetTabId === null) {
+    console.log(
+      "No other eligible source tab is available."
+    );
+
+    return;
+  }
+
+  /*
+   * Return the current clean tab WITHOUT focusing
+   * the source browser.
+   *
+   * This is an internal handoff, not a real exit
+   * from clean mode.
+   */
+  const destinationWindowId =
+    await exitCleanMode(
+      cleanTab,
+      session,
+      sessions,
+      {
+        focusSource: false,
+        activateReturnedTab: false
+      }
+    );
+
+  /*
+   * Refresh the target AFTER the return.
+   *
+   * Its index may have changed when the old clean
+   * tab was inserted back into the source tab strip.
+   */
+  const targetTab =
+    await getTabIfExists(
+      targetTabId
+    );
+
+  if (
+    !targetTab ||
+    targetTab.windowId !==
+      destinationWindowId ||
+    targetTab.groupId !==
+      TAB_GROUP_ID_NONE
+  ) {
+    /*
+     * Best-effort recovery:
+     * put the old clean tab back into clean mode
+     * instead of unexpectedly dropping the user
+     * into the normal browser.
+     */
+    const returnedTab =
+      await getTabIfExists(
+        cleanTab.id
+      );
+
+    if (
+      returnedTab &&
+      returnedTab.windowId ===
+        destinationWindowId
+    ) {
+      await enterCleanMode(
+        returnedTab,
+        sessions,
+        cleanGeometry
+      );
+    }
+
+    console.log(
+      "Clean tab switch was canceled because the target tab changed."
+    );
+
+    return;
+  }
+
+  try {
+    await enterCleanMode(
+      targetTab,
+      sessions,
+      cleanGeometry
+    );
+  } catch (error) {
+    /*
+     * If opening the next clean popup fails,
+     * try to restore the previous clean tab at
+     * the same geometry.
+     */
+    const returnedTab =
+      await getTabIfExists(
+        cleanTab.id
+      );
+
+    if (
+      returnedTab &&
+      returnedTab.windowId ===
+        destinationWindowId
+    ) {
+      try {
+        await enterCleanMode(
+          returnedTab,
+          sessions,
+          cleanGeometry
+        );
+      } catch (rollbackError) {
+        console.error(
+          "Clean-tab rollback also failed:",
+          rollbackError
+        );
+      }
+    }
+
+    throw error;
+  }
+
   console.log(
-    `Tab ${cleanTab.id} returned from clean mode.`
+    `Clean view switched from tab ${cleanTab.id} to tab ${targetTab.id}.`
   );
 }
 
@@ -514,18 +836,22 @@ async function toggleTab(tab) {
     sessions[keyForTab(tab.id)];
 
   /*
-   * If THIS exact tab is currently inside the
-   * popup recorded in its own return ticket,
-   * return this tab home.
+   * If THIS exact tab is inside the popup recorded
+   * in its own return ticket, return it home.
    */
   if (
     session &&
-    session.popupWindowId === tab.windowId
+    session.popupWindowId ===
+      tab.windowId
   ) {
     await exitCleanMode(
       tab,
       session,
       sessions
+    );
+
+    console.log(
+      `Tab ${tab.id} returned from clean mode.`
     );
 
     return;
@@ -537,8 +863,8 @@ async function toggleTab(tab) {
     );
 
   /*
-   * Don't treat arbitrary browser popups, PWAs,
-   * DevTools windows, etc. as our clean windows.
+   * Do not treat unrelated popups, PWAs, DevTools,
+   * etc. as our clean windows.
    */
   if (
     currentWindow.type !== "normal"
@@ -557,13 +883,10 @@ async function toggleTab(tab) {
 }
 
 async function toggleFocusedTab() {
-  const tabs =
-    await chrome.tabs.query({
-      active: true,
-      currentWindow: true
-    });
+  const activeTab =
+    await getFocusedTab();
 
-  await toggleTab(tabs[0]);
+  await toggleTab(activeTab);
 }
 
 async function removeClosedCleanSession(
@@ -590,17 +913,31 @@ async function removeClosedCleanSession(
 
 chrome.commands.onCommand.addListener(
   (command) => {
-    if (
-      command !== TOGGLE_COMMAND
+    let operation = null;
+
+    if (command === TOGGLE_COMMAND) {
+      operation = toggleFocusedTab;
+    } else if (
+      command === NEXT_CLEAN_TAB_COMMAND
     ) {
+      operation =
+        () => switchCleanTab(1);
+    } else if (
+      command === PREVIOUS_CLEAN_TAB_COMMAND
+    ) {
+      operation =
+        () => switchCleanTab(-1);
+    }
+
+    if (!operation) {
       return;
     }
 
     enqueueOperation(
-      toggleFocusedTab
+      operation
     ).catch((error) => {
       console.error(
-        "Clean-window toggle failed:",
+        "Clean-window command failed:",
         error
       );
     });
@@ -626,8 +963,8 @@ chrome.tabs.onRemoved.addListener(
 chrome.runtime.onStartup.addListener(
   () => {
     /*
-     * Tab and window IDs only belong to the
-     * current browser session.
+     * Tab and window IDs belong to the current
+     * browser session.
      *
      * Local storage survives extension reloads,
      * but old return tickets should not survive a

@@ -15,6 +15,18 @@
         "default": "Ctrl+Shift+F"
       },
       "description": "Toggle the focused tab between normal and clean window mode"
+    },
+    "next-clean-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Period"
+      },
+      "description": "Show the next source tab in the focused clean window"
+    },
+    "previous-clean-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Comma"
+      },
+      "description": "Show the previous source tab in the focused clean window"
     }
   }
 }
