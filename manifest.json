@@ -2,22 +2,19 @@
   "manifest_version": 3,
   "name": "Chromium Clean Window",
   "version": "0.1.0",
-  "description": "Toggle a live browser tab between the normal browser and a clean popup window.",
+  "description": "Toggle live browser tabs between normal browser windows and clean popup windows.",
   "permissions": [
     "storage"
   ],
   "background": {
     "service_worker": "background.js"
   },
-  "action": {
-    "default_title": "Chromium Clean Window"
-  },
   "commands": {
     "toggle-clean-window": {
       "suggested_key": {
         "default": "Ctrl+Shift+F"
       },
-      "description": "Toggle clean window mode"
+      "description": "Toggle the focused tab between normal and clean window mode"
     }
   }
 }
