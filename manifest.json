@@ -8,5 +8,13 @@
   },
   "action": {
     "default_title": "Chromium Clean Window"
+  },
+  "commands": {
+    "toggle-clean-window": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "Toggle clean window mode"
+    }
   }
 }
