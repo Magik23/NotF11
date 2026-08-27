@@ -16,3 +16,9 @@ Thumbs.db
 # Not currently used, but ignored in case tooling is added later.
 node_modules/
 dist/
+
+# Internal AI handoff / working documents
+**/*HANDOFF*.md
+
+# Editable design source files
+*.xcf
