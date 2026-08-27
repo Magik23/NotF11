@@ -470,6 +470,14 @@ async function exitCleanMode(
     );
   }
 
+  /*
+   * Restore the tab's original pin state while it
+   * is inside the normal bridge.
+   *
+   * Chromium may change that state again during a
+   * cross-window move, so the destination branch
+   * below restores it a second time after the move.
+   */
   await chrome.tabs.update(
     cleanTab.id,
     {
@@ -499,6 +507,37 @@ async function exitCleanMode(
         sourceTabs
       );
 
+    /*
+     * First move the live tab back into its source
+     * browser.
+     */
+    await chrome.tabs.move(
+      cleanTab.id,
+      {
+        windowId: sourceWindow.id,
+        index: targetIndex
+      }
+    );
+
+    /*
+     * A cross-window move can cause Chromium to
+     * drop or reposition the pinned state.
+     *
+     * Restore the original state only after the
+     * tab has reached its final destination.
+     */
+    await chrome.tabs.update(
+      cleanTab.id,
+      {
+        pinned: session.wasPinned
+      }
+    );
+
+    /*
+     * Pinning or unpinning can itself change the
+     * tab's index. Reapply the logical return index
+     * after the pin state has been restored.
+     */
     await chrome.tabs.move(
       cleanTab.id,
       {

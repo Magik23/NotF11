@@ -11,14 +11,6 @@
     "128": "assets/icons/icon-128.png"
   },
 
-  "action": {
-    "default_icon": {
-      "16": "assets/icons/icon-16.png",
-      "32": "assets/icons/icon-32.png"
-    },
-    "default_title": "NotF11"
-  },
-
   "permissions": [
     "storage"
   ],
