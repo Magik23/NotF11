@@ -1,4 +1,4 @@
-console.log("Chromium Clean Window service worker started.");
+console.log("NotF11 service worker started.");
 
 const TOGGLE_COMMAND = "toggle-clean-window";
 const NEXT_CLEAN_TAB_COMMAND = "next-clean-tab";

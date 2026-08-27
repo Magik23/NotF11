@@ -29,7 +29,8 @@ That makes it useful for:
 - Moves the existing live tab instead of reopening its URL
 - Preserves scroll position, entered text, login sessions, and active page state
 - Returns the tab to its original browser window and tab position
-- Preserves clean-window geometry between toggles
+- Preserves the clean window's current geometry while cycling between tabs
+- Supports multiple tracked clean windows
 - Cycles through tabs from the original browser window while remaining in clean-window mode
 - Uses standard Chromium extension APIs
 - Requires no content scripts or webpage modification
@@ -109,8 +110,9 @@ NotF11 is a functional pre-release. The core workflow has been implemented and v
 - Entering and exiting clean-window mode
 - Returning the live tab to its original window and index
 - Preserving active page state
-- Remembering clean-window geometry
+- Preserving clean-window geometry during previous/next tab handoffs
 - Cycling through source-window tabs
+- Managing multiple clean-window sessions
 - Working inside a FancyZones desktop layout
 
 The remaining path toward a stable release focuses on broader compatibility testing, recovery hardening, packaging, documentation, and browser-store preparation.
@@ -118,7 +120,7 @@ The remaining path toward a stable release focuses on broader compatibility test
 ## Known behavior and limitations
 
 - The operating system's title bar remains visible. This is intentional: it keeps the window movable, resizable, maximizable, and compatible with desktop window managers.
-- NotF11 tracks one clean-window session for reliable return behavior. Chromium may allow additional popup windows, but they are not managed as independent NotF11 sessions.
+- Grouped tabs are not supported yet. NotF11 currently enters and cycles through ungrouped tabs only.
 - Heavy web applications may briefly flash or redraw while Chromium moves the live tab between windows. The page is not reopened, and its active state is preserved.
 - Window bounds may differ by a few pixels when a window touches a screen edge because Windows and Chromium can clamp edge geometry.
 - Browser-reserved shortcuts or conflicts with other extensions may require changing the default key combinations.
@@ -127,9 +129,7 @@ The remaining path toward a stable release focuses on broader compatibility test
 
 The project's architecture, API investigation, implementation decisions, validation results, edge cases, and roadmap are maintained in:
 
-[`docs/CHROMIUM_CLEAN_WINDOW_TOGGLE_CANONICAL_AI_HANDOFF_V3.md`](docs/CHROMIUM_CLEAN_WINDOW_TOGGLE_CANONICAL_AI_HANDOFF_V3.md)
-
-The documentation retains the project's original technical codename for historical continuity.
+[`docs/NOTF11_CANONICAL_AI_HANDOFF_V4.md`](docs/NOTF11_CANONICAL_AI_HANDOFF_V4.md)
 
 ## Contributing and support
 

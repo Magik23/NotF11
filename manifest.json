@@ -1,27 +1,47 @@
 {
   "manifest_version": 3,
-  "name": "Chromium Clean Window",
+  "name": "NotF11",
   "version": "0.1.0",
-  "description": "Toggle live browser tabs between normal browser windows and clean popup windows.",
+  "description": "Any browser tab, toolbar-free. Turn it into a clean, resizable window.",
+
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png"
+    },
+    "default_title": "NotF11"
+  },
+
   "permissions": [
     "storage"
   ],
+
   "background": {
     "service_worker": "background.js"
   },
+
   "commands": {
     "toggle-clean-window": {
       "suggested_key": {
         "default": "Ctrl+Shift+F"
       },
-      "description": "Toggle the focused tab between normal and clean window mode"
+      "description": "Enter or exit clean-window mode for the focused tab"
     },
+
     "next-clean-tab": {
       "suggested_key": {
         "default": "Ctrl+Shift+Period"
       },
       "description": "Show the next source tab in the focused clean window"
     },
+
     "previous-clean-tab": {
       "suggested_key": {
         "default": "Ctrl+Shift+Comma"
