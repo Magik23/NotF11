@@ -666,7 +666,7 @@ async function switchCleanTab(direction) {
   if (
     !session ||
     session.popupWindowId !==
-      cleanTab.windowId
+    cleanTab.windowId
   ) {
     console.log(
       "Tab switching is only available from a tracked clean popup."
@@ -773,9 +773,9 @@ async function switchCleanTab(direction) {
   if (
     !targetTab ||
     targetTab.windowId !==
-      destinationWindowId ||
+    destinationWindowId ||
     targetTab.groupId !==
-      TAB_GROUP_ID_NONE
+    TAB_GROUP_ID_NONE
   ) {
     /*
      * Best-effort recovery:
@@ -791,7 +791,7 @@ async function switchCleanTab(direction) {
     if (
       returnedTab &&
       returnedTab.windowId ===
-        destinationWindowId
+      destinationWindowId
     ) {
       await enterCleanMode(
         returnedTab,
@@ -827,7 +827,7 @@ async function switchCleanTab(direction) {
     if (
       returnedTab &&
       returnedTab.windowId ===
-        destinationWindowId
+      destinationWindowId
     ) {
       try {
         await enterCleanMode(
@@ -849,6 +849,72 @@ async function switchCleanTab(direction) {
   console.log(
     `Clean view switched from tab ${cleanTab.id} to tab ${targetTab.id}.`
   );
+}
+
+async function recoverUntrackedPopup(
+  tab,
+  popupWindow
+) {
+  /*
+   * A full browser restart can restore a previous
+   * clean popup after NotF11 has correctly discarded
+   * the old return ticket.
+   *
+   * The original source window can no longer be
+   * identified safely because Chromium tab/window
+   * IDs belong to the previous browser session.
+   *
+   * Ctrl+Shift+F therefore provides a safe escape:
+   * preserve the same live tab, but move it into a
+   * normal browser window with the browser UI back.
+   */
+  const popupGeometry =
+    getGeometry(popupWindow);
+
+  const createData = {
+    tabId: tab.id,
+    type: "normal",
+    focused: true
+  };
+
+  if (popupGeometry) {
+    Object.assign(
+      createData,
+      popupGeometry
+    );
+  }
+
+  const normalWindow =
+    await chrome.windows.create(
+      createData
+    );
+
+  if (
+    !normalWindow ||
+    normalWindow.id === undefined
+  ) {
+    throw new Error(
+      "Untracked popup could not be recovered into a normal browser window."
+    );
+  }
+
+  /*
+   * Chromium may slightly adjust bounds while
+   * creating the new normal window. Reapply the
+   * previous popup geometry when available.
+   */
+  if (popupGeometry) {
+    await chrome.windows.update(
+      normalWindow.id,
+      popupGeometry
+    );
+  }
+
+  console.log(
+    `Untracked popup tab ${tab.id} recovered into normal window ${normalWindow.id}.`
+  );
+
+  return normalWindow;
 }
 
 async function toggleTab(tab) {
@@ -881,7 +947,7 @@ async function toggleTab(tab) {
   if (
     session &&
     session.popupWindowId ===
-      tab.windowId
+    tab.windowId
   ) {
     await exitCleanMode(
       tab,
@@ -902,14 +968,34 @@ async function toggleTab(tab) {
     );
 
   /*
-   * Do not treat unrelated popups, PWAs, DevTools,
-   * etc. as our clean windows.
+   * A popup without a valid NotF11 session may be
+   * a clean window restored by Chromium after a
+   * complete browser restart.
+   *
+   * Its original source can no longer be identified
+   * safely, but Ctrl+Shift+F must always provide an
+   * escape back to a normal browser window.
+   */
+  if (
+    currentWindow.type === "popup"
+  ) {
+    await recoverUntrackedPopup(
+      tab,
+      currentWindow
+    );
+
+    return;
+  }
+
+  /*
+   * Do not reinterpret other special Chromium window
+   * types as NotF11 clean windows.
    */
   if (
     currentWindow.type !== "normal"
   ) {
     console.log(
-      "This popup is not one of our tracked clean windows."
+      "This window type is not supported by NotF11."
     );
 
     return;
@@ -1008,6 +1094,10 @@ chrome.runtime.onStartup.addListener(
      * Local storage survives extension reloads,
      * but old return tickets should not survive a
      * full browser restart.
+     *
+     * If Chromium restores an old clean popup,
+     * Ctrl+Shift+F can recover that orphan popup
+     * into a normal browser window.
      */
     enqueueOperation(
       () =>
