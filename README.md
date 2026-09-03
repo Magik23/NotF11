@@ -40,6 +40,7 @@ That makes it useful for:
 - Uses standard Chromium extension APIs
 - Requires no content scripts or webpage modification
 - Includes no analytics, telemetry, ads, accounts, or external services
+- Lets you enter clean-window mode by clicking the toolbar icon
 
 ## Default shortcuts
 
@@ -54,9 +55,7 @@ Shortcuts can be changed from the browser's extension-shortcut settings:
 - Brave: `brave://extensions/shortcuts`
 - Chrome: `chrome://extensions/shortcuts`
 
-NotF11 is intentionally keyboard-driven.
-
-Chromium may display the NotF11 icon in its Extensions menu or allow it to be pinned to the toolbar. The icon currently has no click action; the keyboard shortcuts are the controls for NotF11.
+Click the NotF11 toolbar icon to enter clean-window mode. Keyboard shortcuts remain available for entering, exiting, and switching tabs.
 
 ## How it works
 
