@@ -1036,6 +1036,19 @@ async function removeClosedCleanSession(
   );
 }
 
+chrome.action.onClicked.addListener(
+  () => {
+    enqueueOperation(
+      toggleFocusedTab
+    ).catch((error) => {
+      console.error(
+        "Clean-window action failed:",
+        error
+      );
+    });
+  }
+);
+
 chrome.commands.onCommand.addListener(
   (command) => {
     let operation = null;
