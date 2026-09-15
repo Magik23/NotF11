@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NotF11</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <header class="brand">
+        <img
+          class="brand__icon"
+          src="assets/icons/icon-48.png"
+          width="38"
+          height="38"
+          alt=""
+        >
+        <div>
+          <h1>NotF11</h1>
+          <p>Any browser tab, toolbar-free.</p>
+        </div>
+      </header>
+
+      <section class="status" aria-live="polite">
+        <span class="status__dot"></span>
+        <span id="status-text">Ready for clean-window mode</span>
+        <span id="session-count" class="status__count"></span>
+      </section>
+
+      <section class="settings" aria-label="NotF11 settings">
+        <label class="setting" for="clean-on-launch">
+          <span class="setting__copy">
+            <strong>Clean on launch</strong>
+            <small>Open the first active browser tab clean when the browser starts again.</small>
+          </span>
+          <span class="switch">
+            <input id="clean-on-launch" type="checkbox">
+            <span class="switch__track" aria-hidden="true"></span>
+          </span>
+        </label>
+
+        <label class="setting" for="new-tabs-stay-clean">
+          <span class="setting__copy">
+            <strong>New tabs stay clean</strong>
+            <small>Tabs created from a clean session become additional clean windows.</small>
+          </span>
+          <span class="switch">
+            <input id="new-tabs-stay-clean" type="checkbox">
+            <span class="switch__track" aria-hidden="true"></span>
+          </span>
+        </label>
+
+        <label class="setting" for="remember-window-geometry">
+          <span class="setting__copy">
+            <strong>Remember size &amp; position</strong>
+            <small>Keep clean windows in the same desktop footprint. Turn off to let your window manager place them.</small>
+          </span>
+          <span class="switch">
+            <input id="remember-window-geometry" type="checkbox">
+            <span class="switch__track" aria-hidden="true"></span>
+          </span>
+        </label>
+      </section>
+
+      <button id="toggle-button" class="primary" type="button">
+        <span id="toggle-label">Toggle current tab</span>
+        <kbd id="shortcut-toggle-primary">Ctrl Shift F</kbd>
+      </button>
+
+      <section class="shortcuts" aria-label="Keyboard shortcuts">
+        <div class="shortcut-row">
+          <span>Toggle clean mode</span>
+          <kbd id="shortcut-toggle">Ctrl Shift F</kbd>
+        </div>
+        <div class="shortcut-row">
+          <span>Next source tab</span>
+          <kbd id="shortcut-next">Ctrl Shift .</kbd>
+        </div>
+        <div class="shortcut-row">
+          <span>Previous source tab</span>
+          <kbd id="shortcut-previous">Ctrl Shift ,</kbd>
+        </div>
+        <button id="manage-shortcuts" class="secondary" type="button">
+          Manage shortcuts
+        </button>
+      </section>
+
+      <p id="shortcut-warning" class="shortcut-warning" role="status" aria-live="polite"></p>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+
+      <footer>
+        Live tabs. Local state. No page access.
+      </footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

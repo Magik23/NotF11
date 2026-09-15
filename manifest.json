@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "NotF11",
   "version": "0.1.0",
+  "minimum_chrome_version": "102",
   "description": "Any browser tab, toolbar-free. Turn it into a clean, resizable window.",
 
   "icons": {
@@ -16,7 +17,8 @@
       "16": "assets/icons/icon-16.png",
       "32": "assets/icons/icon-32.png"
     },
-    "default_title": "NotF11"
+    "default_title": "NotF11",
+    "default_popup": "popup.html"
   },
 
   "permissions": [
