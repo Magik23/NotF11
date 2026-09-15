@@ -32,7 +32,7 @@
         <label class="setting" for="clean-on-launch">
           <span class="setting__copy">
             <strong>Clean on launch</strong>
-            <small>Open the first active browser tab clean when the browser starts again.</small>
+            <small>Start the first browser window in Clean mode.</small>
           </span>
           <span class="switch">
             <input id="clean-on-launch" type="checkbox">
@@ -43,7 +43,7 @@
         <label class="setting" for="new-tabs-stay-clean">
           <span class="setting__copy">
             <strong>New tabs stay clean</strong>
-            <small>Tabs created from a clean session become additional clean windows.</small>
+            <small>New tabs opened from a Clean window also open Clean.</small>
           </span>
           <span class="switch">
             <input id="new-tabs-stay-clean" type="checkbox">
@@ -54,7 +54,7 @@
         <label class="setting" for="remember-window-geometry">
           <span class="setting__copy">
             <strong>Remember size &amp; position</strong>
-            <small>Keep clean windows in the same desktop footprint. Turn off to let your window manager place them.</small>
+            <small>Keep Clean windows in the same desktop footprint. Turn off for tiling window managers.</small>
           </span>
           <span class="switch">
             <input id="remember-window-geometry" type="checkbox">
@@ -83,6 +83,9 @@
         </div>
         <button id="manage-shortcuts" class="secondary" type="button">
           Manage shortcuts
+        </button>
+        <button id="open-documentation" class="secondary" type="button">
+          Help &amp; documentation
         </button>
       </section>
 

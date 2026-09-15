@@ -8,6 +8,7 @@ const sessionCount = document.querySelector("#session-count");
 const message = document.querySelector("#message");
 const shortcutWarning = document.querySelector("#shortcut-warning");
 const manageShortcutsButton = document.querySelector("#manage-shortcuts");
+const documentationButton = document.querySelector("#open-documentation");
 const primaryShortcut = document.querySelector("#shortcut-toggle-primary");
 
 let messageTimer = null;
@@ -216,6 +217,22 @@ manageShortcutsButton.addEventListener("click", async () => {
   } catch (error) {
     setMessage(
       "Open your browser extension shortcuts page to assign commands.",
+      true
+    );
+  }
+});
+
+documentationButton.addEventListener("click", async () => {
+  setMessage();
+
+  try {
+    await chrome.tabs.create({
+      url: "https://github.com/Magik23/NotF11/blob/main/docs/NOTF11_EXTENSION_PAGE.md"
+    });
+    window.close();
+  } catch (error) {
+    setMessage(
+      "Open the NotF11 GitHub repository for help and documentation.",
       true
     );
   }

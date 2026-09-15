@@ -2,178 +2,404 @@
 
 ## Any browser tab, toolbar-free.
 
-**Turn it into a clean, resizable window.**
+**Turn the tab you already have open into a clean desktop window — without reopening the page.**
 
-NotF11 removes the browser interface around your current tab—no tab strip, address bar, bookmarks bar, navigation buttons, or extension controls.
+NotF11 moves the current live Chromium tab into a clean popup-style window with the browser chrome removed:
 
-What remains is the same live page inside a clean desktop window you can move, resize, maximize, snap, and arrange alongside your other applications.
+- no tab strip,
+- no address bar,
+- no bookmarks bar,
+- no navigation buttons,
+- no extension toolbar.
 
-Unlike F11 fullscreen, NotF11 does not take over your entire display.
+What remains is the same live page in a normal desktop window that can still be moved, resized, maximized, snapped, tiled, or arranged alongside other applications.
+
+Unlike F11 fullscreen, NotF11 does not take over the entire display.
 
 **One shortcut in. The same shortcut out.**
 
-## The same live tab, with more room
+---
 
-Press `Ctrl+Shift+F` and NotF11 moves the current live tab into a clean Chromium window.
+# The same live tab, with more room
 
-Press it again and the same tab returns to its source browser window.
+Press:
 
-Because NotF11 moves the existing tab instead of reopening its URL, active page state stays with it—including:
+```text
+Ctrl+Shift+F
+```
 
-- Scroll position
-- Entered text
-- Login sessions
-- In-page progress
-- Active web-app state
+and NotF11 moves the current live tab into a Clean window.
 
-NotF11 does not recreate the page.
+Press it again and the same live tab returns to a normal browser source.
 
-## Toolbar-free, still a real desktop window
+NotF11 moves the existing Chromium tab rather than rebuilding the page from its URL, so browser and page state can remain with it, including where Chromium permits:
 
-NotF11 removes the browser controls, not the operating system's window frame.
+- scroll position,
+- entered text,
+- login/session state,
+- navigation history,
+- in-page progress,
+- active web-app state.
 
-The clean window remains:
+NotF11 does **not** create a duplicate copy of the page.
 
-- Movable
-- Resizable
-- Maximizable
-- Compatible with Windows Snap
-- Compatible with Microsoft PowerToys FancyZones
-- Usable across multiple monitors
+---
 
-This gives the page more room without locking you into fullscreen.
+# Clean, but still a real desktop window
 
-## Built for pages that deserve their own space
+NotF11 removes browser chrome, not the operating system's window management.
 
-NotF11 works especially well with:
+A Clean window remains:
 
-- ChatGPT and other AI tools
-- Web apps and dashboards
-- Documentation and reference pages
-- Browser-based editors and productivity tools
-- Video, media, and reading
-- Any website you want to treat more like a desktop application
+- movable,
+- resizable,
+- maximizable,
+- compatible with Windows Snap,
+- compatible with tools such as Microsoft PowerToys FancyZones,
+- usable across multiple monitors,
+- compatible with compositor-managed tiling workflows.
 
-## Default shortcuts
+This gives the page more room without forcing fullscreen.
 
-- `Ctrl+Shift+F` — Enter or exit the clean window
-- `Ctrl+Shift+,` — Switch to the previous eligible browser tab
-- `Ctrl+Shift+.` — Switch to the next eligible browser tab
+---
 
-The previous and next shortcuts allow the clean window to behave like a focused viewport over tabs in its source browser window.
+# Three simple settings
+
+Click the NotF11 extension icon to open the compact control panel.
+
+## Clean on launch
+
+**Default: Off**
+
+When enabled, NotF11 can start the first eligible browser surface in Clean mode.
+
+NotF11 checks that the Clean/Raw toggle shortcut is actually assigned before allowing this feature to create an unsafe recovery situation.
+
+## New tabs stay clean
+
+**Default: Off**
+
+When a new tab is created from a Clean NotF11 workflow:
+
+- Off → the new tab remains Raw in the same logical source family.
+- On → the new tab becomes another Clean window in that same family.
+
+This setting applies to tabs created from a Clean workflow. Ordinary Ctrl+T behavior from a normal browser window remains ordinary Chromium behavior.
+
+## Remember size & position
+
+**Default: On**
+
+When enabled, NotF11 asks Chromium to preserve the previous desktop footprint when moving between Raw and Clean surfaces.
+
+Turn it off when you prefer the operating system, tiling window manager, or compositor to decide placement completely.
+
+Typical examples:
+
+```text
+Windows / ordinary desktop workflow → On
+Hyprland / compositor-owned tiling   → Off
+```
+
+The setting affects future transitions. Changing it does not intentionally rearrange windows that are already open.
+
+---
+
+# Default shortcuts
+
+```text
+Ctrl+Shift+F  — Enter or exit Clean mode
+Ctrl+Shift+,  — Previous eligible source tab
+Ctrl+Shift+.  — Next eligible source tab
+```
+
+The Previous / Next commands are not global browser-tab cycling.
+
+They hand the Clean role to another eligible Raw tab from the same remembered source family.
 
 Shortcuts can be changed from the browser's extension-shortcut settings:
 
 - Brave: `brave://extensions/shortcuts`
 - Chrome: `chrome://extensions/shortcuts`
 
-NotF11 is intentionally keyboard-driven.
+The popup displays the shortcuts that Chromium actually assigned.
 
-Chromium may display the NotF11 icon in its Extensions menu or allow the icon to be pinned to the browser toolbar. The icon currently has no click action; the keyboard shortcuts are the controls for NotF11.
+---
 
-## Multiple clean windows
+# Source families
 
-NotF11 can track multiple independent clean windows at the same time.
+A core NotF11 rule is:
 
-Each clean tab keeps its own return information, including its source browser window and logical tab position.
+> **Clean changes the surface, not the family.**
 
-Tabs already detached into other clean windows are skipped while cycling through the remaining source tabs.
+When a tab moves from a normal browser window into a Clean window, NotF11 remembers the logical browser relationship it came from.
 
-## Pinned tabs
+Example:
 
-Browser-pinned tabs are supported.
+```text
+Source family
+├─ A → Clean
+├─ B → Raw
+└─ C → Raw
+```
 
-If a pinned tab enters clean mode, NotF11 remembers its pinned state and restores it when the tab returns to its source browser window.
+Previous / Next can hand the Clean role between eligible Raw members of that same family.
 
-Logical placement is reconstructed against the current tab strip, so the tab remains inside Chromium's pinned-tab region even if the source window changes while the tab is away.
+If another family exists in another browser window, NotF11 should not cross into it.
 
-## Recovery behavior
+---
 
-NotF11 includes recovery behavior for several browser-window lifecycle situations.
+# Multiple Clean windows
 
-### If the source browser window is closed
+NotF11 can track multiple Clean windows at the same time.
 
-If a clean tab's original source browser window disappears while the browser is still running, NotF11 preserves the live tab and recovers it into a replacement normal browser window when it returns from clean mode.
+A family can contain a mixture of Raw and Clean members:
 
-Sibling clean tabs that belonged to the same missing source are redirected to that replacement window.
+```text
+Family X
+├─ A → Clean
+├─ B → Raw
+├─ C → Clean
+└─ D → Raw
+```
 
-### If a clean popup is manually closed
+Tabs that are already Clean are normally skipped during Previous / Next handoff because they already occupy their own Clean surfaces.
 
-The corresponding stored NotF11 session is automatically removed.
+---
 
-### If the extension service worker reloads
+# New tabs from a Clean window
 
-Valid live clean-window sessions are stored locally and can continue operating after the Manifest V3 service worker restarts or the unpacked extension is reloaded.
+New tabs created from a Clean workflow preserve family lineage.
 
-### After a complete browser restart
+With **New tabs stay clean = Off**:
 
-Return tickets from the previous browser session are intentionally discarded because Chromium tab and window IDs belong to the browser session in which they were created.
+```text
+A Clean
+  └─ creates B
 
-Chromium may still restore a previous clean popup.
+A remains Clean
+B joins A's family as Raw
+```
 
-If that happens, press:
+With **New tabs stay clean = On**:
 
-`Ctrl+Shift+F`
+```text
+A Clean
+  └─ creates B
 
-NotF11 will move the same restored live tab into a normal browser window so the address bar and browser controls are available again.
+A remains Clean
+B joins A's family as Clean
+```
 
-NotF11 does not attempt to guess the tab's previous source window or tab index across a complete browser restart.
+The setting changes the child's initial representation, not its logical ancestry.
 
-## Small, focused, and private
+---
 
-NotF11 does not inject scripts into websites or read or modify webpage content.
+# One-tab source recovery
+
+A normal browser window can naturally disappear when its only tab is moved into a Clean popup.
+
+That is not automatically an error.
+
+Example:
+
+```text
+Normal source
+└─ A
+
+A → Clean
+
+original normal source disappears
+```
+
+If a new Raw tab is later created from A's Clean workflow, that new tab can become the legitimate replacement source for the family.
+
+NotF11 does **not** adopt an unrelated browser window merely because one exists.
+
+---
+
+# Recovery behavior
+
+NotF11 includes recovery behavior for browser-window lifecycle changes.
+
+## If the remembered source still exists
+
+The same live tab returns to that normal browser source.
+
+## If the remembered source is gone
+
+NotF11 creates a real normal replacement and moves the live tab there.
+
+It should not silently attach the tab to an unrelated browser window.
+
+## If a Clean popup is manually closed
+
+The associated runtime Clean session is cleaned up.
+
+## If the Manifest V3 service worker restarts
+
+Runtime relationship state is stored for the current browser session so valid Clean sessions can continue after ordinary service-worker suspension/reload.
+
+## After a complete browser restart
+
+Runtime tab/window IDs are session-specific.
+
+If Chromium restores an old popup without a current NotF11 relationship record, the popup can be recovered safely into a normal browser surface rather than guessing an old source relationship.
+
+---
+
+# Pinned tabs
+
+Pinned tabs are supported where the current NotF11 relationship model can restore them safely.
+
+When a pinned tab enters Clean mode, NotF11 remembers its pinned state and restores it when returning to its normal source.
+
+Native Chromium **tab groups are intentionally not supported** at this time because repeatedly detaching grouped tabs can damage or lose group semantics.
+
+---
+
+# Windows, FancyZones, and tiling window managers
+
+NotF11 is one Chromium extension with two placement styles.
+
+## Windows-style footprint preservation
+
+With:
+
+```text
+Remember size & position = On
+```
+
+NotF11 requests the previous window footprint so Raw ↔ Clean can feel like the same page transformed in place.
+
+Windows or Chromium may still clamp bounds slightly at screen edges.
+
+## Hyprland and compositor-owned placement
+
+With:
+
+```text
+Remember size & position = Off
+```
+
+NotF11 does not try to own placement.
+
+The extension manages:
+
+- the live tab,
+- Raw / Clean representation,
+- source-family relationships,
+- Previous / Next handoff.
+
+The compositor manages:
+
+- tiling,
+- workspace placement,
+- scratchpad,
+- grouping,
+- physical topology.
+
+An advanced Hyprland workflow is to keep a normal source browser in scratchpad and use Clean windows as workspace surfaces.
+
+NotF11 does not require Hyprland, FancyZones, or any native helper.
+
+---
+
+# Built for pages that deserve their own space
+
+NotF11 works especially well with:
+
+- ChatGPT and other AI tools,
+- web apps and dashboards,
+- documentation and reference pages,
+- browser-based editors,
+- productivity tools,
+- video and media,
+- reading,
+- monitoring pages,
+- any website you want to treat more like a desktop application.
+
+---
+
+# Small, focused, and private
+
+NotF11 does not inject scripts into websites and does not read or modify webpage content.
 
 It has:
 
-- No analytics or telemetry
-- No ads or tracking
-- No account or sign-in
-- No cloud service
-- No host permissions
-- No content scripts
-- No webpage-content collection
+- no analytics,
+- no telemetry,
+- no ads,
+- no tracking,
+- no account requirement,
+- no cloud service,
+- no host permissions,
+- no content scripts,
+- no webpage-content collection.
 
-The extension currently requests only the `storage` permission, which is used for NotF11's own clean-window session state.
+The extension's explicit permission remains:
 
-Window, tab, keyboard-command, and extension-icon behavior use standard Chromium extension APIs.
+```text
+storage
+```
 
-## Compatibility
+Storage is used for NotF11's own settings and relationship/session state.
 
-NotF11 has been tested with:
+Window, tab, keyboard-command, and popup behavior use standard Chromium extension APIs.
 
-- Brave Desktop on Windows 11
-- Google Chrome on Windows 11
+See [`PRIVACY.md`](../PRIVACY.md) for the repository privacy policy.
 
-Its window-management workflow has also been extensively tested with:
+---
 
-- Microsoft PowerToys FancyZones
-- Windows desktop snapping
-- Multiple browser windows
-- Multiple clean windows
+# Compatibility
 
-NotF11 uses standard Chromium Manifest V3 APIs and is expected to work with other Chromium-based desktop browsers that provide the same APIs.
+NotF11 uses Chromium Manifest V3 APIs.
 
-Additional browser and operating-system testing is welcome.
+The product has been developed and tested around:
 
-## Known behavior and limitations
+- Brave Desktop,
+- Google Chrome,
+- Windows 11,
+- Windows Snap,
+- Microsoft PowerToys FancyZones,
+- Linux / Hyprland workflows developed through the former NotF11 Tile branch of the project,
+- multiple normal browser windows,
+- multiple simultaneous Clean windows.
 
-- The operating system's title bar remains visible. This is intentional so the window remains movable, resizable, maximizable, and compatible with normal desktop window-management tools.
+Other Chromium-based desktop browsers that expose the same APIs may work as well.
+
+The unified release should always be re-tested against the current acceptance checklist before publication.
+
+---
+
+# Known behavior and limitations
+
+- The operating system's title bar remains visible. This is intentional.
+- Chromium cannot perfectly mutate a normal browser window into a popup in place; Raw ↔ Clean can involve top-level window replacement.
+- Tiling window managers can visibly reflow when Chromium creates or removes top-level windows.
 - Native Chromium tab groups are not currently supported.
-- Heavy web applications may briefly flash or redraw while Chromium moves the live tab between windows. The page itself is not reopened.
-- Windows and Chromium may clamp window geometry by a few pixels when a window touches a display edge.
-- After a complete browser restart, a restored clean popup no longer knows its previous source relationship. `Ctrl+Shift+F` safely recovers it into a normal browser window instead.
-- Browser-reserved shortcuts or conflicts with other extensions may require changing the default shortcuts.
-- The extension icon has no click action. The current NotF11 interface is intentionally keyboard-driven.
+- Heavy web applications may briefly redraw while Chromium moves the live tab between windows.
+- Windows and Chromium can clamp requested geometry by a few pixels at display edges.
+- Browser-reserved shortcuts or conflicts with other extensions can leave suggested shortcuts unassigned.
+- `Remember size & position = Off` intentionally leaves placement to the desktop environment.
+- Unexpected physical placement does not automatically mean the source-family relationship is wrong.
 
-## What NotF11 is not
+---
 
-- **Not fullscreen:** it does not occupy or take over the entire display.
-- **Not picture-in-picture:** it works with regular webpages, not only video.
-- **Not app mode:** no special site installation or separate launch command is required.
+# What NotF11 is not
+
+- **Not fullscreen:** it does not take over the entire display.
+- **Not picture-in-picture:** it works with ordinary webpages, not only video.
+- **Not app mode:** no separate site installation is required.
 - **Not a duplicate page:** it keeps the live tab you already have open.
 - **Not a webpage modification:** it does not inject UI or scripts into the site.
+- **Not a window manager:** it does not own your entire desktop layout.
+- **Not a workspace router:** it does not choose Hyprland workspaces.
+- **Not a FancyZones plugin:** FancyZones is optional.
 
-## Open source
+---
+
+# Open source
 
 NotF11 is open source.
 
@@ -189,7 +415,11 @@ Released under the MIT License.
 
 Open the page you want.
 
-Press `Ctrl+Shift+F`.
+Press:
+
+```text
+Ctrl+Shift+F
+```
 
 Keep the page. Lose the browser clutter.
 
