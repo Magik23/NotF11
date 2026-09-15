@@ -62,37 +62,10 @@ h1 {
   font-size: 11px;
 }
 
-.status {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  min-height: 31px;
-  padding: 7px 9px;
-  border: 1px solid #2d383b;
-  border-radius: 9px;
-  background: rgba(16, 22, 24, 0.86);
-  color: #b5c1c1;
-  font-size: 11px;
-}
-
-.status__dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
-  background: #21dfe0;
-  box-shadow: 0 0 10px rgba(33, 223, 224, 0.34);
-}
-
-.status__count {
-  margin-left: auto;
-  color: #edf5f5;
-  font-variant-numeric: tabular-nums;
-}
-
 .settings {
   display: grid;
   gap: 8px;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .setting {
@@ -202,7 +175,7 @@ h1 {
 }
 
 .primary:disabled {
-  cursor: progress;
+  cursor: not-allowed;
   opacity: 0.55;
 }
 
@@ -237,14 +210,47 @@ kbd {
 }
 
 .message {
+  position: relative;
   min-height: 14px;
   margin-top: 8px;
+  padding-left: 14px;
   color: #9ca9aa;
   font-size: 10px;
+  line-height: 1.35;
+}
+
+.message:empty {
+  padding-left: 0;
+}
+
+.message:not(:empty)::before {
+  content: "";
+  position: absolute;
+  top: 0.45em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #21dfe0;
+  box-shadow: 0 0 8px rgba(33, 223, 224, 0.34);
+}
+
+.message--success {
+  color: #bffafa;
+}
+
+.message--warning {
+  color: #ffb4a7;
 }
 
 .message--error {
   color: #ff9a8d;
+}
+
+.message--warning:not(:empty)::before,
+.message--error:not(:empty)::before {
+  background: #ff8f82;
+  box-shadow: 0 0 8px rgba(255, 143, 130, 0.26);
 }
 
 footer {
@@ -255,7 +261,8 @@ footer {
   text-align: center;
 }
 
-.shortcut-row kbd.is-unassigned {
+.shortcut-row kbd.is-unassigned,
+.primary kbd.is-unassigned {
   border-color: #6b4a42;
   background: rgba(92, 49, 42, 0.32);
   color: #ffb4a7;
@@ -278,18 +285,6 @@ footer {
   border-color: #40575b;
   background: rgba(21, 30, 33, 0.96);
   color: #e4eeee;
-}
-
-.shortcut-warning {
-  min-height: 0;
-  margin-top: 8px;
-  color: #ffb4a7;
-  font-size: 10px;
-  line-height: 1.35;
-}
-
-.shortcut-warning:empty {
-  display: none;
 }
 
 button:focus-visible {

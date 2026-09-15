@@ -3,15 +3,16 @@ const newTabsStayClean = document.querySelector("#new-tabs-stay-clean");
 const rememberWindowGeometry = document.querySelector("#remember-window-geometry");
 const toggleButton = document.querySelector("#toggle-button");
 const toggleLabel = document.querySelector("#toggle-label");
-const statusText = document.querySelector("#status-text");
-const sessionCount = document.querySelector("#session-count");
 const message = document.querySelector("#message");
-const shortcutWarning = document.querySelector("#shortcut-warning");
 const manageShortcutsButton = document.querySelector("#manage-shortcuts");
 const documentationButton = document.querySelector("#open-documentation");
 const primaryShortcut = document.querySelector("#shortcut-toggle-primary");
 
 let messageTimer = null;
+let contextNotice = {
+  text: "",
+  tone: "info"
+};
 
 const shortcutElements = {
   "toggle-clean-window": document.querySelector("#shortcut-toggle"),
@@ -19,20 +20,39 @@ const shortcutElements = {
   "previous-clean-tab": document.querySelector("#shortcut-previous")
 };
 
-function setMessage(text = "", isError = false, autoClearMs = 0) {
+function renderMessage(text = "", tone = "info") {
+  message.textContent = text;
+  message.classList.remove(
+    "message--success",
+    "message--warning",
+    "message--error"
+  );
+
+  if (text && tone !== "info") {
+    message.classList.add(`message--${tone}`);
+  }
+}
+
+function setContextNotice(text = "", tone = "info") {
+  contextNotice = { text, tone };
+
+  if (messageTimer === null) {
+    renderMessage(text, tone);
+  }
+}
+
+function showTransientMessage(text = "", tone = "info", autoClearMs = 0) {
   if (messageTimer !== null) {
     clearTimeout(messageTimer);
     messageTimer = null;
   }
 
-  message.textContent = text;
-  message.classList.toggle("message--error", isError);
+  renderMessage(text, tone);
 
-  if (text && !isError && autoClearMs > 0) {
+  if (text && autoClearMs > 0) {
     messageTimer = setTimeout(() => {
-      message.textContent = "";
-      message.classList.remove("message--error");
       messageTimer = null;
+      renderMessage(contextNotice.text, contextNotice.tone);
     }, autoClearMs);
   }
 }
@@ -73,7 +93,7 @@ async function refreshShortcuts() {
     commands.map((command) => [command.name, command])
   );
 
-  let missingCount = 0;
+  const missingNames = [];
 
   for (const [name, element] of Object.entries(shortcutElements)) {
     const shortcut = byName.get(name)?.shortcut ?? "";
@@ -89,13 +109,15 @@ async function refreshShortcuts() {
     }
 
     if (!assigned) {
-      missingCount += 1;
+      missingNames.push(name);
     }
   }
 
-  shortcutWarning.textContent = missingCount
-    ? `${missingCount} keyboard shortcut${missingCount === 1 ? " is" : "s are"} unassigned.`
-    : "";
+  return {
+    missingNames,
+    missingCount: missingNames.length,
+    toggleAssigned: !missingNames.includes("toggle-clean-window")
+  };
 }
 
 function renderState(state) {
@@ -105,12 +127,8 @@ function renderState(state) {
     state.settings.rememberWindowGeometry
   );
 
-  const count = Number(state.cleanSessionCount) || 0;
-  sessionCount.textContent = count > 0 ? `${count} clean` : "";
-
   if (state.grouped) {
-    statusText.textContent = "Grouped tabs stay in Chromium";
-    toggleLabel.textContent = "Grouped tab unsupported";
+    toggleLabel.textContent = "Grouped tab not supported";
     toggleButton.disabled = true;
     return;
   }
@@ -118,38 +136,73 @@ function renderState(state) {
   toggleButton.disabled = false;
 
   if (state.mode === "clean") {
-    statusText.textContent = "Current tab is clean";
     toggleLabel.textContent = "Return current tab";
   } else if (state.mode === "popup") {
-    statusText.textContent = "Untracked popup can be recovered";
     toggleLabel.textContent = "Recover normal browser";
   } else {
-    statusText.textContent = state.settings.rememberWindowGeometry
-      ? "Size & position memory is on"
-      : "Window manager controls placement";
     toggleLabel.textContent = "Open current tab clean";
   }
 }
 
+function getContextNotice(state, shortcutState) {
+  if (state.recoveryNotice?.type === "clean-on-launch-disabled") {
+    return {
+      text: "Clean on launch was turned off because Toggle clean mode is unassigned.",
+      tone: "warning"
+    };
+  }
+
+  if (state.grouped) {
+    return {
+      text: "Grouped tabs aren't supported.",
+      tone: "warning"
+    };
+  }
+
+  if (!shortcutState.toggleAssigned) {
+    return {
+      text: "Toggle clean mode is unassigned. Clean on launch requires it.",
+      tone: "warning"
+    };
+  }
+
+  if (shortcutState.missingCount > 0) {
+    const count = shortcutState.missingCount;
+
+    return {
+      text: `${count} keyboard shortcut${count === 1 ? " is" : "s are"} unassigned.`,
+      tone: "warning"
+    };
+  }
+
+  if (state.mode === "popup") {
+    return {
+      text: "This popup can be recovered safely.",
+      tone: "info"
+    };
+  }
+
+  return {
+    text: "",
+    tone: "info"
+  };
+}
+
 async function refresh() {
   const tabId = await getCurrentContextTabId();
-  const [response] = await Promise.all([
+  const [response, shortcutState] = await Promise.all([
     send({ type: "get-popup-state", tabId }),
     refreshShortcuts()
   ]);
 
   renderState(response.state);
 
-  if (response.state.recoveryNotice?.type === "clean-on-launch-disabled") {
-    setMessage(
-      "Clean on launch was turned off because Toggle clean mode is unassigned. Assign it, then re-enable Clean on launch if you want."
-    );
-  }
+  const notice = getContextNotice(response.state, shortcutState);
+  setContextNotice(notice.text, notice.tone);
 }
 
 async function changeSetting(key, value, input) {
   input.disabled = true;
-  setMessage();
 
   try {
     const response = await send({
@@ -159,10 +212,10 @@ async function changeSetting(key, value, input) {
     });
 
     input.checked = Boolean(response.settings[key]);
-    setMessage("Saved.", false, 1400);
+    showTransientMessage("Saved.", "success", 1400);
   } catch (error) {
     input.checked = !value;
-    setMessage(error.message, true);
+    showTransientMessage(error.message, "error");
   } finally {
     input.disabled = false;
   }
@@ -194,50 +247,45 @@ rememberWindowGeometry.addEventListener("change", () => {
 
 toggleButton.addEventListener("click", async () => {
   toggleButton.disabled = true;
-  setMessage();
 
   try {
     const tabId = await getCurrentContextTabId();
     await send({ type: "toggle-focused", tabId });
     window.close();
   } catch (error) {
-    setMessage(error.message, true);
+    showTransientMessage(error.message, "error");
     toggleButton.disabled = false;
   }
 });
 
 manageShortcutsButton.addEventListener("click", async () => {
-  setMessage();
-
   try {
     await chrome.tabs.create({
       url: "chrome://extensions/shortcuts"
     });
     window.close();
-  } catch (error) {
-    setMessage(
+  } catch (_error) {
+    showTransientMessage(
       "Open your browser extension shortcuts page to assign commands.",
-      true
+      "error"
     );
   }
 });
 
 documentationButton.addEventListener("click", async () => {
-  setMessage();
-
   try {
     await chrome.tabs.create({
       url: chrome.runtime.getURL("help.html")
     });
     window.close();
-  } catch (error) {
-    setMessage(
+  } catch (_error) {
+    showTransientMessage(
       "Could not open NotF11 help.",
-      true
+      "error"
     );
   }
 });
 
 refresh().catch((error) => {
-  setMessage(error.message, true);
+  showTransientMessage(error.message, "error");
 });

@@ -22,12 +22,6 @@
         </div>
       </header>
 
-      <section class="status" aria-live="polite">
-        <span class="status__dot"></span>
-        <span id="status-text">Ready for clean-window mode</span>
-        <span id="session-count" class="status__count"></span>
-      </section>
-
       <section class="settings" aria-label="NotF11 settings">
         <label class="setting" for="clean-on-launch">
           <span class="setting__copy">
@@ -89,8 +83,13 @@
         </button>
       </section>
 
-      <p id="shortcut-warning" class="shortcut-warning" role="status" aria-live="polite"></p>
-      <p id="message" class="message" role="status" aria-live="polite"></p>
+      <p
+        id="message"
+        class="message"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
 
       <footer>
         Live tabs. Local state. No page access.
