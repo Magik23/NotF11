@@ -227,12 +227,12 @@ documentationButton.addEventListener("click", async () => {
 
   try {
     await chrome.tabs.create({
-      url: "https://github.com/Magik23/NotF11/blob/main/docs/NOTF11_EXTENSION_PAGE.md"
+      url: chrome.runtime.getURL("help.html")
     });
     window.close();
   } catch (error) {
     setMessage(
-      "Open the NotF11 GitHub repository for help and documentation.",
+      "Could not open NotF11 help.",
       true
     );
   }
