@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "任意浏览器标签页，无工具栏。"
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "启用“启动时使用 Clean”之前，请先分配“切换 Clean 模式”快捷键。"
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "由于“切换 Clean 模式”快捷键未分配，“启动时使用 Clean”已关闭。"
+  },
+  "cleanLaunchHelp": {
+    "message": "启用后，第一个符合条件的浏览器界面会以 Clean 模式启动。NotF11 会先确认主要切换快捷键确实已分配，避免该功能造成不安全的恢复状态。"
+  },
+  "cleanOnLaunchDescription": {
+    "message": "让第一个浏览器窗口以 Clean 模式启动。"
+  },
+  "cleanOnLaunchTitle": {
+    "message": "启动时使用 Clean"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "无法创建 Clean 窗口。"
+  },
+  "commandNextDescription": {
+    "message": "在当前聚焦的 Clean 窗口中显示下一个源标签页"
+  },
+  "commandPreviousDescription": {
+    "message": "在当前聚焦的 Clean 窗口中显示上一个源标签页"
+  },
+  "commandToggleDescription": {
+    "message": "为当前聚焦标签页进入或退出 Clean 模式"
+  },
+  "defaultOff": {
+    "message": "默认：关闭"
+  },
+  "defaultOn": {
+    "message": "默认：开启"
+  },
+  "extensionDescription": {
+    "message": "任意浏览器标签页，无工具栏。把它变成简洁、可调整大小的窗口。"
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "源家族\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "当一个标签页离开普通浏览器窗口并变成 Clean 时，NotF11 会记住它原本所属的逻辑浏览器关系。"
+  },
+  "familiesP2": {
+    "message": "“上一个 / 下一个”可以在同一家族中符合条件的 Raw 成员之间转移 Clean 角色。如果另一个浏览器窗口属于不同家族，NotF11 不会跨过去。"
+  },
+  "familiesP3": {
+    "message": "支持多个 Clean 窗口。已经处于 Clean 的家族成员通常会在切换时被跳过，因为它们已经占用了自己的 Clean 界面。"
+  },
+  "familiesQuote": {
+    "message": "Clean 改变的是表面，不是家族。"
+  },
+  "familiesTitle": {
+    "message": "源家族"
+  },
+  "footerPrivacy": {
+    "message": "实时标签页。本地状态。无页面访问。"
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 会把同一个实时标签页移动到 Clean 风格的弹出窗口中，而不会重新打开页面。"
+  },
+  "gettingStartedP1Before": {
+    "message": "聚焦任意未分组的 Chromium 标签页，然后按"
+  },
+  "gettingStartedP2": {
+    "message": "再次按同一个快捷键即可把标签页返回普通浏览器源。与 F11 全屏不同，Clean 窗口仍然是普通桌面窗口，可以移动、调整大小、最大化、贴靠或平铺。"
+  },
+  "gettingStartedTitle": {
+    "message": "快速开始"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "不支持分组标签页"
+  },
+  "groupedTabsUnsupported": {
+    "message": "不支持分组标签页。"
+  },
+  "helpDocumentation": {
+    "message": "帮助与文档"
+  },
+  "helpDocumentationLabel": {
+    "message": "帮助与文档"
+  },
+  "helpSectionsAria": {
+    "message": "帮助章节"
+  },
+  "helpTitle": {
+    "message": "NotF11 帮助"
+  },
+  "heroAction": {
+    "message": "Clean ↔ 普通"
+  },
+  "heroEyebrow": {
+    "message": "任意浏览器标签页，无工具栏。"
+  },
+  "heroLede": {
+    "message": "NotF11 会把你已经打开的 Chromium 实时标签页移动到简洁的桌面窗口中，然后让同一个标签页可以返回普通浏览器源。"
+  },
+  "heroTitle": {
+    "message": "保留网页，去掉浏览器杂项。"
+  },
+  "hyprlandP1": {
+    "message": "如果希望合成器负责位置、平铺、工作区和 scratchpad 行为，请关闭“记住大小和位置”。"
+  },
+  "hyprlandP2": {
+    "message": "NotF11 继续负责浏览器关系、Raw / Clean 表现形式和家族交接，而不是桌面拓扑。"
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / 平铺合成器"
+  },
+  "invalidSetting": {
+    "message": "无效的 NotF11 设置。"
+  },
+  "issuesLink": {
+    "message": "问题"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "键盘快捷键"
+  },
+  "limitation1": {
+    "message": "操作系统标题栏会有意保留显示。"
+  },
+  "limitation2": {
+    "message": "目前不支持 Chromium 原生标签页分组。"
+  },
+  "limitation3": {
+    "message": "当 Chromium 在窗口之间移动实时标签页时，较重的网页应用可能会短暂重绘。"
+  },
+  "limitation4": {
+    "message": "Chromium 或 Windows 可能会在屏幕边缘略微调整请求的窗口几何。"
+  },
+  "limitation5": {
+    "message": "当顶层浏览器窗口出现或消失时，平铺窗口管理器可能会明显重新排布。"
+  },
+  "limitation6": {
+    "message": "浏览器保留的快捷键或与其他扩展的冲突，可能导致建议快捷键未被分配。"
+  },
+  "limitation7": {
+    "message": "NotF11 不选择 Hyprland 工作区，也不控制 FancyZones。"
+  },
+  "limitationsTitle": {
+    "message": "已知行为与限制"
+  },
+  "manageShortcuts": {
+    "message": "管理快捷键"
+  },
+  "navFamilies": {
+    "message": "源家族"
+  },
+  "navGettingStarted": {
+    "message": "快速开始"
+  },
+  "navLimitations": {
+    "message": "限制"
+  },
+  "navNewTabs": {
+    "message": "新标签页"
+  },
+  "navPlacement": {
+    "message": "窗口位置"
+  },
+  "navPrivacy": {
+    "message": "隐私"
+  },
+  "navRecovery": {
+    "message": "恢复"
+  },
+  "navSettings": {
+    "message": "设置"
+  },
+  "navShortcuts": {
+    "message": "快捷键"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "新标签页无法为其 Clean 家族创建替代源。"
+  },
+  "newTabsHelp": {
+    "message": "只控制从 NotF11 Clean 工作流中创建的新标签页。关闭时，子标签页会在同一源家族中保持 Raw；开启时，子标签页会成为该家族中的另一个 Clean 窗口。"
+  },
+  "newTabsIntro": {
+    "message": "从 Clean 工作流创建的新标签页会保留家族关系。"
+  },
+  "newTabsOffCardTitle": {
+    "message": "新标签页保持 Clean = 关闭"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ 创建 B\n\nA 保持 Clean\nB 以 Raw 身份加入 A 的家族"
+  },
+  "newTabsOnCardTitle": {
+    "message": "新标签页保持 Clean = 开启"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ 创建 B\n\nA 保持 Clean\nB 以 Clean 身份加入 A 的家族"
+  },
+  "newTabsP": {
+    "message": "此设置改变的是子标签页的初始表现形式，而不是它的来源关系。普通浏览器窗口中的 Ctrl+T 仍保持普通 Chromium 行为。"
+  },
+  "newTabsStayCleanDescription": {
+    "message": "从 Clean 窗口打开的新标签页也以 Clean 打开。"
+  },
+  "newTabsStayCleanTitle": {
+    "message": "新标签页保持 Clean"
+  },
+  "newTabsTitle": {
+    "message": "从 Clean 窗口打开的新标签页"
+  },
+  "nextSourceTab": {
+    "message": "下一个源标签页"
+  },
+  "notWindowManagerText": {
+    "message": "物理位置与预期不同，并不自动意味着浏览器关系有问题。"
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 不是窗口管理器。"
+  },
+  "openCurrentTabClean": {
+    "message": "以 Clean 打开当前标签页"
+  },
+  "openHelpError": {
+    "message": "无法打开 NotF11 帮助。"
+  },
+  "openShortcutsError": {
+    "message": "请打开浏览器的扩展程序快捷键页面来分配命令。"
+  },
+  "placementTitle": {
+    "message": "窗口位置"
+  },
+  "popupRecoverySafe": {
+    "message": "此弹出窗口可以安全恢复。"
+  },
+  "previousSourceTab": {
+    "message": "上一个源标签页"
+  },
+  "privacyCode": {
+    "message": "实时标签页。\n本地状态。\n无页面访问。"
+  },
+  "privacyNoAccount": {
+    "message": "无需账户"
+  },
+  "privacyNoAds": {
+    "message": "无广告"
+  },
+  "privacyNoAnalytics": {
+    "message": "无分析"
+  },
+  "privacyNoCloud": {
+    "message": "无云服务"
+  },
+  "privacyNoContentScripts": {
+    "message": "无内容脚本"
+  },
+  "privacyNoHostPermissions": {
+    "message": "无主机权限"
+  },
+  "privacyNoTelemetry": {
+    "message": "无遥测"
+  },
+  "privacyNoTracking": {
+    "message": "无跟踪"
+  },
+  "privacyP1": {
+    "message": "NotF11 不会向网站注入脚本，也不会读取或修改网页内容。"
+  },
+  "privacyP2": {
+    "message": "扩展只使用自身的本地/会话存储来保存设置和 NotF11 关系状态。启用“记住大小和位置”时，可能会使用窗口几何信息。"
+  },
+  "privacyTitle": {
+    "message": "小巧、专注、注重隐私"
+  },
+  "recoverNormalBrowser": {
+    "message": "恢复为普通浏览器窗口"
+  },
+  "recoveryOneTabText": {
+    "message": "当普通浏览器窗口唯一的标签页被移动到 Clean 后，该窗口可能自然消失。如果之后从该 Clean 工作流创建了新的 Raw 标签页，它可以成为这个家族合法的替代源。"
+  },
+  "recoveryOneTabTitle": {
+    "message": "单标签页源"
+  },
+  "recoveryRestartText": {
+    "message": "Chromium 的标签页和窗口 ID 只在当前浏览器会话中有效。如果 Chromium 恢复了一个没有当前 NotF11 关系记录的旧弹出窗口，NotF11 可以把它恢复成普通浏览器界面，而不是猜测旧的源关系。"
+  },
+  "recoveryRestartTitle": {
+    "message": "浏览器重启后"
+  },
+  "recoverySourceExistsText": {
+    "message": "同一个实时标签页会返回该普通浏览器源。"
+  },
+  "recoverySourceExistsTitle": {
+    "message": "如果记住的源仍然存在"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 会创建一个真正的普通替代窗口，并把实时标签页移到那里。它不会悄悄把标签页附加到无关的浏览器窗口。"
+  },
+  "recoverySourceGoneTitle": {
+    "message": "如果记住的源已经不存在"
+  },
+  "recoveryTitle": {
+    "message": "恢复行为"
+  },
+  "rememberGeometryDescription": {
+    "message": "让 Clean 窗口保持在相同桌面区域。使用平铺窗口管理器时请关闭。"
+  },
+  "rememberGeometryHelp": {
+    "message": "启用后，NotF11 会请求 Chromium 在 Raw ↔ Clean 切换时保留之前的桌面占用区域。如果希望平铺窗口管理器或合成器完全负责窗口位置，请关闭此选项。"
+  },
+  "rememberGeometryTitle": {
+    "message": "记住大小和位置"
+  },
+  "replacementSourceFailed": {
+    "message": "无法创建替代的普通源窗口。"
+  },
+  "reportIssue": {
+    "message": "报告问题"
+  },
+  "requestFailed": {
+    "message": "NotF11 请求失败。"
+  },
+  "returnCurrentTab": {
+    "message": "返回当前标签页"
+  },
+  "sameLiveTabText": {
+    "message": "在 Chromium 允许的情况下，滚动位置、已输入文本、登录/会话状态、导航历史以及网页应用状态都可以随标签页保留。"
+  },
+  "sameLiveTabTitle": {
+    "message": "始终是同一个实时标签页。"
+  },
+  "saved": {
+    "message": "已保存。"
+  },
+  "settingsAria": {
+    "message": "NotF11 设置"
+  },
+  "settingsTitle": {
+    "message": "设置"
+  },
+  "shortcutNextHelp": {
+    "message": "下一个符合条件的源标签页"
+  },
+  "shortcutPreviousHelp": {
+    "message": "上一个符合条件的源标签页"
+  },
+  "shortcutToggleHelp": {
+    "message": "进入或退出 Clean 模式"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "有 1 个键盘快捷键未分配。"
+  },
+  "shortcutsAria": {
+    "message": "键盘快捷键"
+  },
+  "shortcutsP1": {
+    "message": "“上一个”和“下一个”不是全局浏览器标签页切换。它们会把 Clean 角色交给同一个已记忆源家族中的另一个符合条件的 Raw 标签页。"
+  },
+  "shortcutsP2": {
+    "message": "浏览器快捷键可能发生冲突。请在 NotF11 弹出窗口中使用“管理快捷键”，查看 Chromium 实际分配的命令。"
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "有 $COUNT$ 个键盘快捷键未分配。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "源代码"
+  },
+  "temporaryBridgeFailed": {
+    "message": "无法创建临时普通桥接窗口。"
+  },
+  "toggleCleanMode": {
+    "message": "切换 Clean 模式"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "切换当前标签页"
+  },
+  "toggleUnassignedNotice": {
+    "message": "“切换 Clean 模式”快捷键未分配。“启动时使用 Clean”需要该快捷键。"
+  },
+  "unassigned": {
+    "message": "未分配"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "无法将未跟踪的弹出窗口恢复为普通浏览器窗口。"
+  },
+  "windowsDesktopP1": {
+    "message": "如果希望 Raw ↔ Clean 在 Chromium 和操作系统允许的情况下保留之前的桌面占用区域，请保持“记住大小和位置”开启。"
+  },
+  "windowsDesktopP2": {
+    "message": "它也能很好地配合 Windows 常规贴靠功能以及 PowerToys FancyZones 等工具。"
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / 普通桌面"
+  }
+}

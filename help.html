@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NotF11 Help</title>
+    <title data-i18n="helpTitle">NotF11 Help</title>
     <link rel="stylesheet" href="help.css">
   </head>
   <body>
@@ -12,161 +12,148 @@
         <div class="brand">
           <img src="assets/icons/icon-48.png" width="42" height="42" alt="">
           <div>
-            <strong>NotF11</strong>
-            <span>Help &amp; documentation</span>
+            <strong data-i18n="extensionName">NotF11</strong>
+            <span data-i18n="helpDocumentationLabel">Help &amp; documentation</span>
           </div>
         </div>
 
-        <nav aria-label="Help sections">
-          <a href="#getting-started">Getting started</a>
-          <a href="#settings">Settings</a>
-          <a href="#shortcuts">Shortcuts</a>
-          <a href="#families">Source families</a>
-          <a href="#new-tabs">New tabs</a>
-          <a href="#recovery">Recovery</a>
-          <a href="#placement">Window placement</a>
-          <a href="#privacy">Privacy</a>
-          <a href="#limitations">Limitations</a>
+        <nav aria-label="Help sections" data-i18n-aria-label="helpSectionsAria">
+          <a href="#getting-started" data-i18n="navGettingStarted">Getting started</a>
+          <a href="#settings" data-i18n="navSettings">Settings</a>
+          <a href="#shortcuts" data-i18n="navShortcuts">Shortcuts</a>
+          <a href="#families" data-i18n="navFamilies">Source families</a>
+          <a href="#new-tabs" data-i18n="navNewTabs">New tabs</a>
+          <a href="#recovery" data-i18n="navRecovery">Recovery</a>
+          <a href="#placement" data-i18n="navPlacement">Window placement</a>
+          <a href="#privacy" data-i18n="navPrivacy">Privacy</a>
+          <a href="#limitations" data-i18n="navLimitations">Limitations</a>
         </nav>
 
         <div class="sidebar-links">
           <a href="https://github.com/Magik23/NotF11" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://github.com/Magik23/NotF11/issues" target="_blank" rel="noreferrer">Report an issue</a>
+          <a href="https://github.com/Magik23/NotF11/issues" target="_blank" rel="noreferrer" data-i18n="reportIssue">Report an issue</a>
         </div>
       </aside>
 
       <main class="content">
         <section class="hero">
-          <div class="eyebrow">ANY BROWSER TAB, TOOLBAR-FREE.</div>
-          <h1>Keep the page. Lose the browser clutter.</h1>
-          <p class="lede">
+          <div class="eyebrow" data-i18n="heroEyebrow">ANY BROWSER TAB, TOOLBAR-FREE.</div>
+          <h1 data-i18n="heroTitle">Keep the page. Lose the browser clutter.</h1>
+          <p class="lede" data-i18n="heroLede">
             NotF11 moves the live Chromium tab you already have open into a clean desktop window,
             then lets the same tab return to a normal browser source.
           </p>
 
           <div class="hero-actions">
             <kbd>Ctrl Shift F</kbd>
-            <span>Clean ↔ normal</span>
+            <span data-i18n="heroAction">Clean ↔ normal</span>
           </div>
         </section>
 
         <section id="getting-started">
-          <h2>Getting started</h2>
+          <h2 data-i18n="gettingStartedTitle">Getting started</h2>
           <p>
-            Focus any ungrouped Chromium tab and press <kbd>Ctrl Shift F</kbd>.
-            NotF11 moves that same live tab into a Clean popup-style window without reopening the page.
+            <span data-i18n="gettingStartedP1Before">Focus any ungrouped Chromium tab and press</span>
+            <kbd>Ctrl Shift F</kbd>.
+            <span data-i18n="gettingStartedP1After">NotF11 moves that same live tab into a Clean popup-style window without reopening the page.</span>
           </p>
 
           <div class="callout">
-            <strong>Same live tab.</strong>
-            Scroll position, entered text, login/session state, navigation history and active web-app
-            state can remain with the tab where Chromium permits.
+            <strong data-i18n="sameLiveTabTitle">Same live tab.</strong>
+            <span data-i18n="sameLiveTabText">Scroll position, entered text, login/session state, navigation history and active web-app state can remain with the tab where Chromium permits.</span>
           </div>
 
-          <p>
-            Press the same shortcut again to return the tab to its normal browser source.
-            Unlike F11 fullscreen, the Clean window remains a normal desktop window that can be moved,
-            resized, maximized, snapped or tiled.
+          <p data-i18n="gettingStartedP2">
+            Press the same shortcut again to return the tab to its normal browser source. Unlike F11 fullscreen, the Clean window remains a normal desktop window that can be moved, resized, maximized, snapped or tiled.
           </p>
         </section>
 
         <section id="settings">
-          <h2>Settings</h2>
+          <h2 data-i18n="settingsTitle">Settings</h2>
 
           <div class="setting-grid">
             <article class="card">
               <div class="card-head">
-                <h3>Clean on launch</h3>
-                <span class="default off">Default: Off</span>
+                <h3 data-i18n="cleanOnLaunchTitle">Clean on launch</h3>
+                <span class="default off" data-i18n="defaultOff">Default: Off</span>
               </div>
-              <p>
-                Starts the first eligible browser surface in Clean mode when enabled.
-                NotF11 checks that the main Toggle shortcut is actually assigned before allowing this
-                feature to create an unsafe recovery situation.
+              <p data-i18n="cleanLaunchHelp">
+                Starts the first eligible browser surface in Clean mode when enabled. NotF11 checks that the main Toggle shortcut is actually assigned before allowing this feature to create an unsafe recovery situation.
               </p>
             </article>
 
             <article class="card">
               <div class="card-head">
-                <h3>New tabs stay clean</h3>
-                <span class="default off">Default: Off</span>
+                <h3 data-i18n="newTabsStayCleanTitle">New tabs stay clean</h3>
+                <span class="default off" data-i18n="defaultOff">Default: Off</span>
               </div>
-              <p>
-                Controls only new tabs created from a Clean NotF11 workflow.
-                With it off, the child stays Raw in the same source family.
-                With it on, the child becomes another Clean window in that family.
+              <p data-i18n="newTabsHelp">
+                Controls only new tabs created from a Clean NotF11 workflow. With it off, the child stays Raw in the same source family. With it on, the child becomes another Clean window in that family.
               </p>
             </article>
 
             <article class="card">
               <div class="card-head">
-                <h3>Remember size &amp; position</h3>
-                <span class="default on">Default: On</span>
+                <h3 data-i18n="rememberGeometryTitle">Remember size &amp; position</h3>
+                <span class="default on" data-i18n="defaultOn">Default: On</span>
               </div>
-              <p>
-                When enabled, NotF11 asks Chromium to preserve the previous desktop footprint across
-                Raw ↔ Clean transitions. Turn it off when you want a tiling window manager or compositor
-                to own placement completely.
+              <p data-i18n="rememberGeometryHelp">
+                When enabled, NotF11 asks Chromium to preserve the previous desktop footprint across Raw ↔ Clean transitions. Turn it off when you want a tiling window manager or compositor to own placement completely.
               </p>
             </article>
           </div>
         </section>
 
         <section id="shortcuts">
-          <h2>Keyboard shortcuts</h2>
+          <h2 data-i18n="keyboardShortcutsTitle">Keyboard shortcuts</h2>
 
           <div class="shortcut-list">
-            <div><kbd>Ctrl Shift F</kbd><span>Enter or exit Clean mode</span></div>
-            <div><kbd>Ctrl Shift ,</kbd><span>Previous eligible source tab</span></div>
-            <div><kbd>Ctrl Shift .</kbd><span>Next eligible source tab</span></div>
+            <div><kbd>Ctrl Shift F</kbd><span data-i18n="shortcutToggleHelp">Enter or exit Clean mode</span></div>
+            <div><kbd>Ctrl Shift ,</kbd><span data-i18n="shortcutPreviousHelp">Previous eligible source tab</span></div>
+            <div><kbd>Ctrl Shift .</kbd><span data-i18n="shortcutNextHelp">Next eligible source tab</span></div>
           </div>
 
-          <p>
-            Previous and Next are not global browser-tab cycling. They hand the Clean role to another
-            eligible Raw tab from the same remembered source family.
+          <p data-i18n="shortcutsP1">
+            Previous and Next are not global browser-tab cycling. They hand the Clean role to another eligible Raw tab from the same remembered source family.
           </p>
 
-          <p>
-            Browser shortcut conflicts are possible. Use <strong>Manage shortcuts</strong> in the
-            NotF11 popup to review the commands Chromium actually assigned.
+          <p data-i18n="shortcutsP2">
+            Browser shortcut conflicts are possible. Use Manage shortcuts in the NotF11 popup to review the commands Chromium actually assigned.
           </p>
         </section>
 
         <section id="families">
-          <h2>Source families</h2>
+          <h2 data-i18n="familiesTitle">Source families</h2>
 
-          <blockquote>Clean changes the surface, not the family.</blockquote>
+          <blockquote data-i18n="familiesQuote">Clean changes the surface, not the family.</blockquote>
 
-          <p>
-            When a tab leaves a normal browser window and becomes Clean, NotF11 remembers the logical
-            browser relationship it came from.
+          <p data-i18n="familiesP1">
+            When a tab leaves a normal browser window and becomes Clean, NotF11 remembers the logical browser relationship it came from.
           </p>
 
-          <pre><code>Source family
+          <pre><code data-i18n="familiesDiagram">Source family
 ├─ A → Clean
 ├─ B → Raw
 └─ C → Raw</code></pre>
 
-          <p>
-            Previous / Next can hand the Clean role between eligible Raw members of that same family.
-            If another browser window represents a different family, NotF11 does not cross into it.
+          <p data-i18n="familiesP2">
+            Previous / Next can hand the Clean role between eligible Raw members of that same family. If another browser window represents a different family, NotF11 does not cross into it.
           </p>
 
-          <p>
-            Multiple Clean windows are supported. Family members that are already Clean are normally
-            skipped during cycling because they already occupy their own Clean surfaces.
+          <p data-i18n="familiesP3">
+            Multiple Clean windows are supported. Family members that are already Clean are normally skipped during cycling because they already occupy their own Clean surfaces.
           </p>
         </section>
 
         <section id="new-tabs">
-          <h2>New tabs from a Clean window</h2>
+          <h2 data-i18n="newTabsTitle">New tabs from a Clean window</h2>
 
-          <p>New tabs created from a Clean workflow preserve family lineage.</p>
+          <p data-i18n="newTabsIntro">New tabs created from a Clean workflow preserve family lineage.</p>
 
           <div class="two-up">
             <article class="card">
-              <h3>New tabs stay clean = Off</h3>
-              <pre><code>A Clean
+              <h3 data-i18n="newTabsOffCardTitle">New tabs stay clean = Off</h3>
+              <pre><code data-i18n="newTabsOffDiagram">A Clean
   └─ creates B
 
 A remains Clean
@@ -174,8 +161,8 @@ B joins A's family as Raw</code></pre>
             </article>
 
             <article class="card">
-              <h3>New tabs stay clean = On</h3>
-              <pre><code>A Clean
+              <h3 data-i18n="newTabsOnCardTitle">New tabs stay clean = On</h3>
+              <pre><code data-i18n="newTabsOnDiagram">A Clean
   └─ creates B
 
 A remains Clean
@@ -183,127 +170,119 @@ B joins A's family as Clean</code></pre>
             </article>
           </div>
 
-          <p>
-            The setting changes the child's initial representation, not its ancestry.
-            Ordinary Ctrl+T from a normal browser window remains ordinary Chromium behavior.
+          <p data-i18n="newTabsP">
+            The setting changes the child's initial representation, not its ancestry. Ordinary Ctrl+T from a normal browser window remains ordinary Chromium behavior.
           </p>
         </section>
 
         <section id="recovery">
-          <h2>Recovery behavior</h2>
+          <h2 data-i18n="recoveryTitle">Recovery behavior</h2>
 
-          <h3>If the remembered source still exists</h3>
-          <p>The same live tab returns to that normal browser source.</p>
+          <h3 data-i18n="recoverySourceExistsTitle">If the remembered source still exists</h3>
+          <p data-i18n="recoverySourceExistsText">The same live tab returns to that normal browser source.</p>
 
-          <h3>If the remembered source is gone</h3>
-          <p>
-            NotF11 creates a real normal replacement and moves the live tab there.
-            It does not silently attach the tab to some unrelated browser window.
+          <h3 data-i18n="recoverySourceGoneTitle">If the remembered source is gone</h3>
+          <p data-i18n="recoverySourceGoneText">
+            NotF11 creates a real normal replacement and moves the live tab there. It does not silently attach the tab to some unrelated browser window.
           </p>
 
-          <h3>One-tab source</h3>
-          <p>
-            A normal browser window can naturally disappear when its only tab is moved Clean.
-            If a new Raw tab is later created from that Clean workflow, the new tab can become the
-            legitimate replacement source for that family.
+          <h3 data-i18n="recoveryOneTabTitle">One-tab source</h3>
+          <p data-i18n="recoveryOneTabText">
+            A normal browser window can naturally disappear when its only tab is moved Clean. If a new Raw tab is later created from that Clean workflow, the new tab can become the legitimate replacement source for that family.
           </p>
 
-          <h3>After a browser restart</h3>
-          <p>
-            Chromium tab and window IDs are browser-session specific. If Chromium restores an old
-            popup without a current NotF11 relationship record, NotF11 can recover it into a normal
-            browser surface instead of guessing an old source relationship.
+          <h3 data-i18n="recoveryRestartTitle">After a browser restart</h3>
+          <p data-i18n="recoveryRestartText">
+            Chromium tab and window IDs are browser-session specific. If Chromium restores an old popup without a current NotF11 relationship record, NotF11 can recover it into a normal browser surface instead of guessing an old source relationship.
           </p>
         </section>
 
         <section id="placement">
-          <h2>Window placement</h2>
+          <h2 data-i18n="placementTitle">Window placement</h2>
 
           <div class="two-up">
             <article class="card">
-              <h3>Windows / ordinary desktop</h3>
-              <p>
-                Keep <strong>Remember size &amp; position</strong> on when you want Raw ↔ Clean to
-                preserve the previous desktop footprint where Chromium and the OS allow it.
+              <h3 data-i18n="windowsDesktopTitle">Windows / ordinary desktop</h3>
+              <p data-i18n="windowsDesktopP1">
+                Keep Remember size &amp; position on when you want Raw ↔ Clean to preserve the previous desktop footprint where Chromium and the OS allow it.
               </p>
-              <p>
+              <p data-i18n="windowsDesktopP2">
                 This also works well with normal Windows snapping and tools such as PowerToys FancyZones.
               </p>
             </article>
 
             <article class="card">
-              <h3>Hyprland / tiling compositor</h3>
-              <p>
-                Turn <strong>Remember size &amp; position</strong> off when the compositor should own
-                placement, tiling, workspaces and scratchpad behavior.
+              <h3 data-i18n="hyprlandTitle">Hyprland / tiling compositor</h3>
+              <p data-i18n="hyprlandP1">
+                Turn Remember size &amp; position off when the compositor should own placement, tiling, workspaces and scratchpad behavior.
               </p>
-              <p>
-                NotF11 continues to own browser relationships, Raw / Clean representation and family
-                handoff — not desktop topology.
+              <p data-i18n="hyprlandP2">
+                NotF11 continues to own browser relationships, Raw / Clean representation and family handoff — not desktop topology.
               </p>
             </article>
           </div>
 
           <div class="callout">
-            <strong>NotF11 is not a window manager.</strong>
-            Unexpected physical placement does not automatically mean the browser relationship is wrong.
+            <strong data-i18n="notWindowManagerTitle">NotF11 is not a window manager.</strong>
+            <span data-i18n="notWindowManagerText">Unexpected physical placement does not automatically mean the browser relationship is wrong.</span>
           </div>
         </section>
 
         <section id="privacy">
-          <h2>Small, focused, and private</h2>
+          <h2 data-i18n="privacyTitle">Small, focused, and private</h2>
 
-          <p>
+          <p data-i18n="privacyP1">
             NotF11 does not inject scripts into websites and does not read or modify webpage content.
           </p>
 
           <div class="privacy-grid">
-            <span>No analytics</span>
-            <span>No telemetry</span>
-            <span>No ads</span>
-            <span>No tracking</span>
-            <span>No account</span>
-            <span>No cloud service</span>
-            <span>No host permissions</span>
-            <span>No content scripts</span>
+            <span data-i18n="privacyNoAnalytics">No analytics</span>
+            <span data-i18n="privacyNoTelemetry">No telemetry</span>
+            <span data-i18n="privacyNoAds">No ads</span>
+            <span data-i18n="privacyNoTracking">No tracking</span>
+            <span data-i18n="privacyNoAccount">No account</span>
+            <span data-i18n="privacyNoCloud">No cloud service</span>
+            <span data-i18n="privacyNoHostPermissions">No host permissions</span>
+            <span data-i18n="privacyNoContentScripts">No content scripts</span>
           </div>
 
-          <p>
-            The extension uses its own local/session storage for settings and NotF11 relationship state.
-            Window geometry may be used when <strong>Remember size &amp; position</strong> is enabled.
+          <p data-i18n="privacyP2">
+            The extension uses its own local/session storage for settings and NotF11 relationship state. Window geometry may be used when Remember size &amp; position is enabled.
           </p>
 
-          <pre><code>Live tabs.
+          <pre><code data-i18n="privacyCode">Live tabs.
 Local state.
 No page access.</code></pre>
         </section>
 
         <section id="limitations">
-          <h2>Known behavior &amp; limitations</h2>
+          <h2 data-i18n="limitationsTitle">Known behavior &amp; limitations</h2>
           <ul>
-            <li>The operating system's title bar remains visible intentionally.</li>
-            <li>Native Chromium tab groups are not currently supported.</li>
-            <li>Heavy web apps may briefly redraw while Chromium moves the live tab between windows.</li>
-            <li>Chromium or Windows can clamp requested geometry slightly at display edges.</li>
-            <li>Tiling window managers can visibly reflow when top-level browser windows appear or disappear.</li>
-            <li>Browser-reserved shortcuts or conflicts with other extensions can leave suggested shortcuts unassigned.</li>
-            <li>NotF11 does not choose Hyprland workspaces or control FancyZones.</li>
+            <li data-i18n="limitation1">The operating system's title bar remains visible intentionally.</li>
+            <li data-i18n="limitation2">Native Chromium tab groups are not currently supported.</li>
+            <li data-i18n="limitation3">Heavy web apps may briefly redraw while Chromium moves the live tab between windows.</li>
+            <li data-i18n="limitation4">Chromium or Windows can clamp requested geometry slightly at display edges.</li>
+            <li data-i18n="limitation5">Tiling window managers can visibly reflow when top-level browser windows appear or disappear.</li>
+            <li data-i18n="limitation6">Browser-reserved shortcuts or conflicts with other extensions can leave suggested shortcuts unassigned.</li>
+            <li data-i18n="limitation7">NotF11 does not choose Hyprland workspaces or control FancyZones.</li>
           </ul>
         </section>
 
         <section class="footer-card">
           <img src="assets/icons/icon-48.png" width="34" height="34" alt="">
           <div>
-            <strong>NotF11</strong>
-            <span>Any browser tab, toolbar-free.</span>
+            <strong data-i18n="extensionName">NotF11</strong>
+            <span data-i18n="appTagline">Any browser tab, toolbar-free.</span>
           </div>
           <div class="footer-links">
-            <a href="https://github.com/Magik23/NotF11" target="_blank" rel="noreferrer">Source</a>
-            <a href="https://github.com/Magik23/NotF11/issues" target="_blank" rel="noreferrer">Issues</a>
+            <a href="https://github.com/Magik23/NotF11" target="_blank" rel="noreferrer" data-i18n="sourceLink">Source</a>
+            <a href="https://github.com/Magik23/NotF11/issues" target="_blank" rel="noreferrer" data-i18n="issuesLink">Issues</a>
             <a href="https://albenoir.com" target="_blank" rel="noreferrer">Albenoir Studio</a>
           </div>
         </section>
       </main>
     </div>
+
+    <script src="i18n.js"></script>
   </body>
 </html>

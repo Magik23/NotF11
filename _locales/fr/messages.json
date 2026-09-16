@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "N’importe quel onglet, sans barre d’outils."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Attribuez le raccourci du mode Clean avant d’activer Clean au démarrage."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean au démarrage a été désactivé car le raccourci du mode Clean n’est pas attribué."
+  },
+  "cleanLaunchHelp": {
+    "message": "Lorsqu’il est activé, démarre la première surface de navigateur admissible en mode Clean. NotF11 vérifie que le raccourci principal de bascule est réellement attribué avant d’autoriser cette fonction à créer une situation de récupération potentiellement dangereuse."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Démarrer la première fenêtre du navigateur en mode Clean."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean au démarrage"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Impossible de créer la fenêtre Clean."
+  },
+  "commandNextDescription": {
+    "message": "Afficher l’onglet source suivant dans la fenêtre Clean active"
+  },
+  "commandPreviousDescription": {
+    "message": "Afficher l’onglet source précédent dans la fenêtre Clean active"
+  },
+  "commandToggleDescription": {
+    "message": "Entrer ou sortir du mode Clean pour l’onglet actif"
+  },
+  "defaultOff": {
+    "message": "Par défaut : Désactivé"
+  },
+  "defaultOn": {
+    "message": "Par défaut : Activé"
+  },
+  "extensionDescription": {
+    "message": "N’importe quel onglet, sans barre d’outils. Transformez-le en fenêtre épurée et redimensionnable."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Famille source\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Lorsqu’un onglet quitte une fenêtre normale du navigateur pour devenir Clean, NotF11 mémorise la relation logique du navigateur dont il provient."
+  },
+  "familiesP2": {
+    "message": "Précédent / Suivant peut transmettre le rôle Clean entre les membres Raw admissibles de cette même famille. Si une autre fenêtre représente une autre famille, NotF11 ne la traverse pas."
+  },
+  "familiesP3": {
+    "message": "Plusieurs fenêtres Clean sont prises en charge. Les membres de la famille déjà Clean sont normalement ignorés pendant le parcours, puisqu’ils occupent déjà leur propre surface Clean."
+  },
+  "familiesQuote": {
+    "message": "Clean change la surface, pas la famille."
+  },
+  "familiesTitle": {
+    "message": "Familles sources"
+  },
+  "footerPrivacy": {
+    "message": "Onglets actifs. État local. Aucun accès à la page."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 déplace ce même onglet actif vers une fenêtre de type popup Clean sans rouvrir la page."
+  },
+  "gettingStartedP1Before": {
+    "message": "Placez le focus sur un onglet Chromium non groupé et appuyez sur"
+  },
+  "gettingStartedP2": {
+    "message": "Appuyez de nouveau sur le même raccourci pour renvoyer l’onglet vers sa source normale. Contrairement au plein écran F11, la fenêtre Clean reste une fenêtre de bureau normale qui peut être déplacée, redimensionnée, maximisée, ancrée ou mise en mosaïque."
+  },
+  "gettingStartedTitle": {
+    "message": "Bien démarrer"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Onglet groupé non pris en charge"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Les onglets groupés ne sont pas pris en charge."
+  },
+  "helpDocumentation": {
+    "message": "Aide et documentation"
+  },
+  "helpDocumentationLabel": {
+    "message": "Aide et documentation"
+  },
+  "helpSectionsAria": {
+    "message": "Sections d’aide"
+  },
+  "helpTitle": {
+    "message": "Aide NotF11"
+  },
+  "heroAction": {
+    "message": "Clean ↔ normal"
+  },
+  "heroEyebrow": {
+    "message": "N’IMPORTE QUEL ONGLET, SANS BARRE D’OUTILS."
+  },
+  "heroLede": {
+    "message": "NotF11 déplace l’onglet Chromium actif déjà ouvert vers une fenêtre de bureau épurée, puis permet à ce même onglet de revenir vers une source normale du navigateur."
+  },
+  "heroTitle": {
+    "message": "Gardez la page. Retirez l’encombrement du navigateur."
+  },
+  "hyprlandP1": {
+    "message": "Désactivez Mémoriser taille et position si le compositeur doit gérer le placement, la mosaïque, les espaces de travail et le scratchpad."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 continue de gérer les relations du navigateur, la représentation Raw / Clean et le passage au sein de la famille — pas la topologie du bureau."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / compositeur en mosaïque"
+  },
+  "invalidSetting": {
+    "message": "Paramètre NotF11 invalide."
+  },
+  "issuesLink": {
+    "message": "Problèmes"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Raccourcis clavier"
+  },
+  "limitation1": {
+    "message": "La barre de titre du système d’exploitation reste volontairement visible."
+  },
+  "limitation2": {
+    "message": "Les groupes d’onglets natifs de Chromium ne sont pas pris en charge pour le moment."
+  },
+  "limitation3": {
+    "message": "Les applications web lourdes peuvent se redessiner brièvement lorsque Chromium déplace l’onglet actif entre des fenêtres."
+  },
+  "limitation4": {
+    "message": "Chromium ou Windows peut légèrement limiter la géométrie demandée aux bords de l’écran."
+  },
+  "limitation5": {
+    "message": "Les gestionnaires de fenêtres en mosaïque peuvent se réorganiser visiblement lorsque des fenêtres de navigateur de premier niveau apparaissent ou disparaissent."
+  },
+  "limitation6": {
+    "message": "Les raccourcis réservés par le navigateur ou les conflits avec d’autres extensions peuvent laisser les raccourcis suggérés non attribués."
+  },
+  "limitation7": {
+    "message": "NotF11 ne choisit pas les espaces de travail Hyprland et ne contrôle pas FancyZones."
+  },
+  "limitationsTitle": {
+    "message": "Comportements connus et limites"
+  },
+  "manageShortcuts": {
+    "message": "Gérer les raccourcis"
+  },
+  "navFamilies": {
+    "message": "Familles sources"
+  },
+  "navGettingStarted": {
+    "message": "Bien démarrer"
+  },
+  "navLimitations": {
+    "message": "Limites"
+  },
+  "navNewTabs": {
+    "message": "Nouveaux onglets"
+  },
+  "navPlacement": {
+    "message": "Placement des fenêtres"
+  },
+  "navPrivacy": {
+    "message": "Confidentialité"
+  },
+  "navRecovery": {
+    "message": "Récupération"
+  },
+  "navSettings": {
+    "message": "Paramètres"
+  },
+  "navShortcuts": {
+    "message": "Raccourcis"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "Le nouvel onglet n’a pas pu créer la source de remplacement de sa famille Clean."
+  },
+  "newTabsHelp": {
+    "message": "Contrôle uniquement les nouveaux onglets créés depuis un flux Clean NotF11. Désactivé, l’enfant reste Raw dans la même famille source. Activé, l’enfant devient une autre fenêtre Clean de cette famille."
+  },
+  "newTabsIntro": {
+    "message": "Les nouveaux onglets créés depuis un flux Clean conservent la filiation de leur famille."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Les nouveaux onglets restent Clean = Désactivé"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ crée B\n\nA reste Clean\nB rejoint la famille de A en Raw"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Les nouveaux onglets restent Clean = Activé"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ crée B\n\nA reste Clean\nB rejoint la famille de A en Clean"
+  },
+  "newTabsP": {
+    "message": "Le paramètre change la représentation initiale de l’onglet enfant, pas son ascendance. Un Ctrl+T ordinaire depuis une fenêtre normale reste le comportement Chromium habituel."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Les nouveaux onglets ouverts depuis une fenêtre Clean s’ouvrent aussi en Clean."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Les nouveaux onglets restent Clean"
+  },
+  "newTabsTitle": {
+    "message": "Nouveaux onglets depuis une fenêtre Clean"
+  },
+  "nextSourceTab": {
+    "message": "Onglet source suivant"
+  },
+  "notWindowManagerText": {
+    "message": "Un placement physique inattendu ne signifie pas automatiquement que la relation du navigateur est incorrecte."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 n’est pas un gestionnaire de fenêtres."
+  },
+  "openCurrentTabClean": {
+    "message": "Ouvrir l’onglet actuel en Clean"
+  },
+  "openHelpError": {
+    "message": "Impossible d’ouvrir l’aide de NotF11."
+  },
+  "openShortcutsError": {
+    "message": "Ouvrez la page des raccourcis d’extensions de votre navigateur pour attribuer les commandes."
+  },
+  "placementTitle": {
+    "message": "Placement des fenêtres"
+  },
+  "popupRecoverySafe": {
+    "message": "Cette fenêtre contextuelle peut être récupérée en toute sécurité."
+  },
+  "previousSourceTab": {
+    "message": "Onglet source précédent"
+  },
+  "privacyCode": {
+    "message": "Onglets actifs.\nÉtat local.\nAucun accès à la page."
+  },
+  "privacyNoAccount": {
+    "message": "Aucun compte"
+  },
+  "privacyNoAds": {
+    "message": "Aucune publicité"
+  },
+  "privacyNoAnalytics": {
+    "message": "Aucune analyse"
+  },
+  "privacyNoCloud": {
+    "message": "Aucun service cloud"
+  },
+  "privacyNoContentScripts": {
+    "message": "Aucun script de contenu"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Aucune permission d’hôte"
+  },
+  "privacyNoTelemetry": {
+    "message": "Aucune télémétrie"
+  },
+  "privacyNoTracking": {
+    "message": "Aucun suivi"
+  },
+  "privacyP1": {
+    "message": "NotF11 n’injecte aucun script dans les sites web et ne lit ni ne modifie le contenu des pages."
+  },
+  "privacyP2": {
+    "message": "L’extension utilise son propre stockage local/de session pour les paramètres et l’état des relations NotF11. La géométrie de fenêtre peut être utilisée lorsque Mémoriser taille et position est activé."
+  },
+  "privacyTitle": {
+    "message": "Petit, ciblé et respectueux de la vie privée"
+  },
+  "recoverNormalBrowser": {
+    "message": "Récupérer le navigateur normal"
+  },
+  "recoveryOneTabText": {
+    "message": "Une fenêtre normale peut disparaître naturellement lorsque son seul onglet est déplacé en Clean. Si un nouvel onglet Raw est ensuite créé depuis ce flux Clean, il peut devenir la source de remplacement légitime de cette famille."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Source à un seul onglet"
+  },
+  "recoveryRestartText": {
+    "message": "Les identifiants d’onglets et de fenêtres Chromium sont propres à chaque session. Si Chromium restaure une ancienne popup sans relation NotF11 actuelle, NotF11 peut la récupérer dans une surface normale au lieu de deviner une ancienne relation source."
+  },
+  "recoveryRestartTitle": {
+    "message": "Après un redémarrage du navigateur"
+  },
+  "recoverySourceExistsText": {
+    "message": "Le même onglet actif revient vers cette source normale du navigateur."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Si la source mémorisée existe encore"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 crée un véritable remplacement normal et y déplace l’onglet actif. Il ne rattache pas silencieusement l’onglet à une fenêtre de navigateur sans rapport."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Si la source mémorisée a disparu"
+  },
+  "recoveryTitle": {
+    "message": "Comportement de récupération"
+  },
+  "rememberGeometryDescription": {
+    "message": "Conserver l’empreinte des fenêtres Clean sur le bureau. Désactivez pour les gestionnaires de fenêtres en mosaïque."
+  },
+  "rememberGeometryHelp": {
+    "message": "Lorsqu’il est activé, NotF11 demande à Chromium de conserver l’empreinte précédente sur le bureau pendant les transitions Raw ↔ Clean. Désactivez-le si vous voulez qu’un gestionnaire de fenêtres en mosaïque ou le compositeur contrôle entièrement le placement."
+  },
+  "rememberGeometryTitle": {
+    "message": "Mémoriser taille et position"
+  },
+  "replacementSourceFailed": {
+    "message": "Impossible de créer une fenêtre source normale de remplacement."
+  },
+  "reportIssue": {
+    "message": "Signaler un problème"
+  },
+  "requestFailed": {
+    "message": "La requête NotF11 a échoué."
+  },
+  "returnCurrentTab": {
+    "message": "Renvoyer l’onglet actuel"
+  },
+  "sameLiveTabText": {
+    "message": "La position de défilement, le texte saisi, l’état de connexion/session, l’historique de navigation et l’état actif de l’application web peuvent rester avec l’onglet lorsque Chromium le permet."
+  },
+  "sameLiveTabTitle": {
+    "message": "Le même onglet actif."
+  },
+  "saved": {
+    "message": "Enregistré."
+  },
+  "settingsAria": {
+    "message": "Paramètres de NotF11"
+  },
+  "settingsTitle": {
+    "message": "Paramètres"
+  },
+  "shortcutNextHelp": {
+    "message": "Onglet source admissible suivant"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Onglet source admissible précédent"
+  },
+  "shortcutToggleHelp": {
+    "message": "Entrer ou sortir du mode Clean"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 raccourci clavier n’est pas attribué."
+  },
+  "shortcutsAria": {
+    "message": "Raccourcis clavier"
+  },
+  "shortcutsP1": {
+    "message": "Précédent et Suivant ne parcourent pas globalement les onglets du navigateur. Ils transmettent le rôle Clean à un autre onglet Raw admissible de la même famille source mémorisée."
+  },
+  "shortcutsP2": {
+    "message": "Des conflits de raccourcis peuvent se produire. Utilisez Gérer les raccourcis dans la fenêtre NotF11 pour vérifier les commandes réellement attribuées par Chromium."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ raccourcis clavier ne sont pas attribués.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Source"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Impossible de créer la fenêtre normale temporaire de transition."
+  },
+  "toggleCleanMode": {
+    "message": "Basculer le mode Clean"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Basculer l’onglet actuel"
+  },
+  "toggleUnassignedNotice": {
+    "message": "Le raccourci du mode Clean n’est pas attribué. Clean au démarrage l’exige."
+  },
+  "unassigned": {
+    "message": "Non attribué"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Impossible de récupérer la fenêtre contextuelle non suivie dans une fenêtre normale du navigateur."
+  },
+  "windowsDesktopP1": {
+    "message": "Laissez Mémoriser taille et position activé si vous voulez que Raw ↔ Clean conserve l’empreinte précédente du bureau lorsque Chromium et le système d’exploitation le permettent."
+  },
+  "windowsDesktopP2": {
+    "message": "Cela fonctionne aussi très bien avec l’ancrage Windows et des outils comme PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / bureau classique"
+  }
+}

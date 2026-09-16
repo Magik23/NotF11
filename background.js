@@ -21,6 +21,10 @@ const DEFAULT_SETTINGS = Object.freeze({
 
 let operationQueue = Promise.resolve();
 
+function i18n(key, substitutions = undefined, fallback = "") {
+  return chrome.i18n.getMessage(key, substitutions) || fallback || key;
+}
+
 function enqueueOperation(operation) {
   const run = operationQueue.then(operation, operation);
   operationQueue = run.catch(() => {});
@@ -116,7 +120,7 @@ async function disableUnsafeCleanOnLaunch(settings, reason) {
 
 async function updateSetting(key, value) {
   if (!(key in DEFAULT_SETTINGS) || typeof value !== "boolean") {
-    throw new Error("Invalid NotF11 setting.");
+    throw new Error(i18n("invalidSetting", undefined, "Invalid NotF11 setting."));
   }
 
   if (
@@ -125,7 +129,11 @@ async function updateSetting(key, value) {
     !(await isToggleShortcutAssigned())
   ) {
     throw new Error(
-      "Assign the Toggle clean mode shortcut before enabling Clean on launch."
+      i18n(
+        "assignToggleBeforeCleanLaunch",
+        undefined,
+        "Assign the Toggle clean mode shortcut before enabling Clean on launch."
+      )
     );
   }
 
@@ -560,7 +568,7 @@ async function enterCleanMode(
   const popupWindow = await chrome.windows.create(createData);
 
   if (!popupWindow || popupWindow.id === undefined) {
-    throw new Error("Clean window could not be created.");
+    throw new Error(i18n("cleanWindowCreateFailed", undefined, "Clean window could not be created."));
   }
 
   sessions[keyForTab(activeTab.id)] = {
@@ -771,7 +779,11 @@ async function exitCleanMode(
 
       if (!bridgeWindow || bridgeWindow.id === undefined) {
         throw new Error(
-          "Temporary normal bridge window could not be created."
+          i18n(
+            "temporaryBridgeFailed",
+            undefined,
+            "Temporary normal bridge window could not be created."
+          )
         );
       }
 
@@ -891,7 +903,11 @@ async function exitCleanMode(
 
       if (!replacementWindow || replacementWindow.id === undefined) {
         throw new Error(
-          "Replacement normal source window could not be created."
+          i18n(
+            "replacementSourceFailed",
+            undefined,
+            "Replacement normal source window could not be created."
+          )
         );
       }
 
@@ -1112,7 +1128,11 @@ async function recoverUntrackedPopup(tab) {
 
   if (!normalWindow || normalWindow.id === undefined) {
     throw new Error(
-      "Untracked popup could not be recovered into a normal browser window."
+      i18n(
+        "untrackedPopupRecoveryFailed",
+        undefined,
+        "Untracked popup could not be recovered into a normal browser window."
+      )
     );
   }
 
@@ -1385,7 +1405,11 @@ async function attachRawNewTabToCleanFamily(
       replacementWindow.id === undefined
     ) {
       throw new Error(
-        "The new tab could not create its clean family's replacement source."
+        i18n(
+          "newTabReplacementSourceFailed",
+          undefined,
+          "The new tab could not create its clean family's replacement source."
+        )
       );
     }
 

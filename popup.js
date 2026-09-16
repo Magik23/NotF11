@@ -1,3 +1,5 @@
+const { t } = window.NotF11I18n;
+
 const cleanOnLaunch = document.querySelector("#clean-on-launch");
 const newTabsStayClean = document.querySelector("#new-tabs-stay-clean");
 const rememberWindowGeometry = document.querySelector("#remember-window-geometry");
@@ -61,7 +63,7 @@ async function send(messageBody) {
   const response = await chrome.runtime.sendMessage(messageBody);
 
   if (!response?.ok) {
-    throw new Error(response?.error || "NotF11 request failed.");
+    throw new Error(response?.error || t("requestFailed", undefined, "NotF11 request failed."));
   }
 
   return response;
@@ -78,7 +80,7 @@ async function getCurrentContextTabId() {
 
 function formatShortcut(shortcut) {
   if (!shortcut) {
-    return "Unassigned";
+    return t("unassigned", undefined, "Unassigned");
   }
 
   return shortcut
@@ -128,7 +130,7 @@ function renderState(state) {
   );
 
   if (state.grouped) {
-    toggleLabel.textContent = "Grouped tab not supported";
+    toggleLabel.textContent = t("groupedTabNotSupportedButton", undefined, "Grouped tab not supported");
     toggleButton.disabled = true;
     return;
   }
@@ -136,32 +138,32 @@ function renderState(state) {
   toggleButton.disabled = false;
 
   if (state.mode === "clean") {
-    toggleLabel.textContent = "Return current tab";
+    toggleLabel.textContent = t("returnCurrentTab", undefined, "Return current tab");
   } else if (state.mode === "popup") {
-    toggleLabel.textContent = "Recover normal browser";
+    toggleLabel.textContent = t("recoverNormalBrowser", undefined, "Recover normal browser");
   } else {
-    toggleLabel.textContent = "Open current tab clean";
+    toggleLabel.textContent = t("openCurrentTabClean", undefined, "Open current tab clean");
   }
 }
 
 function getContextNotice(state, shortcutState) {
   if (state.recoveryNotice?.type === "clean-on-launch-disabled") {
     return {
-      text: "Clean on launch was turned off because Toggle clean mode is unassigned.",
+      text: t("cleanLaunchDisabledNotice", undefined, "Clean on launch was turned off because Toggle clean mode is unassigned."),
       tone: "warning"
     };
   }
 
   if (state.grouped) {
     return {
-      text: "Grouped tabs aren't supported.",
+      text: t("groupedTabsUnsupported", undefined, "Grouped tabs aren't supported."),
       tone: "warning"
     };
   }
 
   if (!shortcutState.toggleAssigned) {
     return {
-      text: "Toggle clean mode is unassigned. Clean on launch requires it.",
+      text: t("toggleUnassignedNotice", undefined, "Toggle clean mode is unassigned. Clean on launch requires it."),
       tone: "warning"
     };
   }
@@ -170,14 +172,20 @@ function getContextNotice(state, shortcutState) {
     const count = shortcutState.missingCount;
 
     return {
-      text: `${count} keyboard shortcut${count === 1 ? " is" : "s are"} unassigned.`,
+      text: count === 1
+        ? t("shortcutUnassignedSingular", undefined, "1 keyboard shortcut is unassigned.")
+        : t(
+            "shortcutsUnassignedPlural",
+            [String(count)],
+            `${count} keyboard shortcuts are unassigned.`
+          ),
       tone: "warning"
     };
   }
 
   if (state.mode === "popup") {
     return {
-      text: "This popup can be recovered safely.",
+      text: t("popupRecoverySafe", undefined, "This popup can be recovered safely."),
       tone: "info"
     };
   }
@@ -212,7 +220,7 @@ async function changeSetting(key, value, input) {
     });
 
     input.checked = Boolean(response.settings[key]);
-    showTransientMessage("Saved.", "success", 1400);
+    showTransientMessage(t("saved", undefined, "Saved."), "success", 1400);
   } catch (error) {
     input.checked = !value;
     showTransientMessage(error.message, "error");
@@ -266,7 +274,7 @@ manageShortcutsButton.addEventListener("click", async () => {
     window.close();
   } catch (_error) {
     showTransientMessage(
-      "Open your browser extension shortcuts page to assign commands.",
+      t("openShortcutsError", undefined, "Open your browser extension shortcuts page to assign commands."),
       "error"
     );
   }
@@ -280,7 +288,7 @@ documentationButton.addEventListener("click", async () => {
     window.close();
   } catch (_error) {
     showTransientMessage(
-      "Could not open NotF11 help.",
+      t("openHelpError", undefined, "Could not open NotF11 help."),
       "error"
     );
   }

@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Cualquier pestaña, sin barra de herramientas."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Asigna el atajo para alternar el modo Clean antes de activar Clean al iniciar."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean al iniciar se desactivó porque el atajo para alternar el modo Clean no está asignado."
+  },
+  "cleanLaunchHelp": {
+    "message": "Cuando está activado, inicia en modo Clean la primera superficie elegible del navegador. NotF11 comprueba que el atajo principal de alternancia esté realmente asignado antes de permitir que esta función pueda crear una situación de recuperación insegura."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Inicia la primera ventana del navegador en modo Clean."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean al iniciar"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "No se pudo crear la ventana Clean."
+  },
+  "commandNextDescription": {
+    "message": "Mostrar la siguiente pestaña de origen en la ventana Clean enfocada"
+  },
+  "commandPreviousDescription": {
+    "message": "Mostrar la pestaña de origen anterior en la ventana Clean enfocada"
+  },
+  "commandToggleDescription": {
+    "message": "Entrar o salir del modo Clean para la pestaña enfocada"
+  },
+  "defaultOff": {
+    "message": "Predeterminado: Desactivado"
+  },
+  "defaultOn": {
+    "message": "Predeterminado: Activado"
+  },
+  "extensionDescription": {
+    "message": "Cualquier pestaña del navegador, sin barra de herramientas. Conviértela en una ventana limpia y redimensionable."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Familia de origen\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Cuando una pestaña sale de una ventana normal del navegador y pasa a Clean, NotF11 recuerda la relación lógica del navegador de la que provino."
+  },
+  "familiesP2": {
+    "message": "Anterior / Siguiente puede transferir el rol Clean entre miembros Raw elegibles de esa misma familia. Si otra ventana del navegador representa una familia diferente, NotF11 no cruza hacia ella."
+  },
+  "familiesP3": {
+    "message": "Se admiten varias ventanas Clean. Los miembros de la familia que ya están en Clean normalmente se omiten al recorrer porque ya ocupan sus propias superficies Clean."
+  },
+  "familiesQuote": {
+    "message": "Clean cambia la superficie, no la familia."
+  },
+  "familiesTitle": {
+    "message": "Familias de origen"
+  },
+  "footerPrivacy": {
+    "message": "Pestañas activas. Estado local. Sin acceso a la página."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 mueve esa misma pestaña activa a una ventana emergente estilo Clean sin volver a abrir la página."
+  },
+  "gettingStartedP1Before": {
+    "message": "Enfoca cualquier pestaña de Chromium que no esté agrupada y presiona"
+  },
+  "gettingStartedP2": {
+    "message": "Presiona el mismo atajo otra vez para devolver la pestaña a su origen normal del navegador. A diferencia de la pantalla completa F11, la ventana Clean sigue siendo una ventana normal del escritorio que se puede mover, redimensionar, maximizar, ajustar o colocar en mosaico."
+  },
+  "gettingStartedTitle": {
+    "message": "Primeros pasos"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Pestaña agrupada no compatible"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Las pestañas agrupadas no son compatibles."
+  },
+  "helpDocumentation": {
+    "message": "Ayuda y documentación"
+  },
+  "helpDocumentationLabel": {
+    "message": "Ayuda y documentación"
+  },
+  "helpSectionsAria": {
+    "message": "Secciones de ayuda"
+  },
+  "helpTitle": {
+    "message": "Ayuda de NotF11"
+  },
+  "heroAction": {
+    "message": "Clean ↔ normal"
+  },
+  "heroEyebrow": {
+    "message": "CUALQUIER PESTAÑA, SIN BARRA DE HERRAMIENTAS."
+  },
+  "heroLede": {
+    "message": "NotF11 mueve la pestaña activa de Chromium que ya tienes abierta a una ventana de escritorio limpia y luego permite que esa misma pestaña vuelva a un origen normal del navegador."
+  },
+  "heroTitle": {
+    "message": "Conserva la página. Elimina el desorden del navegador."
+  },
+  "hyprlandP1": {
+    "message": "Desactiva Recordar tamaño y posición cuando quieras que el compositor controle la colocación, el mosaico, los espacios de trabajo y el comportamiento del scratchpad."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 sigue controlando las relaciones del navegador, la representación Raw / Clean y la transferencia entre familias, no la topología del escritorio."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / compositor en mosaico"
+  },
+  "invalidSetting": {
+    "message": "Configuración de NotF11 no válida."
+  },
+  "issuesLink": {
+    "message": "Problemas"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Atajos de teclado"
+  },
+  "limitation1": {
+    "message": "La barra de título del sistema operativo permanece visible intencionalmente."
+  },
+  "limitation2": {
+    "message": "Los grupos de pestañas nativos de Chromium no son compatibles actualmente."
+  },
+  "limitation3": {
+    "message": "Las aplicaciones web pesadas pueden redibujarse brevemente mientras Chromium mueve la pestaña activa entre ventanas."
+  },
+  "limitation4": {
+    "message": "Chromium o Windows pueden ajustar ligeramente la geometría solicitada en los bordes de la pantalla."
+  },
+  "limitation5": {
+    "message": "Los gestores de ventanas en mosaico pueden reorganizarse visiblemente cuando aparecen o desaparecen ventanas de navegador de nivel superior."
+  },
+  "limitation6": {
+    "message": "Los atajos reservados por el navegador o los conflictos con otras extensiones pueden dejar sin asignar los atajos sugeridos."
+  },
+  "limitation7": {
+    "message": "NotF11 no elige espacios de trabajo de Hyprland ni controla FancyZones."
+  },
+  "limitationsTitle": {
+    "message": "Comportamiento conocido y limitaciones"
+  },
+  "manageShortcuts": {
+    "message": "Administrar atajos"
+  },
+  "navFamilies": {
+    "message": "Familias de origen"
+  },
+  "navGettingStarted": {
+    "message": "Primeros pasos"
+  },
+  "navLimitations": {
+    "message": "Limitaciones"
+  },
+  "navNewTabs": {
+    "message": "Pestañas nuevas"
+  },
+  "navPlacement": {
+    "message": "Posición de ventanas"
+  },
+  "navPrivacy": {
+    "message": "Privacidad"
+  },
+  "navRecovery": {
+    "message": "Recuperación"
+  },
+  "navSettings": {
+    "message": "Configuración"
+  },
+  "navShortcuts": {
+    "message": "Atajos"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "La pestaña nueva no pudo crear el origen de reemplazo de su familia Clean."
+  },
+  "newTabsHelp": {
+    "message": "Controla solo las pestañas nuevas creadas desde un flujo Clean de NotF11. Si está desactivado, la pestaña hija permanece Raw en la misma familia de origen. Si está activado, la hija se convierte en otra ventana Clean de esa familia."
+  },
+  "newTabsIntro": {
+    "message": "Las pestañas nuevas creadas desde un flujo Clean conservan el linaje de la familia."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Las pestañas nuevas siguen en Clean = Desactivado"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ crea B\n\nA permanece Clean\nB se une a la familia de A como Raw"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Las pestañas nuevas siguen en Clean = Activado"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ crea B\n\nA permanece Clean\nB se une a la familia de A como Clean"
+  },
+  "newTabsP": {
+    "message": "La configuración cambia la representación inicial de la pestaña hija, no su ascendencia. Ctrl+T normal desde una ventana normal del navegador sigue siendo el comportamiento normal de Chromium."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Las pestañas nuevas abiertas desde una ventana Clean también se abren en Clean."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Las pestañas nuevas siguen en Clean"
+  },
+  "newTabsTitle": {
+    "message": "Pestañas nuevas desde una ventana Clean"
+  },
+  "nextSourceTab": {
+    "message": "Siguiente pestaña de origen"
+  },
+  "notWindowManagerText": {
+    "message": "Una posición física inesperada no significa automáticamente que la relación del navegador sea incorrecta."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 no es un gestor de ventanas."
+  },
+  "openCurrentTabClean": {
+    "message": "Abrir pestaña actual en Clean"
+  },
+  "openHelpError": {
+    "message": "No se pudo abrir la ayuda de NotF11."
+  },
+  "openShortcutsError": {
+    "message": "Abre la página de atajos de extensiones de tu navegador para asignar comandos."
+  },
+  "placementTitle": {
+    "message": "Posición de ventanas"
+  },
+  "popupRecoverySafe": {
+    "message": "Esta ventana emergente se puede recuperar de forma segura."
+  },
+  "previousSourceTab": {
+    "message": "Pestaña de origen anterior"
+  },
+  "privacyCode": {
+    "message": "Pestañas activas.\nEstado local.\nSin acceso a la página."
+  },
+  "privacyNoAccount": {
+    "message": "Sin cuenta"
+  },
+  "privacyNoAds": {
+    "message": "Sin anuncios"
+  },
+  "privacyNoAnalytics": {
+    "message": "Sin analíticas"
+  },
+  "privacyNoCloud": {
+    "message": "Sin servicio en la nube"
+  },
+  "privacyNoContentScripts": {
+    "message": "Sin scripts de contenido"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Sin permisos de host"
+  },
+  "privacyNoTelemetry": {
+    "message": "Sin telemetría"
+  },
+  "privacyNoTracking": {
+    "message": "Sin seguimiento"
+  },
+  "privacyP1": {
+    "message": "NotF11 no inyecta scripts en sitios web y no lee ni modifica el contenido de las páginas."
+  },
+  "privacyP2": {
+    "message": "La extensión usa su propio almacenamiento local/de sesión para la configuración y el estado de relaciones de NotF11. La geometría de la ventana puede usarse cuando Recordar tamaño y posición está activado."
+  },
+  "privacyTitle": {
+    "message": "Pequeño, enfocado y privado"
+  },
+  "recoverNormalBrowser": {
+    "message": "Recuperar navegador normal"
+  },
+  "recoveryOneTabText": {
+    "message": "Una ventana normal del navegador puede desaparecer de forma natural cuando su única pestaña se mueve a Clean. Si luego se crea una pestaña Raw nueva desde ese flujo Clean, la pestaña nueva puede convertirse en el origen de reemplazo legítimo de esa familia."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Origen de una sola pestaña"
+  },
+  "recoveryRestartText": {
+    "message": "Los ID de pestañas y ventanas de Chromium son específicos de cada sesión del navegador. Si Chromium restaura una ventana emergente antigua sin un registro actual de relación de NotF11, NotF11 puede recuperarla en una superficie normal del navegador en vez de adivinar una relación de origen antigua."
+  },
+  "recoveryRestartTitle": {
+    "message": "Después de reiniciar el navegador"
+  },
+  "recoverySourceExistsText": {
+    "message": "La misma pestaña activa vuelve a ese origen normal del navegador."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Si el origen recordado todavía existe"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 crea un reemplazo normal real y mueve allí la pestaña activa. No adjunta silenciosamente la pestaña a una ventana del navegador no relacionada."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Si el origen recordado ya no existe"
+  },
+  "recoveryTitle": {
+    "message": "Comportamiento de recuperación"
+  },
+  "rememberGeometryDescription": {
+    "message": "Mantén las ventanas Clean en la misma zona del escritorio. Desactívalo con gestores de ventanas en mosaico."
+  },
+  "rememberGeometryHelp": {
+    "message": "Cuando está activado, NotF11 pide a Chromium que conserve la huella anterior en el escritorio durante las transiciones Raw ↔ Clean. Desactívalo cuando quieras que un gestor de ventanas en mosaico o el compositor controle por completo la colocación."
+  },
+  "rememberGeometryTitle": {
+    "message": "Recordar tamaño y posición"
+  },
+  "replacementSourceFailed": {
+    "message": "No se pudo crear una ventana normal de origen de reemplazo."
+  },
+  "reportIssue": {
+    "message": "Informar un problema"
+  },
+  "requestFailed": {
+    "message": "La solicitud de NotF11 falló."
+  },
+  "returnCurrentTab": {
+    "message": "Devolver pestaña actual"
+  },
+  "sameLiveTabText": {
+    "message": "La posición de desplazamiento, el texto ingresado, el estado de inicio de sesión/sesión, el historial de navegación y el estado activo de la aplicación web pueden permanecer con la pestaña cuando Chromium lo permite."
+  },
+  "sameLiveTabTitle": {
+    "message": "La misma pestaña activa."
+  },
+  "saved": {
+    "message": "Guardado."
+  },
+  "settingsAria": {
+    "message": "Configuración de NotF11"
+  },
+  "settingsTitle": {
+    "message": "Configuración"
+  },
+  "shortcutNextHelp": {
+    "message": "Siguiente pestaña de origen elegible"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Pestaña de origen elegible anterior"
+  },
+  "shortcutToggleHelp": {
+    "message": "Entrar o salir del modo Clean"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 atajo de teclado no está asignado."
+  },
+  "shortcutsAria": {
+    "message": "Atajos de teclado"
+  },
+  "shortcutsP1": {
+    "message": "Anterior y Siguiente no recorren globalmente las pestañas del navegador. Transfieren el rol Clean a otra pestaña Raw elegible de la misma familia de origen recordada."
+  },
+  "shortcutsP2": {
+    "message": "Pueden existir conflictos de atajos del navegador. Usa Administrar atajos en la ventana emergente de NotF11 para revisar los comandos que Chromium asignó realmente."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ atajos de teclado no están asignados.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Código fuente"
+  },
+  "temporaryBridgeFailed": {
+    "message": "No se pudo crear la ventana normal temporal de enlace."
+  },
+  "toggleCleanMode": {
+    "message": "Alternar modo Clean"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Alternar pestaña actual"
+  },
+  "toggleUnassignedNotice": {
+    "message": "El atajo para alternar el modo Clean no está asignado. Clean al iniciar lo requiere."
+  },
+  "unassigned": {
+    "message": "Sin asignar"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "No se pudo recuperar la ventana emergente no registrada en una ventana normal del navegador."
+  },
+  "windowsDesktopP1": {
+    "message": "Mantén activado Recordar tamaño y posición cuando quieras que Raw ↔ Clean conserve la huella anterior del escritorio donde Chromium y el sistema operativo lo permitan."
+  },
+  "windowsDesktopP2": {
+    "message": "También funciona bien con el ajuste normal de ventanas de Windows y herramientas como PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / escritorio normal"
+  }
+}

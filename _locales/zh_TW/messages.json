@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "任何瀏覽器分頁，不要工具列。"
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "啟用「啟動時使用 Clean」之前，請先指派「切換 Clean 模式」快速鍵。"
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "因為「切換 Clean 模式」快速鍵未指派，「啟動時使用 Clean」已關閉。"
+  },
+  "cleanLaunchHelp": {
+    "message": "啟用後，第一個符合條件的瀏覽器介面會以 Clean 模式啟動。NotF11 會先確認主要切換快速鍵確實已指派，避免此功能造成不安全的恢復狀態。"
+  },
+  "cleanOnLaunchDescription": {
+    "message": "讓第一個瀏覽器視窗以 Clean 模式啟動。"
+  },
+  "cleanOnLaunchTitle": {
+    "message": "啟動時使用 Clean"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "無法建立 Clean 視窗。"
+  },
+  "commandNextDescription": {
+    "message": "在目前聚焦的 Clean 視窗中顯示下一個來源分頁"
+  },
+  "commandPreviousDescription": {
+    "message": "在目前聚焦的 Clean 視窗中顯示上一個來源分頁"
+  },
+  "commandToggleDescription": {
+    "message": "為目前聚焦的分頁進入或離開 Clean 模式"
+  },
+  "defaultOff": {
+    "message": "預設：關閉"
+  },
+  "defaultOn": {
+    "message": "預設：開啟"
+  },
+  "extensionDescription": {
+    "message": "任何瀏覽器分頁，不要工具列。把它變成乾淨、可調整大小的視窗。"
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "來源家族\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "當一個分頁離開一般瀏覽器視窗並成為 Clean 時，NotF11 會記住它原本所屬的邏輯瀏覽器關係。"
+  },
+  "familiesP2": {
+    "message": "「上一個 / 下一個」可以在同一家族中符合條件的 Raw 成員之間轉移 Clean 角色。如果另一個瀏覽器視窗屬於不同家族，NotF11 不會跨過去。"
+  },
+  "familiesP3": {
+    "message": "支援多個 Clean 視窗。已經處於 Clean 的家族成員通常會在切換時被略過，因為它們已經占用自己的 Clean 介面。"
+  },
+  "familiesQuote": {
+    "message": "Clean 改變的是表面，不是家族。"
+  },
+  "familiesTitle": {
+    "message": "來源家族"
+  },
+  "footerPrivacy": {
+    "message": "即時分頁。本機狀態。不存取頁面。"
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 會把同一個即時分頁移到 Clean 風格的彈出視窗，而不重新開啟頁面。"
+  },
+  "gettingStartedP1Before": {
+    "message": "聚焦任何未群組的 Chromium 分頁，然後按下"
+  },
+  "gettingStartedP2": {
+    "message": "再次按下相同快速鍵即可把分頁返回一般瀏覽器來源。與 F11 全螢幕不同，Clean 視窗仍是一般桌面視窗，可以移動、調整大小、最大化、貼齊或平鋪。"
+  },
+  "gettingStartedTitle": {
+    "message": "快速開始"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "不支援群組分頁"
+  },
+  "groupedTabsUnsupported": {
+    "message": "不支援群組分頁。"
+  },
+  "helpDocumentation": {
+    "message": "說明與文件"
+  },
+  "helpDocumentationLabel": {
+    "message": "說明與文件"
+  },
+  "helpSectionsAria": {
+    "message": "說明章節"
+  },
+  "helpTitle": {
+    "message": "NotF11 說明"
+  },
+  "heroAction": {
+    "message": "Clean ↔ 一般"
+  },
+  "heroEyebrow": {
+    "message": "任何瀏覽器分頁，不要工具列。"
+  },
+  "heroLede": {
+    "message": "NotF11 會把你已經開啟的 Chromium 即時分頁移到乾淨的桌面視窗中，之後再讓同一個分頁回到一般瀏覽器來源。"
+  },
+  "heroTitle": {
+    "message": "保留網頁，拿掉瀏覽器雜項。"
+  },
+  "hyprlandP1": {
+    "message": "如果希望合成器負責位置、平鋪、工作區與 scratchpad 行為，請關閉「記住大小與位置」。"
+  },
+  "hyprlandP2": {
+    "message": "NotF11 繼續負責瀏覽器關係、Raw / Clean 呈現方式與家族交接，而不是桌面拓撲。"
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / 平鋪合成器"
+  },
+  "invalidSetting": {
+    "message": "無效的 NotF11 設定。"
+  },
+  "issuesLink": {
+    "message": "問題"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "鍵盤快速鍵"
+  },
+  "limitation1": {
+    "message": "作業系統標題列會刻意保留顯示。"
+  },
+  "limitation2": {
+    "message": "目前不支援 Chromium 原生分頁群組。"
+  },
+  "limitation3": {
+    "message": "當 Chromium 在視窗之間移動即時分頁時，較重的網頁應用程式可能會短暫重新繪製。"
+  },
+  "limitation4": {
+    "message": "Chromium 或 Windows 可能會在螢幕邊緣稍微調整要求的視窗幾何。"
+  },
+  "limitation5": {
+    "message": "當頂層瀏覽器視窗出現或消失時，平鋪視窗管理器可能會明顯重新排列。"
+  },
+  "limitation6": {
+    "message": "瀏覽器保留的快速鍵或與其他擴充功能的衝突，可能使建議的快速鍵未被指派。"
+  },
+  "limitation7": {
+    "message": "NotF11 不選擇 Hyprland 工作區，也不控制 FancyZones。"
+  },
+  "limitationsTitle": {
+    "message": "已知行為與限制"
+  },
+  "manageShortcuts": {
+    "message": "管理快速鍵"
+  },
+  "navFamilies": {
+    "message": "來源家族"
+  },
+  "navGettingStarted": {
+    "message": "快速開始"
+  },
+  "navLimitations": {
+    "message": "限制"
+  },
+  "navNewTabs": {
+    "message": "新分頁"
+  },
+  "navPlacement": {
+    "message": "視窗位置"
+  },
+  "navPrivacy": {
+    "message": "隱私"
+  },
+  "navRecovery": {
+    "message": "恢復"
+  },
+  "navSettings": {
+    "message": "設定"
+  },
+  "navShortcuts": {
+    "message": "快速鍵"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "新分頁無法為其 Clean 家族建立替代來源。"
+  },
+  "newTabsHelp": {
+    "message": "只控制從 NotF11 Clean 工作流程建立的新分頁。關閉時，子分頁會在同一來源家族中保持 Raw；開啟時，子分頁會成為該家族中的另一個 Clean 視窗。"
+  },
+  "newTabsIntro": {
+    "message": "從 Clean 工作流程建立的新分頁會保留家族關係。"
+  },
+  "newTabsOffCardTitle": {
+    "message": "新分頁保持 Clean = 關閉"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ 建立 B\n\nA 保持 Clean\nB 以 Raw 身分加入 A 的家族"
+  },
+  "newTabsOnCardTitle": {
+    "message": "新分頁保持 Clean = 開啟"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ 建立 B\n\nA 保持 Clean\nB 以 Clean 身分加入 A 的家族"
+  },
+  "newTabsP": {
+    "message": "此設定改變的是子分頁的初始呈現方式，而不是它的來源關係。一般瀏覽器視窗中的 Ctrl+T 仍維持一般 Chromium 行為。"
+  },
+  "newTabsStayCleanDescription": {
+    "message": "從 Clean 視窗開啟的新分頁也會以 Clean 開啟。"
+  },
+  "newTabsStayCleanTitle": {
+    "message": "新分頁保持 Clean"
+  },
+  "newTabsTitle": {
+    "message": "從 Clean 視窗開啟的新分頁"
+  },
+  "nextSourceTab": {
+    "message": "下一個來源分頁"
+  },
+  "notWindowManagerText": {
+    "message": "實際位置與預期不同，並不自動表示瀏覽器關係有問題。"
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 不是視窗管理器。"
+  },
+  "openCurrentTabClean": {
+    "message": "以 Clean 開啟目前分頁"
+  },
+  "openHelpError": {
+    "message": "無法開啟 NotF11 說明。"
+  },
+  "openShortcutsError": {
+    "message": "請開啟瀏覽器的擴充功能快速鍵頁面來指派命令。"
+  },
+  "placementTitle": {
+    "message": "視窗位置"
+  },
+  "popupRecoverySafe": {
+    "message": "此彈出視窗可以安全恢復。"
+  },
+  "previousSourceTab": {
+    "message": "上一個來源分頁"
+  },
+  "privacyCode": {
+    "message": "即時分頁。\n本機狀態。\n不存取頁面。"
+  },
+  "privacyNoAccount": {
+    "message": "不需帳號"
+  },
+  "privacyNoAds": {
+    "message": "無廣告"
+  },
+  "privacyNoAnalytics": {
+    "message": "無分析"
+  },
+  "privacyNoCloud": {
+    "message": "無雲端服務"
+  },
+  "privacyNoContentScripts": {
+    "message": "無內容腳本"
+  },
+  "privacyNoHostPermissions": {
+    "message": "無主機權限"
+  },
+  "privacyNoTelemetry": {
+    "message": "無遙測"
+  },
+  "privacyNoTracking": {
+    "message": "無追蹤"
+  },
+  "privacyP1": {
+    "message": "NotF11 不會向網站注入腳本，也不會讀取或修改網頁內容。"
+  },
+  "privacyP2": {
+    "message": "擴充功能只使用自己的本機/工作階段儲存來保存設定與 NotF11 關係狀態。啟用「記住大小與位置」時，可能會使用視窗幾何資訊。"
+  },
+  "privacyTitle": {
+    "message": "小巧、專注、重視隱私"
+  },
+  "recoverNormalBrowser": {
+    "message": "恢復為一般瀏覽器視窗"
+  },
+  "recoveryOneTabText": {
+    "message": "當一般瀏覽器視窗唯一的分頁被移到 Clean 後，該視窗可能自然消失。如果之後從該 Clean 工作流程建立新的 Raw 分頁，它可以成為這個家族合法的替代來源。"
+  },
+  "recoveryOneTabTitle": {
+    "message": "單分頁來源"
+  },
+  "recoveryRestartText": {
+    "message": "Chromium 的分頁與視窗 ID 只在目前瀏覽器工作階段中有效。如果 Chromium 恢復了一個沒有目前 NotF11 關係記錄的舊彈出視窗，NotF11 可以把它恢復成一般瀏覽器介面，而不是猜測舊的來源關係。"
+  },
+  "recoveryRestartTitle": {
+    "message": "瀏覽器重新啟動後"
+  },
+  "recoverySourceExistsText": {
+    "message": "同一個即時分頁會回到該一般瀏覽器來源。"
+  },
+  "recoverySourceExistsTitle": {
+    "message": "如果記住的來源仍存在"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 會建立一個真正的一般替代視窗，並把即時分頁移到那裡。它不會悄悄把分頁附加到無關的瀏覽器視窗。"
+  },
+  "recoverySourceGoneTitle": {
+    "message": "如果記住的來源已不存在"
+  },
+  "recoveryTitle": {
+    "message": "恢復行為"
+  },
+  "rememberGeometryDescription": {
+    "message": "讓 Clean 視窗維持在相同桌面區域。使用平鋪視窗管理器時請關閉。"
+  },
+  "rememberGeometryHelp": {
+    "message": "啟用後，NotF11 會要求 Chromium 在 Raw ↔ Clean 切換時保留先前的桌面占用區域。如果希望平鋪視窗管理器或合成器完全負責視窗位置，請關閉此選項。"
+  },
+  "rememberGeometryTitle": {
+    "message": "記住大小與位置"
+  },
+  "replacementSourceFailed": {
+    "message": "無法建立替代的一般來源視窗。"
+  },
+  "reportIssue": {
+    "message": "回報問題"
+  },
+  "requestFailed": {
+    "message": "NotF11 請求失敗。"
+  },
+  "returnCurrentTab": {
+    "message": "返回目前分頁"
+  },
+  "sameLiveTabText": {
+    "message": "在 Chromium 允許的範圍內，捲動位置、已輸入文字、登入/工作階段狀態、導覽記錄及網頁應用程式狀態都可以跟著分頁保留。"
+  },
+  "sameLiveTabTitle": {
+    "message": "始終是同一個即時分頁。"
+  },
+  "saved": {
+    "message": "已儲存。"
+  },
+  "settingsAria": {
+    "message": "NotF11 設定"
+  },
+  "settingsTitle": {
+    "message": "設定"
+  },
+  "shortcutNextHelp": {
+    "message": "下一個符合條件的來源分頁"
+  },
+  "shortcutPreviousHelp": {
+    "message": "上一個符合條件的來源分頁"
+  },
+  "shortcutToggleHelp": {
+    "message": "進入或離開 Clean 模式"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "有 1 個鍵盤快速鍵未指派。"
+  },
+  "shortcutsAria": {
+    "message": "鍵盤快速鍵"
+  },
+  "shortcutsP1": {
+    "message": "「上一個」與「下一個」不是全域瀏覽器分頁切換。它們會把 Clean 角色交給同一個已記憶來源家族中的另一個符合條件的 Raw 分頁。"
+  },
+  "shortcutsP2": {
+    "message": "瀏覽器快速鍵可能發生衝突。請在 NotF11 彈出視窗中使用「管理快速鍵」，查看 Chromium 實際指派的命令。"
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "有 $COUNT$ 個鍵盤快速鍵未指派。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "原始碼"
+  },
+  "temporaryBridgeFailed": {
+    "message": "無法建立暫時的一般橋接視窗。"
+  },
+  "toggleCleanMode": {
+    "message": "切換 Clean 模式"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "切換目前分頁"
+  },
+  "toggleUnassignedNotice": {
+    "message": "「切換 Clean 模式」快速鍵未指派。「啟動時使用 Clean」需要這個快速鍵。"
+  },
+  "unassigned": {
+    "message": "未指派"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "無法將未追蹤的彈出視窗恢復為一般瀏覽器視窗。"
+  },
+  "windowsDesktopP1": {
+    "message": "如果希望 Raw ↔ Clean 在 Chromium 與作業系統允許的情況下保留先前的桌面占用區域，請保持「記住大小與位置」開啟。"
+  },
+  "windowsDesktopP2": {
+    "message": "它也能很好地搭配 Windows 一般貼齊功能以及 PowerToys FancyZones 等工具。"
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / 一般桌面"
+  }
+}

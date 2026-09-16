@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Herhangi bir sekme, araç çubuğu olmadan."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Başlangıçta Clean'i etkinleştirmeden önce Clean modunu değiştirme kısayolunu atayın."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean modunu değiştirme kısayolu atanmadığı için Başlangıçta Clean kapatıldı."
+  },
+  "cleanLaunchHelp": {
+    "message": "Etkinleştirildiğinde ilk uygun tarayıcı yüzeyini Clean modunda başlatır. NotF11, bu özellik güvensiz bir kurtarma durumu oluşturmadan önce ana değiştirme kısayolunun gerçekten atanmış olduğunu kontrol eder."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "İlk tarayıcı penceresini Clean modunda başlat."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Başlangıçta Clean"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Clean penceresi oluşturulamadı."
+  },
+  "commandNextDescription": {
+    "message": "Odaktaki Clean penceresinde sonraki kaynak sekmesini göster"
+  },
+  "commandPreviousDescription": {
+    "message": "Odaktaki Clean penceresinde önceki kaynak sekmesini göster"
+  },
+  "commandToggleDescription": {
+    "message": "Odaktaki sekme için Clean moduna gir veya çık"
+  },
+  "defaultOff": {
+    "message": "Varsayılan: Kapalı"
+  },
+  "defaultOn": {
+    "message": "Varsayılan: Açık"
+  },
+  "extensionDescription": {
+    "message": "Herhangi bir tarayıcı sekmesi, araç çubuğu olmadan. Temiz ve yeniden boyutlandırılabilir bir pencereye dönüştürün."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Kaynak ailesi\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Bir sekme normal tarayıcı penceresinden ayrılıp Clean olduğunda NotF11, geldiği mantıksal tarayıcı ilişkisini hatırlar."
+  },
+  "familiesP2": {
+    "message": "Önceki / Sonraki, aynı ailenin uygun Raw üyeleri arasında Clean rolünü devredebilir. Başka bir tarayıcı penceresi farklı bir aileyi temsil ediyorsa NotF11 ona geçmez."
+  },
+  "familiesP3": {
+    "message": "Birden fazla Clean penceresi desteklenir. Zaten Clean olan aile üyeleri, kendi Clean yüzeylerini işgal ettikleri için geçiş sırasında normalde atlanır."
+  },
+  "familiesQuote": {
+    "message": "Clean yüzeyi değiştirir, aileyi değil."
+  },
+  "familiesTitle": {
+    "message": "Kaynak aileleri"
+  },
+  "footerPrivacy": {
+    "message": "Canlı sekmeler. Yerel durum. Sayfa erişimi yok."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 aynı canlı sekmeyi sayfayı yeniden açmadan Clean tarzı bir açılır pencereye taşır."
+  },
+  "gettingStartedP1Before": {
+    "message": "Gruplanmamış herhangi bir Chromium sekmesine odaklanın ve basın"
+  },
+  "gettingStartedP2": {
+    "message": "Sekmeyi normal tarayıcı kaynağına geri döndürmek için aynı kısayola tekrar basın. F11 tam ekranın aksine Clean penceresi taşınabilen, yeniden boyutlandırılabilen, büyütülebilen, kenetlenebilen veya döşenebilen normal bir masaüstü penceresi olarak kalır."
+  },
+  "gettingStartedTitle": {
+    "message": "Başlarken"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Gruplanmış sekme desteklenmiyor"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Gruplanmış sekmeler desteklenmiyor."
+  },
+  "helpDocumentation": {
+    "message": "Yardım ve belgeler"
+  },
+  "helpDocumentationLabel": {
+    "message": "Yardım ve belgeler"
+  },
+  "helpSectionsAria": {
+    "message": "Yardım bölümleri"
+  },
+  "helpTitle": {
+    "message": "NotF11 Yardım"
+  },
+  "heroAction": {
+    "message": "Clean ↔ normal"
+  },
+  "heroEyebrow": {
+    "message": "HERHANGİ BİR SEKME, ARAÇ ÇUBUĞU OLMADAN."
+  },
+  "heroLede": {
+    "message": "NotF11, zaten açık olan canlı Chromium sekmesini temiz bir masaüstü penceresine taşır ve ardından aynı sekmenin normal bir tarayıcı kaynağına dönmesine izin verir."
+  },
+  "heroTitle": {
+    "message": "Sayfayı koru. Tarayıcı kalabalığını kaldır."
+  },
+  "hyprlandP1": {
+    "message": "Compositor'ın yerleşim, döşeme, çalışma alanları ve scratchpad davranışını yönetmesini istiyorsanız Boyut ve konumu hatırla seçeneğini kapatın."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 tarayıcı ilişkilerini, Raw / Clean görünümünü ve aile içi devri yönetmeye devam eder — masaüstü topolojisini değil."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / döşemeli compositor"
+  },
+  "invalidSetting": {
+    "message": "Geçersiz NotF11 ayarı."
+  },
+  "issuesLink": {
+    "message": "Sorunlar"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Klavye kısayolları"
+  },
+  "limitation1": {
+    "message": "İşletim sisteminin başlık çubuğu bilinçli olarak görünür kalır."
+  },
+  "limitation2": {
+    "message": "Yerel Chromium sekme grupları şu anda desteklenmiyor."
+  },
+  "limitation3": {
+    "message": "Ağır web uygulamaları, Chromium canlı sekmeyi pencereler arasında taşırken kısa süreli yeniden çizilebilir."
+  },
+  "limitation4": {
+    "message": "Chromium veya Windows, ekran kenarlarında istenen geometriyi biraz sınırlayabilir."
+  },
+  "limitation5": {
+    "message": "Döşemeli pencere yöneticileri, üst düzey tarayıcı pencereleri göründüğünde veya kaybolduğunda görünür şekilde yeniden düzenleme yapabilir."
+  },
+  "limitation6": {
+    "message": "Tarayıcının ayırdığı kısayollar veya diğer uzantılarla çakışmalar önerilen kısayolları atanmamış bırakabilir."
+  },
+  "limitation7": {
+    "message": "NotF11 Hyprland çalışma alanlarını seçmez ve FancyZones'u kontrol etmez."
+  },
+  "limitationsTitle": {
+    "message": "Bilinen davranışlar ve sınırlamalar"
+  },
+  "manageShortcuts": {
+    "message": "Kısayolları yönet"
+  },
+  "navFamilies": {
+    "message": "Kaynak aileleri"
+  },
+  "navGettingStarted": {
+    "message": "Başlarken"
+  },
+  "navLimitations": {
+    "message": "Sınırlamalar"
+  },
+  "navNewTabs": {
+    "message": "Yeni sekmeler"
+  },
+  "navPlacement": {
+    "message": "Pencere yerleşimi"
+  },
+  "navPrivacy": {
+    "message": "Gizlilik"
+  },
+  "navRecovery": {
+    "message": "Kurtarma"
+  },
+  "navSettings": {
+    "message": "Ayarlar"
+  },
+  "navShortcuts": {
+    "message": "Kısayollar"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "Yeni sekme, Clean ailesinin yedek kaynağını oluşturamadı."
+  },
+  "newTabsHelp": {
+    "message": "Yalnızca NotF11 Clean akışından oluşturulan yeni sekmeleri kontrol eder. Kapalıyken alt sekme aynı kaynak ailesinde Raw kalır. Açıkken alt sekme bu ailede başka bir Clean penceresi olur."
+  },
+  "newTabsIntro": {
+    "message": "Clean akışından oluşturulan yeni sekmeler aile soyunu korur."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Yeni sekmeler Clean kalsın = Kapalı"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ B oluşturur\n\nA Clean kalır\nB, A'nın ailesine Raw olarak katılır"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Yeni sekmeler Clean kalsın = Açık"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ B oluşturur\n\nA Clean kalır\nB, A'nın ailesine Clean olarak katılır"
+  },
+  "newTabsP": {
+    "message": "Ayar, alt sekmenin başlangıçtaki görünümünü değiştirir; soyunu değil. Normal bir tarayıcı penceresinden Ctrl+T, normal Chromium davranışı olarak kalır."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Clean penceresinden açılan yeni sekmeler de Clean olarak açılır."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Yeni sekmeler Clean kalsın"
+  },
+  "newTabsTitle": {
+    "message": "Clean penceresinden yeni sekmeler"
+  },
+  "nextSourceTab": {
+    "message": "Sonraki kaynak sekmesi"
+  },
+  "notWindowManagerText": {
+    "message": "Beklenmedik fiziksel yerleşim, tarayıcı ilişkisinin yanlış olduğu anlamına gelmez."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 bir pencere yöneticisi değildir."
+  },
+  "openCurrentTabClean": {
+    "message": "Geçerli sekmeyi Clean aç"
+  },
+  "openHelpError": {
+    "message": "NotF11 yardımı açılamadı."
+  },
+  "openShortcutsError": {
+    "message": "Komut atamak için tarayıcınızın uzantı kısayolları sayfasını açın."
+  },
+  "placementTitle": {
+    "message": "Pencere yerleşimi"
+  },
+  "popupRecoverySafe": {
+    "message": "Bu açılır pencere güvenli biçimde kurtarılabilir."
+  },
+  "previousSourceTab": {
+    "message": "Önceki kaynak sekmesi"
+  },
+  "privacyCode": {
+    "message": "Canlı sekmeler.\nYerel durum.\nSayfa erişimi yok."
+  },
+  "privacyNoAccount": {
+    "message": "Hesap yok"
+  },
+  "privacyNoAds": {
+    "message": "Reklam yok"
+  },
+  "privacyNoAnalytics": {
+    "message": "Analitik yok"
+  },
+  "privacyNoCloud": {
+    "message": "Bulut hizmeti yok"
+  },
+  "privacyNoContentScripts": {
+    "message": "İçerik betiği yok"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Host izni yok"
+  },
+  "privacyNoTelemetry": {
+    "message": "Telemetri yok"
+  },
+  "privacyNoTracking": {
+    "message": "Takip yok"
+  },
+  "privacyP1": {
+    "message": "NotF11 web sitelerine komut dosyası enjekte etmez ve sayfa içeriğini okumaz veya değiştirmez."
+  },
+  "privacyP2": {
+    "message": "Uzantı, ayarlar ve NotF11 ilişki durumu için kendi yerel/oturum depolamasını kullanır. Boyut ve konumu hatırla etkinse pencere geometrisi kullanılabilir."
+  },
+  "privacyTitle": {
+    "message": "Küçük, odaklı ve özel"
+  },
+  "recoverNormalBrowser": {
+    "message": "Normal tarayıcıyı geri yükle"
+  },
+  "recoveryOneTabText": {
+    "message": "Normal bir tarayıcı penceresi, tek sekmesi Clean'e taşındığında doğal olarak kaybolabilir. Daha sonra bu Clean akışından yeni bir Raw sekme oluşturulursa, bu sekme o aile için geçerli yedek kaynak olabilir."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Tek sekmeli kaynak"
+  },
+  "recoveryRestartText": {
+    "message": "Chromium sekme ve pencere kimlikleri tarayıcı oturumuna özeldir. Chromium, güncel NotF11 ilişki kaydı olmayan eski bir açılır pencereyi geri yüklerse NotF11 eski bir kaynak ilişkisini tahmin etmek yerine onu normal bir tarayıcı yüzeyine kurtarabilir."
+  },
+  "recoveryRestartTitle": {
+    "message": "Tarayıcı yeniden başlatıldıktan sonra"
+  },
+  "recoverySourceExistsText": {
+    "message": "Aynı canlı sekme o normal tarayıcı kaynağına döner."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Hatırlanan kaynak hâlâ varsa"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 gerçek bir normal yedek oluşturur ve canlı sekmeyi oraya taşır. Sekmeyi sessizce ilgisiz bir tarayıcı penceresine bağlamaz."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Hatırlanan kaynak artık yoksa"
+  },
+  "recoveryTitle": {
+    "message": "Kurtarma davranışı"
+  },
+  "rememberGeometryDescription": {
+    "message": "Clean pencerelerini masaüstünde aynı alanda tut. Döşemeli pencere yöneticileri için kapat."
+  },
+  "rememberGeometryHelp": {
+    "message": "Etkinleştirildiğinde NotF11, Raw ↔ Clean geçişlerinde önceki masaüstü alanını koruması için Chromium'a istekte bulunur. Döşemeli pencere yöneticisinin veya compositor'ın yerleşimi tamamen yönetmesini istiyorsanız kapatın."
+  },
+  "rememberGeometryTitle": {
+    "message": "Boyut ve konumu hatırla"
+  },
+  "replacementSourceFailed": {
+    "message": "Yedek normal kaynak penceresi oluşturulamadı."
+  },
+  "reportIssue": {
+    "message": "Sorun bildir"
+  },
+  "requestFailed": {
+    "message": "NotF11 isteği başarısız oldu."
+  },
+  "returnCurrentTab": {
+    "message": "Geçerli sekmeyi geri döndür"
+  },
+  "sameLiveTabText": {
+    "message": "Kaydırma konumu, girilen metin, oturum açma/oturum durumu, gezinme geçmişi ve etkin web uygulaması durumu Chromium izin verdiği sürece sekmeyle birlikte kalabilir."
+  },
+  "sameLiveTabTitle": {
+    "message": "Aynı canlı sekme."
+  },
+  "saved": {
+    "message": "Kaydedildi."
+  },
+  "settingsAria": {
+    "message": "NotF11 ayarları"
+  },
+  "settingsTitle": {
+    "message": "Ayarlar"
+  },
+  "shortcutNextHelp": {
+    "message": "Sonraki uygun kaynak sekmesi"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Önceki uygun kaynak sekmesi"
+  },
+  "shortcutToggleHelp": {
+    "message": "Clean moduna gir veya çık"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 klavye kısayolu atanmamış."
+  },
+  "shortcutsAria": {
+    "message": "Klavye kısayolları"
+  },
+  "shortcutsP1": {
+    "message": "Önceki ve Sonraki, tarayıcı sekmeleri arasında genel geçiş yapmaz. Clean rolünü aynı hatırlanan kaynak ailesindeki başka bir uygun Raw sekmesine devreder."
+  },
+  "shortcutsP2": {
+    "message": "Tarayıcı kısayol çakışmaları olabilir. Chromium'un gerçekten atadığı komutları görmek için NotF11 açılır penceresindeki Kısayolları yönet seçeneğini kullanın."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ klavye kısayolu atanmamış.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Kaynak"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Geçici normal köprü penceresi oluşturulamadı."
+  },
+  "toggleCleanMode": {
+    "message": "Clean modunu değiştir"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Geçerli sekmeyi değiştir"
+  },
+  "toggleUnassignedNotice": {
+    "message": "Clean modunu değiştirme kısayolu atanmadı. Başlangıçta Clean bunu gerektirir."
+  },
+  "unassigned": {
+    "message": "Atanmamış"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Takip edilmeyen açılır pencere normal tarayıcı penceresine kurtarılamadı."
+  },
+  "windowsDesktopP1": {
+    "message": "Chromium ve işletim sistemi izin verdiğinde Raw ↔ Clean geçişinin önceki masaüstü alanını korumasını istiyorsanız Boyut ve konumu hatırla seçeneğini açık tutun."
+  },
+  "windowsDesktopP2": {
+    "message": "Bu, normal Windows kenetleme ve PowerToys FancyZones gibi araçlarla da iyi çalışır."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / normal masaüstü"
+  }
+}

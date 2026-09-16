@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Bất kỳ tab trình duyệt nào, không thanh công cụ."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Hãy gán phím tắt chuyển chế độ Clean trước khi bật Clean khi khởi động."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean khi khởi động đã bị tắt vì phím tắt chuyển chế độ Clean chưa được gán."
+  },
+  "cleanLaunchHelp": {
+    "message": "Khi bật, bề mặt trình duyệt đầu tiên đủ điều kiện sẽ khởi động ở chế độ Clean. NotF11 kiểm tra rằng phím tắt chuyển chính thực sự đã được gán trước khi cho phép tính năng này tạo ra tình huống khôi phục không an toàn."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Khởi động cửa sổ trình duyệt đầu tiên ở chế độ Clean."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean khi khởi động"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Không thể tạo cửa sổ Clean."
+  },
+  "commandNextDescription": {
+    "message": "Hiển thị tab nguồn tiếp theo trong cửa sổ Clean đang được tập trung"
+  },
+  "commandPreviousDescription": {
+    "message": "Hiển thị tab nguồn trước trong cửa sổ Clean đang được tập trung"
+  },
+  "commandToggleDescription": {
+    "message": "Vào hoặc thoát chế độ Clean cho tab đang được tập trung"
+  },
+  "defaultOff": {
+    "message": "Mặc định: Tắt"
+  },
+  "defaultOn": {
+    "message": "Mặc định: Bật"
+  },
+  "extensionDescription": {
+    "message": "Bất kỳ tab trình duyệt nào, không thanh công cụ. Biến nó thành cửa sổ gọn gàng có thể thay đổi kích thước."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Gia đình nguồn\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Khi một tab rời cửa sổ trình duyệt bình thường và trở thành Clean, NotF11 ghi nhớ mối quan hệ logic của trình duyệt mà tab đó xuất phát từ đó."
+  },
+  "familiesP2": {
+    "message": "Trước / Tiếp theo có thể chuyển vai trò Clean giữa các thành viên Raw đủ điều kiện trong cùng gia đình. Nếu một cửa sổ trình duyệt khác thuộc gia đình khác, NotF11 không đi sang đó."
+  },
+  "familiesP3": {
+    "message": "Hỗ trợ nhiều cửa sổ Clean. Thành viên gia đình đã ở Clean thường được bỏ qua khi chuyển vì chúng đã có bề mặt Clean riêng."
+  },
+  "familiesQuote": {
+    "message": "Clean thay đổi bề mặt, không thay đổi gia đình."
+  },
+  "familiesTitle": {
+    "message": "Gia đình nguồn"
+  },
+  "footerPrivacy": {
+    "message": "Tab đang chạy. Trạng thái cục bộ. Không truy cập trang."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 di chuyển chính tab đang chạy đó sang cửa sổ kiểu popup Clean mà không mở lại trang."
+  },
+  "gettingStartedP1Before": {
+    "message": "Đưa tiêu điểm vào một tab Chromium chưa được nhóm rồi nhấn"
+  },
+  "gettingStartedP2": {
+    "message": "Nhấn lại cùng phím tắt để đưa tab về nguồn trình duyệt bình thường. Khác với toàn màn hình F11, cửa sổ Clean vẫn là cửa sổ desktop bình thường có thể di chuyển, đổi kích thước, phóng to, snap hoặc xếp ô."
+  },
+  "gettingStartedTitle": {
+    "message": "Bắt đầu"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Không hỗ trợ tab đã nhóm"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Không hỗ trợ tab đã nhóm."
+  },
+  "helpDocumentation": {
+    "message": "Trợ giúp & tài liệu"
+  },
+  "helpDocumentationLabel": {
+    "message": "Trợ giúp & tài liệu"
+  },
+  "helpSectionsAria": {
+    "message": "Các mục trợ giúp"
+  },
+  "helpTitle": {
+    "message": "Trợ giúp NotF11"
+  },
+  "heroAction": {
+    "message": "Clean ↔ bình thường"
+  },
+  "heroEyebrow": {
+    "message": "BẤT KỲ TAB TRÌNH DUYỆT NÀO, KHÔNG THANH CÔNG CỤ."
+  },
+  "heroLede": {
+    "message": "NotF11 di chuyển tab Chromium đang chạy mà bạn đã mở sang một cửa sổ desktop gọn gàng, rồi cho phép chính tab đó quay về nguồn trình duyệt bình thường."
+  },
+  "heroTitle": {
+    "message": "Giữ nguyên trang. Loại bỏ phần rườm rà của trình duyệt."
+  },
+  "hyprlandP1": {
+    "message": "Tắt Nhớ kích thước & vị trí khi compositor cần toàn quyền quản lý vị trí, xếp ô, workspace và scratchpad."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 vẫn quản lý quan hệ trình duyệt, biểu diễn Raw / Clean và chuyển giao trong gia đình — không quản lý cấu trúc desktop."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / compositor xếp ô"
+  },
+  "invalidSetting": {
+    "message": "Cài đặt NotF11 không hợp lệ."
+  },
+  "issuesLink": {
+    "message": "Sự cố"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Phím tắt bàn phím"
+  },
+  "limitation1": {
+    "message": "Thanh tiêu đề của hệ điều hành cố ý vẫn hiển thị."
+  },
+  "limitation2": {
+    "message": "Nhóm tab gốc của Chromium hiện chưa được hỗ trợ."
+  },
+  "limitation3": {
+    "message": "Ứng dụng web nặng có thể vẽ lại trong chốc lát khi Chromium di chuyển tab đang chạy giữa các cửa sổ."
+  },
+  "limitation4": {
+    "message": "Chromium hoặc Windows có thể điều chỉnh nhẹ hình học yêu cầu ở cạnh màn hình."
+  },
+  "limitation5": {
+    "message": "Trình quản lý cửa sổ xếp ô có thể sắp xếp lại rõ rệt khi cửa sổ trình duyệt cấp cao xuất hiện hoặc biến mất."
+  },
+  "limitation6": {
+    "message": "Phím tắt dành riêng cho trình duyệt hoặc xung đột với tiện ích khác có thể khiến phím tắt đề xuất chưa được gán."
+  },
+  "limitation7": {
+    "message": "NotF11 không chọn workspace Hyprland và không điều khiển FancyZones."
+  },
+  "limitationsTitle": {
+    "message": "Hành vi đã biết & giới hạn"
+  },
+  "manageShortcuts": {
+    "message": "Quản lý phím tắt"
+  },
+  "navFamilies": {
+    "message": "Gia đình nguồn"
+  },
+  "navGettingStarted": {
+    "message": "Bắt đầu"
+  },
+  "navLimitations": {
+    "message": "Giới hạn"
+  },
+  "navNewTabs": {
+    "message": "Tab mới"
+  },
+  "navPlacement": {
+    "message": "Vị trí cửa sổ"
+  },
+  "navPrivacy": {
+    "message": "Quyền riêng tư"
+  },
+  "navRecovery": {
+    "message": "Khôi phục"
+  },
+  "navSettings": {
+    "message": "Cài đặt"
+  },
+  "navShortcuts": {
+    "message": "Phím tắt"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "Tab mới không thể tạo nguồn thay thế cho gia đình Clean của nó."
+  },
+  "newTabsHelp": {
+    "message": "Chỉ điều khiển các tab mới được tạo từ luồng Clean của NotF11. Khi tắt, tab con vẫn Raw trong cùng gia đình nguồn. Khi bật, tab con trở thành một cửa sổ Clean khác trong gia đình đó."
+  },
+  "newTabsIntro": {
+    "message": "Tab mới được tạo từ luồng Clean giữ nguyên dòng gia đình."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Tab mới vẫn ở Clean = Tắt"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ tạo B\n\nA vẫn Clean\nB tham gia gia đình của A dưới dạng Raw"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Tab mới vẫn ở Clean = Bật"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ tạo B\n\nA vẫn Clean\nB tham gia gia đình của A dưới dạng Clean"
+  },
+  "newTabsP": {
+    "message": "Cài đặt chỉ thay đổi cách biểu diễn ban đầu của tab con, không thay đổi nguồn gốc của nó. Ctrl+T bình thường từ cửa sổ trình duyệt bình thường vẫn là hành vi Chromium bình thường."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Tab mới mở từ cửa sổ Clean cũng mở ở trạng thái Clean."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Tab mới vẫn ở Clean"
+  },
+  "newTabsTitle": {
+    "message": "Tab mới từ cửa sổ Clean"
+  },
+  "nextSourceTab": {
+    "message": "Tab nguồn tiếp theo"
+  },
+  "notWindowManagerText": {
+    "message": "Vị trí vật lý bất ngờ không tự động có nghĩa là quan hệ trình duyệt bị sai."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 không phải trình quản lý cửa sổ."
+  },
+  "openCurrentTabClean": {
+    "message": "Mở tab hiện tại ở Clean"
+  },
+  "openHelpError": {
+    "message": "Không thể mở trợ giúp NotF11."
+  },
+  "openShortcutsError": {
+    "message": "Hãy mở trang phím tắt tiện ích của trình duyệt để gán lệnh."
+  },
+  "placementTitle": {
+    "message": "Vị trí cửa sổ"
+  },
+  "popupRecoverySafe": {
+    "message": "Cửa sổ bật lên này có thể được khôi phục an toàn."
+  },
+  "previousSourceTab": {
+    "message": "Tab nguồn trước"
+  },
+  "privacyCode": {
+    "message": "Tab đang chạy.\nTrạng thái cục bộ.\nKhông truy cập trang."
+  },
+  "privacyNoAccount": {
+    "message": "Không tài khoản"
+  },
+  "privacyNoAds": {
+    "message": "Không quảng cáo"
+  },
+  "privacyNoAnalytics": {
+    "message": "Không phân tích"
+  },
+  "privacyNoCloud": {
+    "message": "Không dịch vụ đám mây"
+  },
+  "privacyNoContentScripts": {
+    "message": "Không content script"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Không quyền host"
+  },
+  "privacyNoTelemetry": {
+    "message": "Không telemetry"
+  },
+  "privacyNoTracking": {
+    "message": "Không theo dõi"
+  },
+  "privacyP1": {
+    "message": "NotF11 không chèn script vào trang web và không đọc hoặc sửa nội dung trang."
+  },
+  "privacyP2": {
+    "message": "Tiện ích dùng bộ nhớ cục bộ/phiên riêng cho cài đặt và trạng thái quan hệ NotF11. Hình học cửa sổ có thể được dùng khi Nhớ kích thước & vị trí được bật."
+  },
+  "privacyTitle": {
+    "message": "Nhỏ gọn, tập trung và riêng tư"
+  },
+  "recoverNormalBrowser": {
+    "message": "Khôi phục trình duyệt bình thường"
+  },
+  "recoveryOneTabText": {
+    "message": "Một cửa sổ trình duyệt bình thường có thể tự nhiên biến mất khi tab duy nhất của nó được chuyển sang Clean. Nếu sau đó một tab Raw mới được tạo từ luồng Clean đó, tab mới có thể trở thành nguồn thay thế hợp lệ cho gia đình này."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Nguồn chỉ có một tab"
+  },
+  "recoveryRestartText": {
+    "message": "ID tab và cửa sổ Chromium chỉ có ý nghĩa trong từng phiên trình duyệt. Nếu Chromium khôi phục một popup cũ mà không có bản ghi quan hệ NotF11 hiện tại, NotF11 có thể khôi phục nó thành bề mặt trình duyệt bình thường thay vì đoán quan hệ nguồn cũ."
+  },
+  "recoveryRestartTitle": {
+    "message": "Sau khi khởi động lại trình duyệt"
+  },
+  "recoverySourceExistsText": {
+    "message": "Chính tab đang chạy đó quay lại nguồn trình duyệt bình thường."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Nếu nguồn đã ghi nhớ vẫn còn"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 tạo một cửa sổ bình thường thay thế thực sự và di chuyển tab đang chạy vào đó. Nó không âm thầm gắn tab vào một cửa sổ trình duyệt không liên quan."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Nếu nguồn đã ghi nhớ không còn"
+  },
+  "recoveryTitle": {
+    "message": "Hành vi khôi phục"
+  },
+  "rememberGeometryDescription": {
+    "message": "Giữ cửa sổ Clean trong cùng vùng trên màn hình. Tắt khi dùng trình quản lý cửa sổ xếp ô."
+  },
+  "rememberGeometryHelp": {
+    "message": "Khi bật, NotF11 yêu cầu Chromium giữ vùng desktop trước đó qua các chuyển đổi Raw ↔ Clean. Hãy tắt nếu bạn muốn trình quản lý cửa sổ xếp ô hoặc compositor toàn quyền quyết định vị trí."
+  },
+  "rememberGeometryTitle": {
+    "message": "Nhớ kích thước & vị trí"
+  },
+  "replacementSourceFailed": {
+    "message": "Không thể tạo cửa sổ nguồn bình thường thay thế."
+  },
+  "reportIssue": {
+    "message": "Báo cáo sự cố"
+  },
+  "requestFailed": {
+    "message": "Yêu cầu NotF11 thất bại."
+  },
+  "returnCurrentTab": {
+    "message": "Trả tab hiện tại về"
+  },
+  "sameLiveTabText": {
+    "message": "Vị trí cuộn, văn bản đã nhập, trạng thái đăng nhập/phiên, lịch sử điều hướng và trạng thái ứng dụng web đang hoạt động có thể được giữ cùng tab khi Chromium cho phép."
+  },
+  "sameLiveTabTitle": {
+    "message": "Vẫn là chính tab đang chạy đó."
+  },
+  "saved": {
+    "message": "Đã lưu."
+  },
+  "settingsAria": {
+    "message": "Cài đặt NotF11"
+  },
+  "settingsTitle": {
+    "message": "Cài đặt"
+  },
+  "shortcutNextHelp": {
+    "message": "Tab nguồn đủ điều kiện tiếp theo"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Tab nguồn đủ điều kiện trước"
+  },
+  "shortcutToggleHelp": {
+    "message": "Vào hoặc thoát chế độ Clean"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 phím tắt bàn phím chưa được gán."
+  },
+  "shortcutsAria": {
+    "message": "Phím tắt bàn phím"
+  },
+  "shortcutsP1": {
+    "message": "Trước và Tiếp theo không phải là chuyển tab toàn cục của trình duyệt. Chúng chuyển vai trò Clean sang một tab Raw đủ điều kiện khác trong cùng gia đình nguồn đã ghi nhớ."
+  },
+  "shortcutsP2": {
+    "message": "Có thể xảy ra xung đột phím tắt trình duyệt. Dùng Quản lý phím tắt trong popup NotF11 để kiểm tra các lệnh Chromium thực sự đã gán."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ phím tắt bàn phím chưa được gán.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Mã nguồn"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Không thể tạo cửa sổ bình thường tạm thời làm cầu nối."
+  },
+  "toggleCleanMode": {
+    "message": "Chuyển chế độ Clean"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Chuyển trạng thái tab hiện tại"
+  },
+  "toggleUnassignedNotice": {
+    "message": "Phím tắt chuyển chế độ Clean chưa được gán. Clean khi khởi động cần phím tắt này."
+  },
+  "unassigned": {
+    "message": "Chưa gán"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Không thể khôi phục popup chưa được theo dõi thành cửa sổ trình duyệt bình thường."
+  },
+  "windowsDesktopP1": {
+    "message": "Giữ Nhớ kích thước & vị trí ở trạng thái bật nếu bạn muốn Raw ↔ Clean giữ vùng desktop trước đó trong phạm vi Chromium và hệ điều hành cho phép."
+  },
+  "windowsDesktopP2": {
+    "message": "Tính năng này cũng hoạt động tốt với Windows Snap thông thường và các công cụ như PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / desktop thông thường"
+  }
+}

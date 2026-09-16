@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Elk browsertabblad, zonder werkbalk."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Wijs de sneltoets voor Clean-modus toe voordat je Clean bij opstarten inschakelt."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean bij opstarten is uitgeschakeld omdat de sneltoets voor Clean-modus niet is toegewezen."
+  },
+  "cleanLaunchHelp": {
+    "message": "Wanneer ingeschakeld, start het eerste geschikte browseroppervlak in Clean-modus. NotF11 controleert of de hoofd-sneltoets voor omschakelen echt is toegewezen voordat deze functie een onveilige herstelsituatie kan veroorzaken."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Start het eerste browservenster in Clean-modus."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean bij opstarten"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Clean-venster kon niet worden gemaakt."
+  },
+  "commandNextDescription": {
+    "message": "Het volgende brontabblad tonen in het gefocuste Clean-venster"
+  },
+  "commandPreviousDescription": {
+    "message": "Het vorige brontabblad tonen in het gefocuste Clean-venster"
+  },
+  "commandToggleDescription": {
+    "message": "Clean-modus voor het gefocuste tabblad in- of uitschakelen"
+  },
+  "defaultOff": {
+    "message": "Standaard: Uit"
+  },
+  "defaultOn": {
+    "message": "Standaard: Aan"
+  },
+  "extensionDescription": {
+    "message": "Elk browsertabblad, zonder werkbalk. Maak er een schoon, schaalbaar venster van."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Bronfamilie\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Wanneer een tabblad een normaal browservenster verlaat en Clean wordt, onthoudt NotF11 de logische browserrelatie waaruit het kwam."
+  },
+  "familiesP2": {
+    "message": "Vorige / Volgende kan de Clean-rol doorgeven tussen geschikte Raw-leden van dezelfde familie. Als een ander browservenster een andere familie vertegenwoordigt, gaat NotF11 daar niet naartoe."
+  },
+  "familiesP3": {
+    "message": "Meerdere Clean-vensters worden ondersteund. Familieleden die al Clean zijn, worden tijdens het bladeren normaal overgeslagen omdat ze al hun eigen Clean-oppervlak hebben."
+  },
+  "familiesQuote": {
+    "message": "Clean verandert het oppervlak, niet de familie."
+  },
+  "familiesTitle": {
+    "message": "Bronfamilies"
+  },
+  "footerPrivacy": {
+    "message": "Live-tabbladen. Lokale status. Geen paginatoegang."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 verplaatst datzelfde live-tabblad naar een Clean-pop-upvenster zonder de pagina opnieuw te openen."
+  },
+  "gettingStartedP1Before": {
+    "message": "Focus een niet-gegroepeerd Chromium-tabblad en druk op"
+  },
+  "gettingStartedP2": {
+    "message": "Druk opnieuw op dezelfde sneltoets om het tabblad terug te sturen naar de normale browserbron. In tegenstelling tot F11 op volledig scherm blijft het Clean-venster een normaal bureaubladvenster dat kan worden verplaatst, vergroot of verkleind, gemaximaliseerd, vastgeklikt of betegeld."
+  },
+  "gettingStartedTitle": {
+    "message": "Aan de slag"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Gegroepeerd tabblad niet ondersteund"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Gegroepeerde tabbladen worden niet ondersteund."
+  },
+  "helpDocumentation": {
+    "message": "Help en documentatie"
+  },
+  "helpDocumentationLabel": {
+    "message": "Help en documentatie"
+  },
+  "helpSectionsAria": {
+    "message": "Helpsecties"
+  },
+  "helpTitle": {
+    "message": "NotF11-help"
+  },
+  "heroAction": {
+    "message": "Clean ↔ normaal"
+  },
+  "heroEyebrow": {
+    "message": "ELK BROWSERTABBLAD, ZONDER WERKBALK."
+  },
+  "heroLede": {
+    "message": "NotF11 verplaatst het live Chromium-tabblad dat al openstaat naar een schoon bureaubladvenster en laat datzelfde tabblad daarna terugkeren naar een normale browserbron."
+  },
+  "heroTitle": {
+    "message": "Behoud de pagina. Verwijder de browserrommel."
+  },
+  "hyprlandP1": {
+    "message": "Schakel Grootte en positie onthouden uit wanneer de compositor plaatsing, tegelen, werkruimten en scratchpadgedrag moet beheren."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 blijft browserrelaties, Raw-/Clean-weergave en familieoverdracht beheren — niet de desktop-topologie."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / tegelcompositor"
+  },
+  "invalidSetting": {
+    "message": "Ongeldige NotF11-instelling."
+  },
+  "issuesLink": {
+    "message": "Problemen"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Sneltoetsen"
+  },
+  "limitation1": {
+    "message": "De titelbalk van het besturingssysteem blijft bewust zichtbaar."
+  },
+  "limitation2": {
+    "message": "Native Chromium-tabgroepen worden momenteel niet ondersteund."
+  },
+  "limitation3": {
+    "message": "Zware webapps kunnen kort opnieuw tekenen terwijl Chromium het live-tabblad tussen vensters verplaatst."
+  },
+  "limitation4": {
+    "message": "Chromium of Windows kan aangevraagde venstergeometrie aan schermranden iets begrenzen."
+  },
+  "limitation5": {
+    "message": "Tegelvensterbeheerders kunnen zichtbaar herschikken wanneer browservensters op hoofdniveau verschijnen of verdwijnen."
+  },
+  "limitation6": {
+    "message": "Door de browser gereserveerde sneltoetsen of conflicten met andere extensies kunnen voorgestelde sneltoetsen niet toegewezen laten."
+  },
+  "limitation7": {
+    "message": "NotF11 kiest geen Hyprland-werkruimten en bestuurt FancyZones niet."
+  },
+  "limitationsTitle": {
+    "message": "Bekend gedrag en beperkingen"
+  },
+  "manageShortcuts": {
+    "message": "Sneltoetsen beheren"
+  },
+  "navFamilies": {
+    "message": "Bronfamilies"
+  },
+  "navGettingStarted": {
+    "message": "Aan de slag"
+  },
+  "navLimitations": {
+    "message": "Beperkingen"
+  },
+  "navNewTabs": {
+    "message": "Nieuwe tabbladen"
+  },
+  "navPlacement": {
+    "message": "Vensterplaatsing"
+  },
+  "navPrivacy": {
+    "message": "Privacy"
+  },
+  "navRecovery": {
+    "message": "Herstel"
+  },
+  "navSettings": {
+    "message": "Instellingen"
+  },
+  "navShortcuts": {
+    "message": "Sneltoetsen"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "Het nieuwe tabblad kon de vervangende bron van zijn Clean-familie niet maken."
+  },
+  "newTabsHelp": {
+    "message": "Regelt alleen nieuwe tabbladen die vanuit een Clean-NotF11-workflow worden gemaakt. Uit: het kind blijft Raw in dezelfde bronfamilie. Aan: het kind wordt een extra Clean-venster in die familie."
+  },
+  "newTabsIntro": {
+    "message": "Nieuwe tabbladen uit een Clean-workflow behouden hun familielijn."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Nieuwe tabbladen blijven Clean = Uit"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ maakt B\n\nA blijft Clean\nB voegt zich bij A's familie als Raw"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Nieuwe tabbladen blijven Clean = Aan"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ maakt B\n\nA blijft Clean\nB voegt zich bij A's familie als Clean"
+  },
+  "newTabsP": {
+    "message": "De instelling verandert de eerste weergave van het kindtabblad, niet de afkomst. Een normale Ctrl+T vanuit een normaal browservenster blijft normaal Chromium-gedrag."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Nieuwe tabbladen die vanuit een Clean-venster worden geopend, openen ook Clean."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Nieuwe tabbladen blijven Clean"
+  },
+  "newTabsTitle": {
+    "message": "Nieuwe tabbladen vanuit een Clean-venster"
+  },
+  "nextSourceTab": {
+    "message": "Volgend brontabblad"
+  },
+  "notWindowManagerText": {
+    "message": "Een onverwachte fysieke plaatsing betekent niet automatisch dat de browserrelatie verkeerd is."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 is geen vensterbeheerder."
+  },
+  "openCurrentTabClean": {
+    "message": "Huidig tabblad Clean openen"
+  },
+  "openHelpError": {
+    "message": "NotF11-help kon niet worden geopend."
+  },
+  "openShortcutsError": {
+    "message": "Open de pagina met extensiesneltoetsen van je browser om opdrachten toe te wijzen."
+  },
+  "placementTitle": {
+    "message": "Vensterplaatsing"
+  },
+  "popupRecoverySafe": {
+    "message": "Deze pop-up kan veilig worden hersteld."
+  },
+  "previousSourceTab": {
+    "message": "Vorig brontabblad"
+  },
+  "privacyCode": {
+    "message": "Live-tabbladen.\nLokale status.\nGeen paginatoegang."
+  },
+  "privacyNoAccount": {
+    "message": "Geen account"
+  },
+  "privacyNoAds": {
+    "message": "Geen advertenties"
+  },
+  "privacyNoAnalytics": {
+    "message": "Geen analytics"
+  },
+  "privacyNoCloud": {
+    "message": "Geen cloudservice"
+  },
+  "privacyNoContentScripts": {
+    "message": "Geen contentscripts"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Geen hostrechten"
+  },
+  "privacyNoTelemetry": {
+    "message": "Geen telemetrie"
+  },
+  "privacyNoTracking": {
+    "message": "Geen tracking"
+  },
+  "privacyP1": {
+    "message": "NotF11 injecteert geen scripts in websites en leest of wijzigt geen pagina-inhoud."
+  },
+  "privacyP2": {
+    "message": "De extensie gebruikt eigen lokale/sessieopslag voor instellingen en NotF11-relatiestatus. Venstergeometrie kan worden gebruikt wanneer Grootte en positie onthouden is ingeschakeld."
+  },
+  "privacyTitle": {
+    "message": "Klein, gericht en privé"
+  },
+  "recoverNormalBrowser": {
+    "message": "Normale browser herstellen"
+  },
+  "recoveryOneTabText": {
+    "message": "Een normaal browservenster kan vanzelf verdwijnen wanneer het enige tabblad naar Clean wordt verplaatst. Als later vanuit die Clean-workflow een nieuw Raw-tabblad wordt gemaakt, kan dit de legitieme vervangende bron voor die familie worden."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Bron met één tabblad"
+  },
+  "recoveryRestartText": {
+    "message": "Chromium-tab- en venster-ID's zijn specifiek voor de browsersessie. Als Chromium een oude pop-up herstelt zonder een actuele NotF11-relatierecord, kan NotF11 die terughalen naar een normaal browseroppervlak in plaats van een oude bronrelatie te raden."
+  },
+  "recoveryRestartTitle": {
+    "message": "Na een browserherstart"
+  },
+  "recoverySourceExistsText": {
+    "message": "Hetzelfde live-tabblad keert terug naar die normale browserbron."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Als de onthouden bron nog bestaat"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 maakt een echte normale vervanging en verplaatst het live-tabblad daarheen. Het koppelt het tabblad niet stilletjes aan een niet-gerelateerd browservenster."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Als de onthouden bron verdwenen is"
+  },
+  "recoveryTitle": {
+    "message": "Herstelgedrag"
+  },
+  "rememberGeometryDescription": {
+    "message": "Houd Clean-vensters in hetzelfde bureaubladgebied. Schakel uit voor tegelvensterbeheerders."
+  },
+  "rememberGeometryHelp": {
+    "message": "Wanneer ingeschakeld, vraagt NotF11 Chromium om het vorige bureaubladgebied te behouden tijdens Raw ↔ Clean-overgangen. Schakel uit als een tegelvensterbeheerder of compositor de plaatsing volledig moet bepalen."
+  },
+  "rememberGeometryTitle": {
+    "message": "Grootte en positie onthouden"
+  },
+  "replacementSourceFailed": {
+    "message": "Normaal vervangend bronvenster kon niet worden gemaakt."
+  },
+  "reportIssue": {
+    "message": "Probleem melden"
+  },
+  "requestFailed": {
+    "message": "NotF11-verzoek mislukt."
+  },
+  "returnCurrentTab": {
+    "message": "Huidig tabblad terugzetten"
+  },
+  "sameLiveTabText": {
+    "message": "Scrollpositie, ingevoerde tekst, aanmeld-/sessiestatus, navigatiegeschiedenis en actieve webappstatus kunnen bij het tabblad blijven wanneer Chromium dit toestaat."
+  },
+  "sameLiveTabTitle": {
+    "message": "Hetzelfde live-tabblad."
+  },
+  "saved": {
+    "message": "Opgeslagen."
+  },
+  "settingsAria": {
+    "message": "NotF11-instellingen"
+  },
+  "settingsTitle": {
+    "message": "Instellingen"
+  },
+  "shortcutNextHelp": {
+    "message": "Volgend geschikt brontabblad"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Vorig geschikt brontabblad"
+  },
+  "shortcutToggleHelp": {
+    "message": "Clean-modus in- of uitschakelen"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 sneltoets is niet toegewezen."
+  },
+  "shortcutsAria": {
+    "message": "Sneltoetsen"
+  },
+  "shortcutsP1": {
+    "message": "Vorige en Volgende bladeren niet wereldwijd door browsertabbladen. Ze geven de Clean-rol door aan een ander geschikt Raw-tabblad uit dezelfde onthouden bronfamilie."
+  },
+  "shortcutsP2": {
+    "message": "Conflicten met browsersneltoetsen zijn mogelijk. Gebruik Sneltoetsen beheren in de NotF11-pop-up om te controleren welke opdrachten Chromium werkelijk heeft toegewezen."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ sneltoetsen zijn niet toegewezen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Broncode"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Tijdelijk normaal overbruggingsvenster kon niet worden gemaakt."
+  },
+  "toggleCleanMode": {
+    "message": "Clean-modus omschakelen"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Huidig tabblad omschakelen"
+  },
+  "toggleUnassignedNotice": {
+    "message": "De sneltoets voor Clean-modus is niet toegewezen. Clean bij opstarten vereist deze."
+  },
+  "unassigned": {
+    "message": "Niet toegewezen"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Niet-gevolgde pop-up kon niet worden hersteld naar een normaal browservenster."
+  },
+  "windowsDesktopP1": {
+    "message": "Laat Grootte en positie onthouden aan wanneer Raw ↔ Clean het vorige bureaubladgebied moet behouden waar Chromium en het besturingssysteem dat toestaan."
+  },
+  "windowsDesktopP2": {
+    "message": "Dit werkt ook goed met normale Windows Snap en hulpmiddelen zoals PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / gewone desktop"
+  }
+}

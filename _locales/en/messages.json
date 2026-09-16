@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Any browser tab, toolbar-free."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Assign the Toggle clean mode shortcut before enabling Clean on launch."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean on launch was turned off because Toggle clean mode is unassigned."
+  },
+  "cleanLaunchHelp": {
+    "message": "Starts the first eligible browser surface in Clean mode when enabled. NotF11 checks that the main Toggle shortcut is actually assigned before allowing this feature to create an unsafe recovery situation."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Start the first browser window in Clean mode."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean on launch"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Clean window could not be created."
+  },
+  "commandNextDescription": {
+    "message": "Show the next source tab in the focused clean window"
+  },
+  "commandPreviousDescription": {
+    "message": "Show the previous source tab in the focused clean window"
+  },
+  "commandToggleDescription": {
+    "message": "Enter or exit clean-window mode for the focused tab"
+  },
+  "defaultOff": {
+    "message": "Default: Off"
+  },
+  "defaultOn": {
+    "message": "Default: On"
+  },
+  "extensionDescription": {
+    "message": "Any browser tab, toolbar-free. Turn it into a clean, resizable window."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Source family\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "When a tab leaves a normal browser window and becomes Clean, NotF11 remembers the logical browser relationship it came from."
+  },
+  "familiesP2": {
+    "message": "Previous / Next can hand the Clean role between eligible Raw members of that same family. If another browser window represents a different family, NotF11 does not cross into it."
+  },
+  "familiesP3": {
+    "message": "Multiple Clean windows are supported. Family members that are already Clean are normally skipped during cycling because they already occupy their own Clean surfaces."
+  },
+  "familiesQuote": {
+    "message": "Clean changes the surface, not the family."
+  },
+  "familiesTitle": {
+    "message": "Source families"
+  },
+  "footerPrivacy": {
+    "message": "Live tabs. Local state. No page access."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 moves that same live tab into a Clean popup-style window without reopening the page."
+  },
+  "gettingStartedP1Before": {
+    "message": "Focus any ungrouped Chromium tab and press"
+  },
+  "gettingStartedP2": {
+    "message": "Press the same shortcut again to return the tab to its normal browser source. Unlike F11 fullscreen, the Clean window remains a normal desktop window that can be moved, resized, maximized, snapped or tiled."
+  },
+  "gettingStartedTitle": {
+    "message": "Getting started"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Grouped tab not supported"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Grouped tabs aren't supported."
+  },
+  "helpDocumentation": {
+    "message": "Help & documentation"
+  },
+  "helpDocumentationLabel": {
+    "message": "Help & documentation"
+  },
+  "helpSectionsAria": {
+    "message": "Help sections"
+  },
+  "helpTitle": {
+    "message": "NotF11 Help"
+  },
+  "heroAction": {
+    "message": "Clean ↔ normal"
+  },
+  "heroEyebrow": {
+    "message": "ANY BROWSER TAB, TOOLBAR-FREE."
+  },
+  "heroLede": {
+    "message": "NotF11 moves the live Chromium tab you already have open into a clean desktop window,\n            then lets the same tab return to a normal browser source."
+  },
+  "heroTitle": {
+    "message": "Keep the page. Lose the browser clutter."
+  },
+  "hyprlandP1": {
+    "message": "Turn Remember size & position off when the compositor should own placement, tiling, workspaces and scratchpad behavior."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 continues to own browser relationships, Raw / Clean representation and family handoff — not desktop topology."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / tiling compositor"
+  },
+  "invalidSetting": {
+    "message": "Invalid NotF11 setting."
+  },
+  "issuesLink": {
+    "message": "Issues"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Keyboard shortcuts"
+  },
+  "limitation1": {
+    "message": "The operating system's title bar remains visible intentionally."
+  },
+  "limitation2": {
+    "message": "Native Chromium tab groups are not currently supported."
+  },
+  "limitation3": {
+    "message": "Heavy web apps may briefly redraw while Chromium moves the live tab between windows."
+  },
+  "limitation4": {
+    "message": "Chromium or Windows can clamp requested geometry slightly at display edges."
+  },
+  "limitation5": {
+    "message": "Tiling window managers can visibly reflow when top-level browser windows appear or disappear."
+  },
+  "limitation6": {
+    "message": "Browser-reserved shortcuts or conflicts with other extensions can leave suggested shortcuts unassigned."
+  },
+  "limitation7": {
+    "message": "NotF11 does not choose Hyprland workspaces or control FancyZones."
+  },
+  "limitationsTitle": {
+    "message": "Known behavior & limitations"
+  },
+  "manageShortcuts": {
+    "message": "Manage shortcuts"
+  },
+  "navFamilies": {
+    "message": "Source families"
+  },
+  "navGettingStarted": {
+    "message": "Getting started"
+  },
+  "navLimitations": {
+    "message": "Limitations"
+  },
+  "navNewTabs": {
+    "message": "New tabs"
+  },
+  "navPlacement": {
+    "message": "Window placement"
+  },
+  "navPrivacy": {
+    "message": "Privacy"
+  },
+  "navRecovery": {
+    "message": "Recovery"
+  },
+  "navSettings": {
+    "message": "Settings"
+  },
+  "navShortcuts": {
+    "message": "Shortcuts"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "The new tab could not create its clean family's replacement source."
+  },
+  "newTabsHelp": {
+    "message": "Controls only new tabs created from a Clean NotF11 workflow. With it off, the child stays Raw in the same source family. With it on, the child becomes another Clean window in that family."
+  },
+  "newTabsIntro": {
+    "message": "New tabs created from a Clean workflow preserve family lineage."
+  },
+  "newTabsOffCardTitle": {
+    "message": "New tabs stay clean = Off"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ creates B\n\nA remains Clean\nB joins A's family as Raw"
+  },
+  "newTabsOnCardTitle": {
+    "message": "New tabs stay clean = On"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ creates B\n\nA remains Clean\nB joins A's family as Clean"
+  },
+  "newTabsP": {
+    "message": "The setting changes the child's initial representation, not its ancestry. Ordinary Ctrl+T from a normal browser window remains ordinary Chromium behavior."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "New tabs opened from a Clean window also open Clean."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "New tabs stay clean"
+  },
+  "newTabsTitle": {
+    "message": "New tabs from a Clean window"
+  },
+  "nextSourceTab": {
+    "message": "Next source tab"
+  },
+  "notWindowManagerText": {
+    "message": "Unexpected physical placement does not automatically mean the browser relationship is wrong."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 is not a window manager."
+  },
+  "openCurrentTabClean": {
+    "message": "Open current tab clean"
+  },
+  "openHelpError": {
+    "message": "Could not open NotF11 help."
+  },
+  "openShortcutsError": {
+    "message": "Open your browser extension shortcuts page to assign commands."
+  },
+  "placementTitle": {
+    "message": "Window placement"
+  },
+  "popupRecoverySafe": {
+    "message": "This popup can be recovered safely."
+  },
+  "previousSourceTab": {
+    "message": "Previous source tab"
+  },
+  "privacyCode": {
+    "message": "Live tabs.\nLocal state.\nNo page access."
+  },
+  "privacyNoAccount": {
+    "message": "No account"
+  },
+  "privacyNoAds": {
+    "message": "No ads"
+  },
+  "privacyNoAnalytics": {
+    "message": "No analytics"
+  },
+  "privacyNoCloud": {
+    "message": "No cloud service"
+  },
+  "privacyNoContentScripts": {
+    "message": "No content scripts"
+  },
+  "privacyNoHostPermissions": {
+    "message": "No host permissions"
+  },
+  "privacyNoTelemetry": {
+    "message": "No telemetry"
+  },
+  "privacyNoTracking": {
+    "message": "No tracking"
+  },
+  "privacyP1": {
+    "message": "NotF11 does not inject scripts into websites and does not read or modify webpage content."
+  },
+  "privacyP2": {
+    "message": "The extension uses its own local/session storage for settings and NotF11 relationship state. Window geometry may be used when Remember size & position is enabled."
+  },
+  "privacyTitle": {
+    "message": "Small, focused, and private"
+  },
+  "recoverNormalBrowser": {
+    "message": "Recover normal browser"
+  },
+  "recoveryOneTabText": {
+    "message": "A normal browser window can naturally disappear when its only tab is moved Clean. If a new Raw tab is later created from that Clean workflow, the new tab can become the legitimate replacement source for that family."
+  },
+  "recoveryOneTabTitle": {
+    "message": "One-tab source"
+  },
+  "recoveryRestartText": {
+    "message": "Chromium tab and window IDs are browser-session specific. If Chromium restores an old popup without a current NotF11 relationship record, NotF11 can recover it into a normal browser surface instead of guessing an old source relationship."
+  },
+  "recoveryRestartTitle": {
+    "message": "After a browser restart"
+  },
+  "recoverySourceExistsText": {
+    "message": "The same live tab returns to that normal browser source."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "If the remembered source still exists"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 creates a real normal replacement and moves the live tab there. It does not silently attach the tab to some unrelated browser window."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "If the remembered source is gone"
+  },
+  "recoveryTitle": {
+    "message": "Recovery behavior"
+  },
+  "rememberGeometryDescription": {
+    "message": "Keep Clean windows in the same desktop footprint. Turn off for tiling window managers."
+  },
+  "rememberGeometryHelp": {
+    "message": "When enabled, NotF11 asks Chromium to preserve the previous desktop footprint across Raw ↔ Clean transitions. Turn it off when you want a tiling window manager or compositor to own placement completely."
+  },
+  "rememberGeometryTitle": {
+    "message": "Remember size & position"
+  },
+  "replacementSourceFailed": {
+    "message": "Replacement normal source window could not be created."
+  },
+  "reportIssue": {
+    "message": "Report an issue"
+  },
+  "requestFailed": {
+    "message": "NotF11 request failed."
+  },
+  "returnCurrentTab": {
+    "message": "Return current tab"
+  },
+  "sameLiveTabText": {
+    "message": "Scroll position, entered text, login/session state, navigation history and active web-app state can remain with the tab where Chromium permits."
+  },
+  "sameLiveTabTitle": {
+    "message": "Same live tab."
+  },
+  "saved": {
+    "message": "Saved."
+  },
+  "settingsAria": {
+    "message": "NotF11 settings"
+  },
+  "settingsTitle": {
+    "message": "Settings"
+  },
+  "shortcutNextHelp": {
+    "message": "Next eligible source tab"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Previous eligible source tab"
+  },
+  "shortcutToggleHelp": {
+    "message": "Enter or exit Clean mode"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 keyboard shortcut is unassigned."
+  },
+  "shortcutsAria": {
+    "message": "Keyboard shortcuts"
+  },
+  "shortcutsP1": {
+    "message": "Previous and Next are not global browser-tab cycling. They hand the Clean role to another eligible Raw tab from the same remembered source family."
+  },
+  "shortcutsP2": {
+    "message": "Browser shortcut conflicts are possible. Use Manage shortcuts in the NotF11 popup to review the commands Chromium actually assigned."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ keyboard shortcuts are unassigned.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Source"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Temporary normal bridge window could not be created."
+  },
+  "toggleCleanMode": {
+    "message": "Toggle clean mode"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Toggle current tab"
+  },
+  "toggleUnassignedNotice": {
+    "message": "Toggle clean mode is unassigned. Clean on launch requires it."
+  },
+  "unassigned": {
+    "message": "Unassigned"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Untracked popup could not be recovered into a normal browser window."
+  },
+  "windowsDesktopP1": {
+    "message": "Keep Remember size & position on when you want Raw ↔ Clean to preserve the previous desktop footprint where Chromium and the OS allow it."
+  },
+  "windowsDesktopP2": {
+    "message": "This also works well with normal Windows snapping and tools such as PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / ordinary desktop"
+  }
+}

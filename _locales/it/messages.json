@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Qualsiasi scheda, senza barra degli strumenti."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Assegna la scorciatoia per alternare la modalità Clean prima di attivare Clean all'avvio."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean all'avvio è stato disattivato perché la scorciatoia per alternare la modalità Clean non è assegnata."
+  },
+  "cleanLaunchHelp": {
+    "message": "Quando attivo, avvia in modalità Clean la prima superficie idonea del browser. NotF11 verifica che la scorciatoia principale di alternanza sia realmente assegnata prima di consentire a questa funzione di creare una situazione di ripristino non sicura."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Avvia la prima finestra del browser in modalità Clean."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean all'avvio"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Impossibile creare la finestra Clean."
+  },
+  "commandNextDescription": {
+    "message": "Mostra la scheda sorgente successiva nella finestra Clean attiva"
+  },
+  "commandPreviousDescription": {
+    "message": "Mostra la scheda sorgente precedente nella finestra Clean attiva"
+  },
+  "commandToggleDescription": {
+    "message": "Entra o esci dalla modalità Clean per la scheda attiva"
+  },
+  "defaultOff": {
+    "message": "Predefinito: Disattivato"
+  },
+  "defaultOn": {
+    "message": "Predefinito: Attivato"
+  },
+  "extensionDescription": {
+    "message": "Qualsiasi scheda del browser, senza barra degli strumenti. Trasformala in una finestra pulita e ridimensionabile."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Famiglia sorgente\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Quando una scheda lascia una normale finestra del browser e diventa Clean, NotF11 ricorda la relazione logica del browser da cui proviene."
+  },
+  "familiesP2": {
+    "message": "Precedente / Successiva può passare il ruolo Clean tra membri Raw idonei della stessa famiglia. Se un'altra finestra del browser rappresenta una famiglia diversa, NotF11 non passa a essa."
+  },
+  "familiesP3": {
+    "message": "Sono supportate più finestre Clean. I membri della famiglia già Clean vengono normalmente saltati durante lo scorrimento perché occupano già le proprie superfici Clean."
+  },
+  "familiesQuote": {
+    "message": "Clean cambia la superficie, non la famiglia."
+  },
+  "familiesTitle": {
+    "message": "Famiglie sorgente"
+  },
+  "footerPrivacy": {
+    "message": "Schede attive. Stato locale. Nessun accesso alla pagina."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 sposta quella stessa scheda attiva in una finestra popup in stile Clean senza riaprire la pagina."
+  },
+  "gettingStartedP1Before": {
+    "message": "Porta in primo piano una scheda Chromium non raggruppata e premi"
+  },
+  "gettingStartedP2": {
+    "message": "Premi di nuovo la stessa scorciatoia per riportare la scheda alla sua normale sorgente nel browser. A differenza dello schermo intero F11, la finestra Clean resta una normale finestra desktop che può essere spostata, ridimensionata, massimizzata, agganciata o disposta a riquadri."
+  },
+  "gettingStartedTitle": {
+    "message": "Per iniziare"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Scheda raggruppata non supportata"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Le schede raggruppate non sono supportate."
+  },
+  "helpDocumentation": {
+    "message": "Aiuto e documentazione"
+  },
+  "helpDocumentationLabel": {
+    "message": "Aiuto e documentazione"
+  },
+  "helpSectionsAria": {
+    "message": "Sezioni della guida"
+  },
+  "helpTitle": {
+    "message": "Aiuto NotF11"
+  },
+  "heroAction": {
+    "message": "Clean ↔ normale"
+  },
+  "heroEyebrow": {
+    "message": "QUALSIASI SCHEDA, SENZA BARRA DEGLI STRUMENTI."
+  },
+  "heroLede": {
+    "message": "NotF11 sposta la scheda Chromium attiva già aperta in una finestra desktop pulita, poi consente alla stessa scheda di tornare a una normale sorgente del browser."
+  },
+  "heroTitle": {
+    "message": "Mantieni la pagina. Elimina l'ingombro del browser."
+  },
+  "hyprlandP1": {
+    "message": "Disattiva Ricorda dimensioni e posizione quando il compositor deve gestire posizionamento, riquadri, aree di lavoro e comportamento dello scratchpad."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 continua a gestire le relazioni del browser, la rappresentazione Raw / Clean e il passaggio nella famiglia, non la topologia del desktop."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / compositor a riquadri"
+  },
+  "invalidSetting": {
+    "message": "Impostazione NotF11 non valida."
+  },
+  "issuesLink": {
+    "message": "Problemi"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Scorciatoie da tastiera"
+  },
+  "limitation1": {
+    "message": "La barra del titolo del sistema operativo resta visibile intenzionalmente."
+  },
+  "limitation2": {
+    "message": "I gruppi di schede nativi di Chromium non sono attualmente supportati."
+  },
+  "limitation3": {
+    "message": "Le app web pesanti possono ridisegnarsi brevemente mentre Chromium sposta la scheda attiva tra le finestre."
+  },
+  "limitation4": {
+    "message": "Chromium o Windows possono limitare leggermente la geometria richiesta ai bordi dello schermo."
+  },
+  "limitation5": {
+    "message": "I window manager a riquadri possono riorganizzare visibilmente il layout quando compaiono o scompaiono finestre del browser di primo livello."
+  },
+  "limitation6": {
+    "message": "Scorciatoie riservate dal browser o conflitti con altre estensioni possono lasciare non assegnate le scorciatoie suggerite."
+  },
+  "limitation7": {
+    "message": "NotF11 non sceglie le aree di lavoro Hyprland e non controlla FancyZones."
+  },
+  "limitationsTitle": {
+    "message": "Comportamenti noti e limitazioni"
+  },
+  "manageShortcuts": {
+    "message": "Gestisci scorciatoie"
+  },
+  "navFamilies": {
+    "message": "Famiglie sorgente"
+  },
+  "navGettingStarted": {
+    "message": "Per iniziare"
+  },
+  "navLimitations": {
+    "message": "Limitazioni"
+  },
+  "navNewTabs": {
+    "message": "Nuove schede"
+  },
+  "navPlacement": {
+    "message": "Posizionamento finestre"
+  },
+  "navPrivacy": {
+    "message": "Privacy"
+  },
+  "navRecovery": {
+    "message": "Ripristino"
+  },
+  "navSettings": {
+    "message": "Impostazioni"
+  },
+  "navShortcuts": {
+    "message": "Scorciatoie"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "La nuova scheda non ha potuto creare la sorgente sostitutiva della propria famiglia Clean."
+  },
+  "newTabsHelp": {
+    "message": "Controlla solo le nuove schede create da un flusso Clean di NotF11. Se disattivato, la scheda figlia resta Raw nella stessa famiglia sorgente. Se attivato, la figlia diventa un'altra finestra Clean di quella famiglia."
+  },
+  "newTabsIntro": {
+    "message": "Le nuove schede create da un flusso Clean mantengono la propria linea familiare."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Le nuove schede restano Clean = Disattivato"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ crea B\n\nA resta Clean\nB entra nella famiglia di A come Raw"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Le nuove schede restano Clean = Attivato"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ crea B\n\nA resta Clean\nB entra nella famiglia di A come Clean"
+  },
+  "newTabsP": {
+    "message": "L'impostazione cambia la rappresentazione iniziale della scheda figlia, non la sua discendenza. Un normale Ctrl+T da una normale finestra del browser resta il normale comportamento di Chromium."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Le nuove schede aperte da una finestra Clean si aprono anch'esse in Clean."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Le nuove schede restano Clean"
+  },
+  "newTabsTitle": {
+    "message": "Nuove schede da una finestra Clean"
+  },
+  "nextSourceTab": {
+    "message": "Scheda sorgente successiva"
+  },
+  "notWindowManagerText": {
+    "message": "Un posizionamento fisico inatteso non significa automaticamente che la relazione del browser sia errata."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 non è un window manager."
+  },
+  "openCurrentTabClean": {
+    "message": "Apri la scheda corrente in Clean"
+  },
+  "openHelpError": {
+    "message": "Impossibile aprire l'aiuto di NotF11."
+  },
+  "openShortcutsError": {
+    "message": "Apri la pagina delle scorciatoie delle estensioni del browser per assegnare i comandi."
+  },
+  "placementTitle": {
+    "message": "Posizionamento finestre"
+  },
+  "popupRecoverySafe": {
+    "message": "Questo popup può essere ripristinato in sicurezza."
+  },
+  "previousSourceTab": {
+    "message": "Scheda sorgente precedente"
+  },
+  "privacyCode": {
+    "message": "Schede attive.\nStato locale.\nNessun accesso alla pagina."
+  },
+  "privacyNoAccount": {
+    "message": "Nessun account"
+  },
+  "privacyNoAds": {
+    "message": "Nessuna pubblicità"
+  },
+  "privacyNoAnalytics": {
+    "message": "Nessuna analisi"
+  },
+  "privacyNoCloud": {
+    "message": "Nessun servizio cloud"
+  },
+  "privacyNoContentScripts": {
+    "message": "Nessuno script di contenuto"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Nessun permesso host"
+  },
+  "privacyNoTelemetry": {
+    "message": "Nessuna telemetria"
+  },
+  "privacyNoTracking": {
+    "message": "Nessun tracciamento"
+  },
+  "privacyP1": {
+    "message": "NotF11 non inserisce script nei siti web e non legge né modifica il contenuto delle pagine."
+  },
+  "privacyP2": {
+    "message": "L'estensione usa il proprio archivio locale/di sessione per le impostazioni e lo stato delle relazioni NotF11. La geometria della finestra può essere usata quando Ricorda dimensioni e posizione è attivo."
+  },
+  "privacyTitle": {
+    "message": "Piccolo, focalizzato e privato"
+  },
+  "recoverNormalBrowser": {
+    "message": "Ripristina browser normale"
+  },
+  "recoveryOneTabText": {
+    "message": "Una normale finestra del browser può scomparire naturalmente quando la sua unica scheda viene spostata in Clean. Se in seguito viene creata una nuova scheda Raw da quel flusso Clean, la nuova scheda può diventare la sorgente sostitutiva legittima di quella famiglia."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Sorgente con una sola scheda"
+  },
+  "recoveryRestartText": {
+    "message": "Gli ID di schede e finestre Chromium sono specifici della sessione del browser. Se Chromium ripristina un vecchio popup senza un record di relazione NotF11 corrente, NotF11 può recuperarlo in una normale superficie del browser invece di indovinare una vecchia relazione sorgente."
+  },
+  "recoveryRestartTitle": {
+    "message": "Dopo il riavvio del browser"
+  },
+  "recoverySourceExistsText": {
+    "message": "La stessa scheda attiva torna a quella normale sorgente del browser."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Se la sorgente memorizzata esiste ancora"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 crea un vero sostituto normale e vi sposta la scheda attiva. Non collega silenziosamente la scheda a una finestra del browser non correlata."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Se la sorgente memorizzata non esiste più"
+  },
+  "recoveryTitle": {
+    "message": "Comportamento di ripristino"
+  },
+  "rememberGeometryDescription": {
+    "message": "Mantieni le finestre Clean nella stessa area del desktop. Disattiva con i window manager a riquadri."
+  },
+  "rememberGeometryHelp": {
+    "message": "Quando attivo, NotF11 chiede a Chromium di conservare l'area desktop precedente durante le transizioni Raw ↔ Clean. Disattivalo quando vuoi che un window manager a riquadri o il compositor gestisca completamente il posizionamento."
+  },
+  "rememberGeometryTitle": {
+    "message": "Ricorda dimensioni e posizione"
+  },
+  "replacementSourceFailed": {
+    "message": "Impossibile creare una finestra sorgente normale sostitutiva."
+  },
+  "reportIssue": {
+    "message": "Segnala un problema"
+  },
+  "requestFailed": {
+    "message": "Richiesta NotF11 non riuscita."
+  },
+  "returnCurrentTab": {
+    "message": "Riporta la scheda corrente"
+  },
+  "sameLiveTabText": {
+    "message": "Posizione di scorrimento, testo inserito, stato di accesso/sessione, cronologia di navigazione e stato attivo dell'app web possono restare con la scheda quando Chromium lo consente."
+  },
+  "sameLiveTabTitle": {
+    "message": "La stessa scheda attiva."
+  },
+  "saved": {
+    "message": "Salvato."
+  },
+  "settingsAria": {
+    "message": "Impostazioni di NotF11"
+  },
+  "settingsTitle": {
+    "message": "Impostazioni"
+  },
+  "shortcutNextHelp": {
+    "message": "Scheda sorgente idonea successiva"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Scheda sorgente idonea precedente"
+  },
+  "shortcutToggleHelp": {
+    "message": "Entra o esci dalla modalità Clean"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 scorciatoia da tastiera non è assegnata."
+  },
+  "shortcutsAria": {
+    "message": "Scorciatoie da tastiera"
+  },
+  "shortcutsP1": {
+    "message": "Precedente e Successiva non scorrono globalmente le schede del browser. Passano il ruolo Clean a un'altra scheda Raw idonea della stessa famiglia sorgente memorizzata."
+  },
+  "shortcutsP2": {
+    "message": "Sono possibili conflitti con le scorciatoie del browser. Usa Gestisci scorciatoie nel popup di NotF11 per controllare i comandi realmente assegnati da Chromium."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ scorciatoie da tastiera non sono assegnate.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Sorgente"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Impossibile creare la finestra normale temporanea di collegamento."
+  },
+  "toggleCleanMode": {
+    "message": "Alterna modalità Clean"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Alterna scheda corrente"
+  },
+  "toggleUnassignedNotice": {
+    "message": "La scorciatoia per alternare la modalità Clean non è assegnata. Clean all'avvio la richiede."
+  },
+  "unassigned": {
+    "message": "Non assegnato"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Impossibile ripristinare il popup non tracciato in una finestra normale del browser."
+  },
+  "windowsDesktopP1": {
+    "message": "Mantieni attivo Ricorda dimensioni e posizione quando vuoi che Raw ↔ Clean conservi l'area desktop precedente dove Chromium e il sistema operativo lo consentono."
+  },
+  "windowsDesktopP2": {
+    "message": "Funziona bene anche con l'aggancio normale di Windows e strumenti come PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / desktop normale"
+  }
+}

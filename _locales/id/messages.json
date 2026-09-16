@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Tab browser apa pun, tanpa toolbar."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Tetapkan pintasan untuk mengalihkan mode Clean sebelum mengaktifkan Clean saat diluncurkan."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean saat diluncurkan dimatikan karena pintasan untuk mengalihkan mode Clean belum ditetapkan."
+  },
+  "cleanLaunchHelp": {
+    "message": "Saat aktif, permukaan browser pertama yang memenuhi syarat dimulai dalam mode Clean. NotF11 memastikan pintasan utama untuk beralih benar-benar ditetapkan sebelum fitur ini dapat menciptakan situasi pemulihan yang tidak aman."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Mulai jendela browser pertama dalam mode Clean."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean saat diluncurkan"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Jendela Clean tidak dapat dibuat."
+  },
+  "commandNextDescription": {
+    "message": "Tampilkan tab sumber berikutnya di jendela Clean yang sedang fokus"
+  },
+  "commandPreviousDescription": {
+    "message": "Tampilkan tab sumber sebelumnya di jendela Clean yang sedang fokus"
+  },
+  "commandToggleDescription": {
+    "message": "Masuk atau keluar dari mode Clean untuk tab yang sedang fokus"
+  },
+  "defaultOff": {
+    "message": "Bawaan: Mati"
+  },
+  "defaultOn": {
+    "message": "Bawaan: Aktif"
+  },
+  "extensionDescription": {
+    "message": "Tab browser apa pun, tanpa toolbar. Ubah menjadi jendela bersih yang dapat diubah ukurannya."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Keluarga sumber\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Saat sebuah tab meninggalkan jendela browser normal dan menjadi Clean, NotF11 mengingat hubungan logis browser tempat tab itu berasal."
+  },
+  "familiesP2": {
+    "message": "Sebelumnya / Berikutnya dapat menyerahkan peran Clean di antara anggota Raw yang memenuhi syarat dalam keluarga yang sama. Jika jendela browser lain mewakili keluarga berbeda, NotF11 tidak berpindah ke sana."
+  },
+  "familiesP3": {
+    "message": "Beberapa jendela Clean didukung. Anggota keluarga yang sudah Clean biasanya dilewati saat berpindah karena sudah memiliki permukaan Clean sendiri."
+  },
+  "familiesQuote": {
+    "message": "Clean mengubah permukaan, bukan keluarganya."
+  },
+  "familiesTitle": {
+    "message": "Keluarga sumber"
+  },
+  "footerPrivacy": {
+    "message": "Tab aktif. Status lokal. Tanpa akses halaman."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 memindahkan tab aktif yang sama ke jendela popup bergaya Clean tanpa membuka ulang halaman."
+  },
+  "gettingStartedP1Before": {
+    "message": "Fokuskan tab Chromium yang tidak dikelompokkan lalu tekan"
+  },
+  "gettingStartedP2": {
+    "message": "Tekan pintasan yang sama lagi untuk mengembalikan tab ke sumber browser normalnya. Berbeda dengan layar penuh F11, jendela Clean tetap menjadi jendela desktop normal yang dapat dipindahkan, diubah ukurannya, dimaksimalkan, di-snap, atau di-tile."
+  },
+  "gettingStartedTitle": {
+    "message": "Memulai"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Tab berkelompok tidak didukung"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Tab berkelompok tidak didukung."
+  },
+  "helpDocumentation": {
+    "message": "Bantuan & dokumentasi"
+  },
+  "helpDocumentationLabel": {
+    "message": "Bantuan & dokumentasi"
+  },
+  "helpSectionsAria": {
+    "message": "Bagian bantuan"
+  },
+  "helpTitle": {
+    "message": "Bantuan NotF11"
+  },
+  "heroAction": {
+    "message": "Clean ↔ normal"
+  },
+  "heroEyebrow": {
+    "message": "TAB BROWSER APA PUN, TANPA TOOLBAR."
+  },
+  "heroLede": {
+    "message": "NotF11 memindahkan tab Chromium aktif yang sudah terbuka ke jendela desktop yang bersih, lalu memungkinkan tab yang sama kembali ke sumber browser normal."
+  },
+  "heroTitle": {
+    "message": "Pertahankan halamannya. Hilangkan keruwetan browser."
+  },
+  "hyprlandP1": {
+    "message": "Matikan Ingat ukuran & posisi jika compositor harus mengatur penempatan, tiling, workspace, dan perilaku scratchpad."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 tetap mengatur hubungan browser, representasi Raw / Clean, dan serah-terima keluarga — bukan topologi desktop."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / compositor tiling"
+  },
+  "invalidSetting": {
+    "message": "Pengaturan NotF11 tidak valid."
+  },
+  "issuesLink": {
+    "message": "Masalah"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Pintasan keyboard"
+  },
+  "limitation1": {
+    "message": "Bilah judul sistem operasi sengaja tetap terlihat."
+  },
+  "limitation2": {
+    "message": "Grup tab bawaan Chromium saat ini belum didukung."
+  },
+  "limitation3": {
+    "message": "Aplikasi web berat dapat menggambar ulang sebentar saat Chromium memindahkan tab aktif antarjendela."
+  },
+  "limitation4": {
+    "message": "Chromium atau Windows dapat sedikit membatasi geometri yang diminta di tepi layar."
+  },
+  "limitation5": {
+    "message": "Window manager tiling dapat terlihat menata ulang layout saat jendela browser tingkat atas muncul atau hilang."
+  },
+  "limitation6": {
+    "message": "Pintasan yang dicadangkan browser atau konflik dengan ekstensi lain dapat membuat pintasan yang disarankan tidak ditetapkan."
+  },
+  "limitation7": {
+    "message": "NotF11 tidak memilih workspace Hyprland dan tidak mengontrol FancyZones."
+  },
+  "limitationsTitle": {
+    "message": "Perilaku yang diketahui & batasan"
+  },
+  "manageShortcuts": {
+    "message": "Kelola pintasan"
+  },
+  "navFamilies": {
+    "message": "Keluarga sumber"
+  },
+  "navGettingStarted": {
+    "message": "Memulai"
+  },
+  "navLimitations": {
+    "message": "Batasan"
+  },
+  "navNewTabs": {
+    "message": "Tab baru"
+  },
+  "navPlacement": {
+    "message": "Penempatan jendela"
+  },
+  "navPrivacy": {
+    "message": "Privasi"
+  },
+  "navRecovery": {
+    "message": "Pemulihan"
+  },
+  "navSettings": {
+    "message": "Pengaturan"
+  },
+  "navShortcuts": {
+    "message": "Pintasan"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "Tab baru tidak dapat membuat sumber pengganti untuk keluarga Clean-nya."
+  },
+  "newTabsHelp": {
+    "message": "Hanya mengontrol tab baru yang dibuat dari alur NotF11 Clean. Saat mati, tab anak tetap Raw dalam keluarga sumber yang sama. Saat aktif, tab anak menjadi jendela Clean lain dalam keluarga tersebut."
+  },
+  "newTabsIntro": {
+    "message": "Tab baru yang dibuat dari alur Clean mempertahankan garis keluarga."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Tab baru tetap Clean = Mati"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ membuat B\n\nA tetap Clean\nB bergabung ke keluarga A sebagai Raw"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Tab baru tetap Clean = Aktif"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ membuat B\n\nA tetap Clean\nB bergabung ke keluarga A sebagai Clean"
+  },
+  "newTabsP": {
+    "message": "Pengaturan ini mengubah representasi awal tab anak, bukan asal-usulnya. Ctrl+T biasa dari jendela browser normal tetap mengikuti perilaku Chromium biasa."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Tab baru yang dibuka dari jendela Clean juga terbuka sebagai Clean."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Tab baru tetap Clean"
+  },
+  "newTabsTitle": {
+    "message": "Tab baru dari jendela Clean"
+  },
+  "nextSourceTab": {
+    "message": "Tab sumber berikutnya"
+  },
+  "notWindowManagerText": {
+    "message": "Penempatan fisik yang tidak terduga tidak otomatis berarti hubungan browser salah."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 bukan window manager."
+  },
+  "openCurrentTabClean": {
+    "message": "Buka tab saat ini sebagai Clean"
+  },
+  "openHelpError": {
+    "message": "Tidak dapat membuka bantuan NotF11."
+  },
+  "openShortcutsError": {
+    "message": "Buka halaman pintasan ekstensi browser Anda untuk menetapkan perintah."
+  },
+  "placementTitle": {
+    "message": "Penempatan jendela"
+  },
+  "popupRecoverySafe": {
+    "message": "Popup ini dapat dipulihkan dengan aman."
+  },
+  "previousSourceTab": {
+    "message": "Tab sumber sebelumnya"
+  },
+  "privacyCode": {
+    "message": "Tab aktif.\nStatus lokal.\nTanpa akses halaman."
+  },
+  "privacyNoAccount": {
+    "message": "Tanpa akun"
+  },
+  "privacyNoAds": {
+    "message": "Tanpa iklan"
+  },
+  "privacyNoAnalytics": {
+    "message": "Tanpa analitik"
+  },
+  "privacyNoCloud": {
+    "message": "Tanpa layanan cloud"
+  },
+  "privacyNoContentScripts": {
+    "message": "Tanpa content script"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Tanpa izin host"
+  },
+  "privacyNoTelemetry": {
+    "message": "Tanpa telemetri"
+  },
+  "privacyNoTracking": {
+    "message": "Tanpa pelacakan"
+  },
+  "privacyP1": {
+    "message": "NotF11 tidak menyuntikkan skrip ke situs web dan tidak membaca atau mengubah isi halaman."
+  },
+  "privacyP2": {
+    "message": "Ekstensi menggunakan penyimpanan lokal/sesi miliknya sendiri untuk pengaturan dan status hubungan NotF11. Geometri jendela dapat digunakan ketika Ingat ukuran & posisi diaktifkan."
+  },
+  "privacyTitle": {
+    "message": "Kecil, fokus, dan privat"
+  },
+  "recoverNormalBrowser": {
+    "message": "Pulihkan browser normal"
+  },
+  "recoveryOneTabText": {
+    "message": "Jendela browser normal dapat hilang secara alami saat satu-satunya tab dipindahkan ke Clean. Jika kemudian tab Raw baru dibuat dari alur Clean tersebut, tab baru itu dapat menjadi sumber pengganti yang sah untuk keluarga tersebut."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Sumber satu tab"
+  },
+  "recoveryRestartText": {
+    "message": "ID tab dan jendela Chromium khusus untuk sesi browser. Jika Chromium memulihkan popup lama tanpa catatan hubungan NotF11 yang aktif, NotF11 dapat memulihkannya ke permukaan browser normal alih-alih menebak hubungan sumber lama."
+  },
+  "recoveryRestartTitle": {
+    "message": "Setelah browser dimulai ulang"
+  },
+  "recoverySourceExistsText": {
+    "message": "Tab aktif yang sama kembali ke sumber browser normal tersebut."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Jika sumber yang diingat masih ada"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 membuat pengganti normal yang nyata dan memindahkan tab aktif ke sana. NotF11 tidak diam-diam menempelkan tab ke jendela browser lain yang tidak terkait."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Jika sumber yang diingat sudah tidak ada"
+  },
+  "recoveryTitle": {
+    "message": "Perilaku pemulihan"
+  },
+  "rememberGeometryDescription": {
+    "message": "Pertahankan jendela Clean di area desktop yang sama. Matikan untuk window manager tiling."
+  },
+  "rememberGeometryHelp": {
+    "message": "Saat aktif, NotF11 meminta Chromium mempertahankan area desktop sebelumnya selama transisi Raw ↔ Clean. Matikan bila Anda ingin window manager tiling atau compositor mengatur penempatan sepenuhnya."
+  },
+  "rememberGeometryTitle": {
+    "message": "Ingat ukuran & posisi"
+  },
+  "replacementSourceFailed": {
+    "message": "Jendela sumber normal pengganti tidak dapat dibuat."
+  },
+  "reportIssue": {
+    "message": "Laporkan masalah"
+  },
+  "requestFailed": {
+    "message": "Permintaan NotF11 gagal."
+  },
+  "returnCurrentTab": {
+    "message": "Kembalikan tab saat ini"
+  },
+  "sameLiveTabText": {
+    "message": "Posisi gulir, teks yang diketik, status masuk/sesi, riwayat navigasi, dan status aktif aplikasi web dapat tetap bersama tab jika Chromium mengizinkannya."
+  },
+  "sameLiveTabTitle": {
+    "message": "Tab aktif yang sama."
+  },
+  "saved": {
+    "message": "Tersimpan."
+  },
+  "settingsAria": {
+    "message": "Pengaturan NotF11"
+  },
+  "settingsTitle": {
+    "message": "Pengaturan"
+  },
+  "shortcutNextHelp": {
+    "message": "Tab sumber berikutnya yang memenuhi syarat"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Tab sumber sebelumnya yang memenuhi syarat"
+  },
+  "shortcutToggleHelp": {
+    "message": "Masuk atau keluar dari mode Clean"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 pintasan keyboard belum ditetapkan."
+  },
+  "shortcutsAria": {
+    "message": "Pintasan keyboard"
+  },
+  "shortcutsP1": {
+    "message": "Sebelumnya dan Berikutnya bukan peralihan global antar-tab browser. Keduanya menyerahkan peran Clean ke tab Raw lain yang memenuhi syarat dalam keluarga sumber yang sama."
+  },
+  "shortcutsP2": {
+    "message": "Konflik pintasan browser dapat terjadi. Gunakan Kelola pintasan di popup NotF11 untuk melihat perintah yang benar-benar ditetapkan Chromium."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ pintasan keyboard belum ditetapkan.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Sumber"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Jendela normal sementara sebagai penghubung tidak dapat dibuat."
+  },
+  "toggleCleanMode": {
+    "message": "Alihkan mode Clean"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Alihkan tab saat ini"
+  },
+  "toggleUnassignedNotice": {
+    "message": "Pintasan untuk mengalihkan mode Clean belum ditetapkan. Clean saat diluncurkan memerlukannya."
+  },
+  "unassigned": {
+    "message": "Belum ditetapkan"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Popup yang tidak terlacak tidak dapat dipulihkan menjadi jendela browser normal."
+  },
+  "windowsDesktopP1": {
+    "message": "Biarkan Ingat ukuran & posisi aktif jika Anda ingin Raw ↔ Clean mempertahankan area desktop sebelumnya sejauh diizinkan Chromium dan sistem operasi."
+  },
+  "windowsDesktopP2": {
+    "message": "Ini juga bekerja baik dengan Windows Snap biasa dan alat seperti PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / desktop biasa"
+  }
+}

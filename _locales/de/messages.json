@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Jeder Browser-Tab, ohne Symbolleiste."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Weise zuerst das Kürzel zum Umschalten des Clean-Modus zu, bevor du Clean beim Start aktivierst."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean beim Start wurde deaktiviert, weil das Kürzel zum Umschalten des Clean-Modus nicht zugewiesen ist."
+  },
+  "cleanLaunchHelp": {
+    "message": "Wenn aktiviert, startet die erste geeignete Browseroberfläche im Clean-Modus. NotF11 prüft, ob das Hauptkürzel zum Umschalten tatsächlich zugewiesen ist, bevor diese Funktion eine unsichere Wiederherstellungssituation erzeugen könnte."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Das erste Browserfenster beim Start im Clean-Modus öffnen."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean beim Start"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Clean-Fenster konnte nicht erstellt werden."
+  },
+  "commandNextDescription": {
+    "message": "Nächsten Quell-Tab im fokussierten Clean-Fenster anzeigen"
+  },
+  "commandPreviousDescription": {
+    "message": "Vorherigen Quell-Tab im fokussierten Clean-Fenster anzeigen"
+  },
+  "commandToggleDescription": {
+    "message": "Clean-Modus für den fokussierten Tab ein- oder ausschalten"
+  },
+  "defaultOff": {
+    "message": "Standard: Aus"
+  },
+  "defaultOn": {
+    "message": "Standard: Ein"
+  },
+  "extensionDescription": {
+    "message": "Jeden Browser-Tab ohne Symbolleiste nutzen. In ein sauberes, frei skalierbares Fenster verwandeln."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Quellfamilie\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Wenn ein Tab ein normales Browserfenster verlässt und Clean wird, merkt sich NotF11 die logische Browserbeziehung, aus der er stammt."
+  },
+  "familiesP2": {
+    "message": "Vorheriger / Nächster kann die Clean-Rolle zwischen geeigneten Raw-Mitgliedern derselben Familie übergeben. Gehört ein anderes Browserfenster zu einer anderen Familie, wechselt NotF11 nicht dorthin."
+  },
+  "familiesP3": {
+    "message": "Mehrere Clean-Fenster werden unterstützt. Familienmitglieder, die bereits Clean sind, werden beim Durchschalten normalerweise übersprungen, weil sie bereits eigene Clean-Flächen belegen."
+  },
+  "familiesQuote": {
+    "message": "Clean ändert die Oberfläche, nicht die Familie."
+  },
+  "familiesTitle": {
+    "message": "Quellfamilien"
+  },
+  "footerPrivacy": {
+    "message": "Live-Tabs. Lokaler Zustand. Kein Seitenzugriff."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 verschiebt denselben Live-Tab in ein Clean-Popup-Fenster, ohne die Seite neu zu öffnen."
+  },
+  "gettingStartedP1Before": {
+    "message": "Fokussiere einen nicht gruppierten Chromium-Tab und drücke"
+  },
+  "gettingStartedP2": {
+    "message": "Drücke dasselbe Kürzel erneut, um den Tab zu seiner normalen Browserquelle zurückzuführen. Anders als F11-Vollbild bleibt das Clean-Fenster ein normales Desktop-Fenster, das verschoben, skaliert, maximiert, angedockt oder gekachelt werden kann."
+  },
+  "gettingStartedTitle": {
+    "message": "Erste Schritte"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Gruppierter Tab nicht unterstützt"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Gruppierte Tabs werden nicht unterstützt."
+  },
+  "helpDocumentation": {
+    "message": "Hilfe und Dokumentation"
+  },
+  "helpDocumentationLabel": {
+    "message": "Hilfe und Dokumentation"
+  },
+  "helpSectionsAria": {
+    "message": "Hilfebereiche"
+  },
+  "helpTitle": {
+    "message": "NotF11-Hilfe"
+  },
+  "heroAction": {
+    "message": "Clean ↔ normal"
+  },
+  "heroEyebrow": {
+    "message": "JEDER BROWSER-TAB, OHNE SYMBOLLEISTE."
+  },
+  "heroLede": {
+    "message": "NotF11 verschiebt den bereits geöffneten Live-Chromium-Tab in ein sauberes Desktop-Fenster und lässt denselben Tab anschließend zu einer normalen Browserquelle zurückkehren."
+  },
+  "heroTitle": {
+    "message": "Behalte die Seite. Entferne den Browser-Ballast."
+  },
+  "hyprlandP1": {
+    "message": "Schalte Größe und Position merken aus, wenn der Compositor Platzierung, Kachelung, Arbeitsflächen und Scratchpad-Verhalten übernehmen soll."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 verwaltet weiterhin Browserbeziehungen, Raw-/Clean-Darstellung und Familienübergaben — nicht die Desktop-Topologie."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / Kachel-Compositor"
+  },
+  "invalidSetting": {
+    "message": "Ungültige NotF11-Einstellung."
+  },
+  "issuesLink": {
+    "message": "Probleme"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Tastenkürzel"
+  },
+  "limitation1": {
+    "message": "Die Titelleiste des Betriebssystems bleibt absichtlich sichtbar."
+  },
+  "limitation2": {
+    "message": "Native Chromium-Tabgruppen werden derzeit nicht unterstützt."
+  },
+  "limitation3": {
+    "message": "Aufwendige Web-Apps können kurz neu zeichnen, während Chromium den Live-Tab zwischen Fenstern verschiebt."
+  },
+  "limitation4": {
+    "message": "Chromium oder Windows kann angeforderte Fenstermaße an Bildschirmrändern leicht begrenzen."
+  },
+  "limitation5": {
+    "message": "Kachel-Fenstermanager können sichtbar neu anordnen, wenn Browserfenster oberster Ebene erscheinen oder verschwinden."
+  },
+  "limitation6": {
+    "message": "Vom Browser reservierte Kürzel oder Konflikte mit anderen Erweiterungen können dazu führen, dass vorgeschlagene Kürzel nicht zugewiesen sind."
+  },
+  "limitation7": {
+    "message": "NotF11 wählt keine Hyprland-Arbeitsflächen und steuert FancyZones nicht."
+  },
+  "limitationsTitle": {
+    "message": "Bekanntes Verhalten und Einschränkungen"
+  },
+  "manageShortcuts": {
+    "message": "Tastenkürzel verwalten"
+  },
+  "navFamilies": {
+    "message": "Quellfamilien"
+  },
+  "navGettingStarted": {
+    "message": "Erste Schritte"
+  },
+  "navLimitations": {
+    "message": "Einschränkungen"
+  },
+  "navNewTabs": {
+    "message": "Neue Tabs"
+  },
+  "navPlacement": {
+    "message": "Fensterplatzierung"
+  },
+  "navPrivacy": {
+    "message": "Datenschutz"
+  },
+  "navRecovery": {
+    "message": "Wiederherstellung"
+  },
+  "navSettings": {
+    "message": "Einstellungen"
+  },
+  "navShortcuts": {
+    "message": "Tastenkürzel"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "Der neue Tab konnte die Ersatzquelle seiner Clean-Familie nicht erstellen."
+  },
+  "newTabsHelp": {
+    "message": "Steuert nur neue Tabs, die aus einem Clean-NotF11-Workflow entstehen. Ist es aus, bleibt der Kind-Tab Raw in derselben Quellfamilie. Ist es ein, wird der Kind-Tab zu einem weiteren Clean-Fenster dieser Familie."
+  },
+  "newTabsIntro": {
+    "message": "Neue Tabs aus einem Clean-Workflow behalten ihre Familienzugehörigkeit."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Neue Tabs bleiben Clean = Aus"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ erstellt B\n\nA bleibt Clean\nB tritt A's Familie als Raw bei"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Neue Tabs bleiben Clean = Ein"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ erstellt B\n\nA bleibt Clean\nB tritt A's Familie als Clean bei"
+  },
+  "newTabsP": {
+    "message": "Die Einstellung ändert die anfängliche Darstellung des Kind-Tabs, nicht seine Abstammung. Ein normales Ctrl+T in einem normalen Browserfenster bleibt normales Chromium-Verhalten."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Neue Tabs aus einem Clean-Fenster werden ebenfalls Clean geöffnet."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Neue Tabs bleiben Clean"
+  },
+  "newTabsTitle": {
+    "message": "Neue Tabs aus einem Clean-Fenster"
+  },
+  "nextSourceTab": {
+    "message": "Nächster Quell-Tab"
+  },
+  "notWindowManagerText": {
+    "message": "Eine unerwartete physische Platzierung bedeutet nicht automatisch, dass die Browserbeziehung falsch ist."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 ist kein Fenstermanager."
+  },
+  "openCurrentTabClean": {
+    "message": "Aktuellen Tab Clean öffnen"
+  },
+  "openHelpError": {
+    "message": "NotF11-Hilfe konnte nicht geöffnet werden."
+  },
+  "openShortcutsError": {
+    "message": "Öffne die Seite für Erweiterungs-Tastenkürzel deines Browsers, um Befehle zuzuweisen."
+  },
+  "placementTitle": {
+    "message": "Fensterplatzierung"
+  },
+  "popupRecoverySafe": {
+    "message": "Dieses Popup kann sicher wiederhergestellt werden."
+  },
+  "previousSourceTab": {
+    "message": "Vorheriger Quell-Tab"
+  },
+  "privacyCode": {
+    "message": "Live-Tabs.\nLokaler Zustand.\nKein Seitenzugriff."
+  },
+  "privacyNoAccount": {
+    "message": "Kein Konto"
+  },
+  "privacyNoAds": {
+    "message": "Keine Werbung"
+  },
+  "privacyNoAnalytics": {
+    "message": "Keine Analysen"
+  },
+  "privacyNoCloud": {
+    "message": "Kein Cloud-Dienst"
+  },
+  "privacyNoContentScripts": {
+    "message": "Keine Content-Skripte"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Keine Host-Berechtigungen"
+  },
+  "privacyNoTelemetry": {
+    "message": "Keine Telemetrie"
+  },
+  "privacyNoTracking": {
+    "message": "Kein Tracking"
+  },
+  "privacyP1": {
+    "message": "NotF11 fügt keine Skripte in Websites ein und liest oder verändert keine Seiteninhalte."
+  },
+  "privacyP2": {
+    "message": "Die Erweiterung nutzt ihren eigenen lokalen/Sitzungsspeicher für Einstellungen und den NotF11-Beziehungszustand. Fenstergeometrie kann verwendet werden, wenn Größe und Position merken aktiviert ist."
+  },
+  "privacyTitle": {
+    "message": "Klein, fokussiert und privat"
+  },
+  "recoverNormalBrowser": {
+    "message": "Normales Browserfenster wiederherstellen"
+  },
+  "recoveryOneTabText": {
+    "message": "Ein normales Browserfenster kann natürlich verschwinden, wenn sein einziger Tab Clean verschoben wird. Wird später aus diesem Clean-Workflow ein neuer Raw-Tab erstellt, kann er zur legitimen Ersatzquelle dieser Familie werden."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Quelle mit nur einem Tab"
+  },
+  "recoveryRestartText": {
+    "message": "Chromium-Tab- und Fenster-IDs gelten nur für die jeweilige Browser-Sitzung. Stellt Chromium ein altes Popup ohne aktuellen NotF11-Beziehungsdatensatz wieder her, kann NotF11 es in eine normale Browseroberfläche zurückholen, statt eine alte Quellbeziehung zu erraten."
+  },
+  "recoveryRestartTitle": {
+    "message": "Nach einem Browser-Neustart"
+  },
+  "recoverySourceExistsText": {
+    "message": "Derselbe Live-Tab kehrt zu dieser normalen Browserquelle zurück."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Wenn die gemerkte Quelle noch existiert"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 erstellt einen echten normalen Ersatz und verschiebt den Live-Tab dorthin. Der Tab wird nicht stillschweigend an ein fremdes Browserfenster angehängt."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Wenn die gemerkte Quelle nicht mehr existiert"
+  },
+  "recoveryTitle": {
+    "message": "Wiederherstellungsverhalten"
+  },
+  "rememberGeometryDescription": {
+    "message": "Clean-Fenster im gleichen Desktop-Bereich halten. Für Kachel-Fenstermanager ausschalten."
+  },
+  "rememberGeometryHelp": {
+    "message": "Wenn aktiviert, bittet NotF11 Chromium, den bisherigen Desktop-Bereich bei Raw ↔ Clean-Übergängen zu erhalten. Schalte es aus, wenn ein Kachel-Fenstermanager oder Compositor die Platzierung vollständig übernehmen soll."
+  },
+  "rememberGeometryTitle": {
+    "message": "Größe und Position merken"
+  },
+  "replacementSourceFailed": {
+    "message": "Normales Ersatz-Quellfenster konnte nicht erstellt werden."
+  },
+  "reportIssue": {
+    "message": "Problem melden"
+  },
+  "requestFailed": {
+    "message": "NotF11-Anfrage fehlgeschlagen."
+  },
+  "returnCurrentTab": {
+    "message": "Aktuellen Tab zurückführen"
+  },
+  "sameLiveTabText": {
+    "message": "Scrollposition, eingegebener Text, Anmelde-/Sitzungsstatus, Navigationsverlauf und aktiver Web-App-Status können beim Tab erhalten bleiben, soweit Chromium dies zulässt."
+  },
+  "sameLiveTabTitle": {
+    "message": "Derselbe Live-Tab."
+  },
+  "saved": {
+    "message": "Gespeichert."
+  },
+  "settingsAria": {
+    "message": "NotF11-Einstellungen"
+  },
+  "settingsTitle": {
+    "message": "Einstellungen"
+  },
+  "shortcutNextHelp": {
+    "message": "Nächster geeigneter Quell-Tab"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Vorheriger geeigneter Quell-Tab"
+  },
+  "shortcutToggleHelp": {
+    "message": "Clean-Modus ein- oder ausschalten"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 Tastenkürzel ist nicht zugewiesen."
+  },
+  "shortcutsAria": {
+    "message": "Tastenkürzel"
+  },
+  "shortcutsP1": {
+    "message": "Vorheriger und Nächster sind keine globale Browser-Tab-Navigation. Sie übergeben die Clean-Rolle an einen anderen geeigneten Raw-Tab aus derselben gemerkten Quellfamilie."
+  },
+  "shortcutsP2": {
+    "message": "Konflikte mit Browser-Tastenkürzeln sind möglich. Verwende Tastenkürzel verwalten im NotF11-Popup, um die von Chromium tatsächlich zugewiesenen Befehle zu prüfen."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ Tastenkürzel sind nicht zugewiesen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Quellcode"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Temporäres normales Brückenfenster konnte nicht erstellt werden."
+  },
+  "toggleCleanMode": {
+    "message": "Clean-Modus umschalten"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Aktuellen Tab umschalten"
+  },
+  "toggleUnassignedNotice": {
+    "message": "Das Kürzel zum Umschalten des Clean-Modus ist nicht zugewiesen. Clean beim Start benötigt es."
+  },
+  "unassigned": {
+    "message": "Nicht zugewiesen"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Nicht verfolgtes Popup konnte nicht in ein normales Browserfenster wiederhergestellt werden."
+  },
+  "windowsDesktopP1": {
+    "message": "Lass Größe und Position merken eingeschaltet, wenn Raw ↔ Clean den bisherigen Desktop-Bereich erhalten soll, soweit Chromium und das Betriebssystem dies zulassen."
+  },
+  "windowsDesktopP2": {
+    "message": "Das funktioniert auch gut mit normalem Windows-Andocken und Werkzeugen wie PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / normaler Desktop"
+  }
+}

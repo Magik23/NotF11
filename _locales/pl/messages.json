@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Dowolna karta, bez paska narzędzi."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Przypisz skrót przełączania trybu Clean przed włączeniem Clean przy uruchomieniu."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean przy uruchomieniu został wyłączony, ponieważ skrót przełączania trybu Clean nie jest przypisany."
+  },
+  "cleanLaunchHelp": {
+    "message": "Po włączeniu uruchamia pierwszą odpowiednią powierzchnię przeglądarki w trybie Clean. NotF11 sprawdza, czy główny skrót przełączania jest rzeczywiście przypisany, zanim pozwoli tej funkcji stworzyć potencjalnie niebezpieczną sytuację odzyskiwania."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Uruchom pierwsze okno przeglądarki w trybie Clean."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean przy uruchomieniu"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Nie udało się utworzyć okna Clean."
+  },
+  "commandNextDescription": {
+    "message": "Pokaż następną kartę źródłową w aktywnym oknie Clean"
+  },
+  "commandPreviousDescription": {
+    "message": "Pokaż poprzednią kartę źródłową w aktywnym oknie Clean"
+  },
+  "commandToggleDescription": {
+    "message": "Włącz lub wyłącz tryb Clean dla aktywnej karty"
+  },
+  "defaultOff": {
+    "message": "Domyślnie: Wyłączone"
+  },
+  "defaultOn": {
+    "message": "Domyślnie: Włączone"
+  },
+  "extensionDescription": {
+    "message": "Dowolna karta przeglądarki bez paska narzędzi. Zmień ją w czyste, skalowalne okno."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Rodzina źródłowa\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Gdy karta opuszcza zwykłe okno przeglądarki i staje się Clean, NotF11 zapamiętuje logiczną relację przeglądarki, z której pochodziła."
+  },
+  "familiesP2": {
+    "message": "Poprzednia / Następna może przekazywać rolę Clean między odpowiednimi członkami Raw tej samej rodziny. Jeśli inne okno przeglądarki reprezentuje inną rodzinę, NotF11 do niej nie przechodzi."
+  },
+  "familiesP3": {
+    "message": "Obsługiwanych jest wiele okien Clean. Członkowie rodziny, którzy już są Clean, są zwykle pomijani podczas przełączania, ponieważ mają już własne powierzchnie Clean."
+  },
+  "familiesQuote": {
+    "message": "Clean zmienia powierzchnię, nie rodzinę."
+  },
+  "familiesTitle": {
+    "message": "Rodziny źródeł"
+  },
+  "footerPrivacy": {
+    "message": "Aktywne karty. Stan lokalny. Bez dostępu do strony."
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11 przenosi tę samą aktywną kartę do okna typu popup Clean bez ponownego otwierania strony."
+  },
+  "gettingStartedP1Before": {
+    "message": "Ustaw fokus na dowolnej niezgrupowanej karcie Chromium i naciśnij"
+  },
+  "gettingStartedP2": {
+    "message": "Naciśnij ten sam skrót ponownie, aby przywrócić kartę do jej zwykłego źródła. W przeciwieństwie do pełnego ekranu F11 okno Clean pozostaje zwykłym oknem pulpitu, które można przenosić, zmieniać jego rozmiar, maksymalizować, przyciągać lub układać kafelkowo."
+  },
+  "gettingStartedTitle": {
+    "message": "Pierwsze kroki"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Zgrupowana karta nie jest obsługiwana"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Zgrupowane karty nie są obsługiwane."
+  },
+  "helpDocumentation": {
+    "message": "Pomoc i dokumentacja"
+  },
+  "helpDocumentationLabel": {
+    "message": "Pomoc i dokumentacja"
+  },
+  "helpSectionsAria": {
+    "message": "Sekcje pomocy"
+  },
+  "helpTitle": {
+    "message": "Pomoc NotF11"
+  },
+  "heroAction": {
+    "message": "Clean ↔ zwykłe"
+  },
+  "heroEyebrow": {
+    "message": "DOWOLNA KARTA, BEZ PASKA NARZĘDZI."
+  },
+  "heroLede": {
+    "message": "NotF11 przenosi już otwartą aktywną kartę Chromium do czystego okna pulpitu, a potem pozwala tej samej karcie wrócić do zwykłego źródła przeglądarki."
+  },
+  "heroTitle": {
+    "message": "Zachowaj stronę. Usuń zbędny interfejs przeglądarki."
+  },
+  "hyprlandP1": {
+    "message": "Wyłącz Zapamiętaj rozmiar i pozycję, jeśli kompozytor ma sterować położeniem, kafelkowaniem, obszarami roboczymi i zachowaniem scratchpada."
+  },
+  "hyprlandP2": {
+    "message": "NotF11 nadal kontroluje relacje przeglądarki, reprezentację Raw / Clean i przekazywanie w rodzinie — nie topologię pulpitu."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / kompozytor kafelkowy"
+  },
+  "invalidSetting": {
+    "message": "Nieprawidłowe ustawienie NotF11."
+  },
+  "issuesLink": {
+    "message": "Problemy"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Skróty klawiaturowe"
+  },
+  "limitation1": {
+    "message": "Pasek tytułu systemu operacyjnego celowo pozostaje widoczny."
+  },
+  "limitation2": {
+    "message": "Natywne grupy kart Chromium nie są obecnie obsługiwane."
+  },
+  "limitation3": {
+    "message": "Ciężkie aplikacje webowe mogą na chwilę przerysować się, gdy Chromium przenosi aktywną kartę między oknami."
+  },
+  "limitation4": {
+    "message": "Chromium lub Windows może nieznacznie ograniczać żądaną geometrię przy krawędziach ekranu."
+  },
+  "limitation5": {
+    "message": "Kafelkowe menedżery okien mogą widocznie przeorganizować układ, gdy pojawiają się lub znikają główne okna przeglądarki."
+  },
+  "limitation6": {
+    "message": "Skróty zarezerwowane przez przeglądarkę lub konflikty z innymi rozszerzeniami mogą pozostawić sugerowane skróty bez przypisania."
+  },
+  "limitation7": {
+    "message": "NotF11 nie wybiera obszarów roboczych Hyprland i nie steruje FancyZones."
+  },
+  "limitationsTitle": {
+    "message": "Znane zachowania i ograniczenia"
+  },
+  "manageShortcuts": {
+    "message": "Zarządzaj skrótami"
+  },
+  "navFamilies": {
+    "message": "Rodziny źródeł"
+  },
+  "navGettingStarted": {
+    "message": "Pierwsze kroki"
+  },
+  "navLimitations": {
+    "message": "Ograniczenia"
+  },
+  "navNewTabs": {
+    "message": "Nowe karty"
+  },
+  "navPlacement": {
+    "message": "Położenie okien"
+  },
+  "navPrivacy": {
+    "message": "Prywatność"
+  },
+  "navRecovery": {
+    "message": "Odzyskiwanie"
+  },
+  "navSettings": {
+    "message": "Ustawienia"
+  },
+  "navShortcuts": {
+    "message": "Skróty"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "Nowa karta nie mogła utworzyć zastępczego źródła swojej rodziny Clean."
+  },
+  "newTabsHelp": {
+    "message": "Steruje tylko nowymi kartami utworzonymi z przepływu Clean NotF11. Po wyłączeniu karta potomna pozostaje Raw w tej samej rodzinie źródłowej. Po włączeniu staje się kolejnym oknem Clean tej rodziny."
+  },
+  "newTabsIntro": {
+    "message": "Nowe karty utworzone z przepływu Clean zachowują przynależność rodzinną."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Nowe karty pozostają Clean = Wyłączone"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ tworzy B\n\nA pozostaje Clean\nB dołącza do rodziny A jako Raw"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Nowe karty pozostają Clean = Włączone"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ tworzy B\n\nA pozostaje Clean\nB dołącza do rodziny A jako Clean"
+  },
+  "newTabsP": {
+    "message": "Ustawienie zmienia początkową reprezentację karty potomnej, a nie jej pochodzenie. Zwykłe Ctrl+T w zwykłym oknie przeglądarki pozostaje zwykłym zachowaniem Chromium."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Nowe karty otwarte z okna Clean również otwierają się jako Clean."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Nowe karty pozostają Clean"
+  },
+  "newTabsTitle": {
+    "message": "Nowe karty z okna Clean"
+  },
+  "nextSourceTab": {
+    "message": "Następna karta źródłowa"
+  },
+  "notWindowManagerText": {
+    "message": "Nieoczekiwane fizyczne położenie nie oznacza automatycznie, że relacja przeglądarki jest błędna."
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11 nie jest menedżerem okien."
+  },
+  "openCurrentTabClean": {
+    "message": "Otwórz bieżącą kartę jako Clean"
+  },
+  "openHelpError": {
+    "message": "Nie udało się otworzyć pomocy NotF11."
+  },
+  "openShortcutsError": {
+    "message": "Otwórz stronę skrótów rozszerzeń w przeglądarce, aby przypisać polecenia."
+  },
+  "placementTitle": {
+    "message": "Położenie okien"
+  },
+  "popupRecoverySafe": {
+    "message": "To okno podręczne można bezpiecznie odzyskać."
+  },
+  "previousSourceTab": {
+    "message": "Poprzednia karta źródłowa"
+  },
+  "privacyCode": {
+    "message": "Aktywne karty.\nStan lokalny.\nBez dostępu do strony."
+  },
+  "privacyNoAccount": {
+    "message": "Bez konta"
+  },
+  "privacyNoAds": {
+    "message": "Bez reklam"
+  },
+  "privacyNoAnalytics": {
+    "message": "Bez analityki"
+  },
+  "privacyNoCloud": {
+    "message": "Bez usługi chmurowej"
+  },
+  "privacyNoContentScripts": {
+    "message": "Bez skryptów treści"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Bez uprawnień hosta"
+  },
+  "privacyNoTelemetry": {
+    "message": "Bez telemetrii"
+  },
+  "privacyNoTracking": {
+    "message": "Bez śledzenia"
+  },
+  "privacyP1": {
+    "message": "NotF11 nie wstrzykuje skryptów do stron internetowych i nie odczytuje ani nie modyfikuje ich zawartości."
+  },
+  "privacyP2": {
+    "message": "Rozszerzenie używa własnej pamięci lokalnej/sesyjnej dla ustawień i stanu relacji NotF11. Geometria okna może być używana, gdy Zapamiętaj rozmiar i pozycję jest włączone."
+  },
+  "privacyTitle": {
+    "message": "Mały, skupiony i prywatny"
+  },
+  "recoverNormalBrowser": {
+    "message": "Przywróć zwykłe okno przeglądarki"
+  },
+  "recoveryOneTabText": {
+    "message": "Zwykłe okno przeglądarki może naturalnie zniknąć, gdy jego jedyna karta zostanie przeniesiona do Clean. Jeśli później z tego przepływu Clean zostanie utworzona nowa karta Raw, może stać się prawidłowym zastępczym źródłem tej rodziny."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Źródło z jedną kartą"
+  },
+  "recoveryRestartText": {
+    "message": "Identyfikatory kart i okien Chromium są specyficzne dla sesji przeglądarki. Jeśli Chromium przywróci stare okno popup bez aktualnego rekordu relacji NotF11, NotF11 może odzyskać je jako zwykłą powierzchnię przeglądarki zamiast zgadywać starą relację źródłową."
+  },
+  "recoveryRestartTitle": {
+    "message": "Po ponownym uruchomieniu przeglądarki"
+  },
+  "recoverySourceExistsText": {
+    "message": "Ta sama aktywna karta wraca do tego zwykłego źródła przeglądarki."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Jeśli zapamiętane źródło nadal istnieje"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11 tworzy prawdziwe zwykłe okno zastępcze i przenosi tam aktywną kartę. Nie dołącza po cichu karty do niepowiązanego okna przeglądarki."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Jeśli zapamiętane źródło zniknęło"
+  },
+  "recoveryTitle": {
+    "message": "Zachowanie odzyskiwania"
+  },
+  "rememberGeometryDescription": {
+    "message": "Utrzymuj okna Clean w tym samym obszarze pulpitu. Wyłącz dla kafelkowych menedżerów okien."
+  },
+  "rememberGeometryHelp": {
+    "message": "Po włączeniu NotF11 prosi Chromium o zachowanie poprzedniego obszaru pulpitu podczas przejść Raw ↔ Clean. Wyłącz, jeśli kafelkowy menedżer okien lub kompozytor ma w pełni kontrolować rozmieszczenie."
+  },
+  "rememberGeometryTitle": {
+    "message": "Zapamiętaj rozmiar i pozycję"
+  },
+  "replacementSourceFailed": {
+    "message": "Nie udało się utworzyć zastępczego zwykłego okna źródłowego."
+  },
+  "reportIssue": {
+    "message": "Zgłoś problem"
+  },
+  "requestFailed": {
+    "message": "Żądanie NotF11 nie powiodło się."
+  },
+  "returnCurrentTab": {
+    "message": "Przywróć bieżącą kartę"
+  },
+  "sameLiveTabText": {
+    "message": "Pozycja przewijania, wpisany tekst, stan logowania/sesji, historia nawigacji i aktywny stan aplikacji webowej mogą pozostać z kartą, jeśli Chromium na to pozwala."
+  },
+  "sameLiveTabTitle": {
+    "message": "Ta sama aktywna karta."
+  },
+  "saved": {
+    "message": "Zapisano."
+  },
+  "settingsAria": {
+    "message": "Ustawienia NotF11"
+  },
+  "settingsTitle": {
+    "message": "Ustawienia"
+  },
+  "shortcutNextHelp": {
+    "message": "Następna odpowiednia karta źródłowa"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Poprzednia odpowiednia karta źródłowa"
+  },
+  "shortcutToggleHelp": {
+    "message": "Wejdź lub wyjdź z trybu Clean"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 skrót klawiaturowy nie jest przypisany."
+  },
+  "shortcutsAria": {
+    "message": "Skróty klawiaturowe"
+  },
+  "shortcutsP1": {
+    "message": "Poprzednia i Następna nie przełączają globalnie kart przeglądarki. Przekazują rolę Clean innej odpowiedniej karcie Raw z tej samej zapamiętanej rodziny źródłowej."
+  },
+  "shortcutsP2": {
+    "message": "Możliwe są konflikty skrótów przeglądarki. Użyj opcji Zarządzaj skrótami w oknie NotF11, aby sprawdzić polecenia faktycznie przypisane przez Chromium."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ skrótów klawiaturowych nie jest przypisanych.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Kod źródłowy"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Nie udało się utworzyć tymczasowego zwykłego okna pośredniego."
+  },
+  "toggleCleanMode": {
+    "message": "Przełącz tryb Clean"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Przełącz bieżącą kartę"
+  },
+  "toggleUnassignedNotice": {
+    "message": "Skrót przełączania trybu Clean nie jest przypisany. Clean przy uruchomieniu go wymaga."
+  },
+  "unassigned": {
+    "message": "Nieprzypisany"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Nie udało się odzyskać nieśledzonego okna podręcznego jako zwykłego okna przeglądarki."
+  },
+  "windowsDesktopP1": {
+    "message": "Pozostaw Zapamiętaj rozmiar i pozycję włączone, jeśli Raw ↔ Clean ma zachowywać poprzedni obszar pulpitu tam, gdzie pozwalają na to Chromium i system operacyjny."
+  },
+  "windowsDesktopP2": {
+    "message": "Działa to również dobrze ze standardowym przyciąganiem okien Windows i narzędziami takimi jak PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / zwykły pulpit"
+  }
+}

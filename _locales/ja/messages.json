@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "どのブラウザータブでも、ツールバーなし。"
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "「起動時にClean」を有効にする前に、Cleanモード切り替えのショートカットを割り当ててください。"
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Cleanモード切り替えのショートカットが未割り当てのため、「起動時にClean」はオフになりました。"
+  },
+  "cleanLaunchHelp": {
+    "message": "有効にすると、最初の対象ブラウザー画面をCleanモードで開始します。NotF11は、この機能によって安全に復元できない状態が生じないよう、メインの切り替えショートカットが実際に割り当てられていることを確認します。"
+  },
+  "cleanOnLaunchDescription": {
+    "message": "最初のブラウザーウィンドウをCleanモードで開始します。"
+  },
+  "cleanOnLaunchTitle": {
+    "message": "起動時にClean"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Cleanウィンドウを作成できませんでした。"
+  },
+  "commandNextDescription": {
+    "message": "フォーカス中のCleanウィンドウで次のソースタブを表示"
+  },
+  "commandPreviousDescription": {
+    "message": "フォーカス中のCleanウィンドウで前のソースタブを表示"
+  },
+  "commandToggleDescription": {
+    "message": "フォーカス中のタブでCleanモードを開始または終了"
+  },
+  "defaultOff": {
+    "message": "既定: オフ"
+  },
+  "defaultOn": {
+    "message": "既定: オン"
+  },
+  "extensionDescription": {
+    "message": "どのブラウザータブでも、ツールバーなしのクリーンでサイズ変更可能なウィンドウにできます。"
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "ソースファミリー\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "タブが通常のブラウザーウィンドウを離れてCleanになると、NotF11はそのタブが属していた論理的なブラウザー関係を記憶します。"
+  },
+  "familiesP2": {
+    "message": "前へ / 次へは、同じファミリーの対象Rawメンバー間でCleanの役割を引き渡せます。別のブラウザーウィンドウが別ファミリーなら、NotF11はそこへ移りません。"
+  },
+  "familiesP3": {
+    "message": "複数のCleanウィンドウに対応しています。すでにCleanのファミリーメンバーは独自のClean表示面を持っているため、通常は切り替え対象から除外されます。"
+  },
+  "familiesQuote": {
+    "message": "Cleanは表示面を変えます。ファミリーは変えません。"
+  },
+  "familiesTitle": {
+    "message": "ソースファミリー"
+  },
+  "footerPrivacy": {
+    "message": "ライブタブ。ローカル状態。ページへのアクセスなし。"
+  },
+  "gettingStartedP1After": {
+    "message": "NotF11は、ページを開き直さずに、その同じライブタブをCleanスタイルのポップアップウィンドウへ移動します。"
+  },
+  "gettingStartedP1Before": {
+    "message": "グループ化されていないChromiumタブにフォーカスして、次を押します"
+  },
+  "gettingStartedP2": {
+    "message": "同じショートカットをもう一度押すと、タブは通常のブラウザーソースへ戻ります。F11の全画面表示とは異なり、Cleanウィンドウは移動、サイズ変更、最大化、スナップ、タイル配置ができる通常のデスクトップウィンドウです。"
+  },
+  "gettingStartedTitle": {
+    "message": "はじめに"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "グループ化されたタブは未対応"
+  },
+  "groupedTabsUnsupported": {
+    "message": "グループ化されたタブはサポートされていません。"
+  },
+  "helpDocumentation": {
+    "message": "ヘルプとドキュメント"
+  },
+  "helpDocumentationLabel": {
+    "message": "ヘルプとドキュメント"
+  },
+  "helpSectionsAria": {
+    "message": "ヘルプのセクション"
+  },
+  "helpTitle": {
+    "message": "NotF11 ヘルプ"
+  },
+  "heroAction": {
+    "message": "Clean ↔ 通常"
+  },
+  "heroEyebrow": {
+    "message": "どのブラウザータブでも、ツールバーなし。"
+  },
+  "heroLede": {
+    "message": "NotF11は、すでに開いているChromiumのライブタブをクリーンなデスクトップウィンドウへ移動し、その同じタブを通常のブラウザーソースへ戻せるようにします。"
+  },
+  "heroTitle": {
+    "message": "ページはそのまま。ブラウザーの余計なUIだけをなくす。"
+  },
+  "hyprlandP1": {
+    "message": "配置、タイル、ワークスペース、スクラッチパッド動作をコンポジターに任せる場合は、「サイズと位置を記憶」をオフにします。"
+  },
+  "hyprlandP2": {
+    "message": "NotF11が管理するのはブラウザー関係、Raw / Cleanの表示形態、ファミリー内の引き渡しです。デスクトップのトポロジーではありません。"
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / タイル型コンポジター"
+  },
+  "invalidSetting": {
+    "message": "NotF11の設定が無効です。"
+  },
+  "issuesLink": {
+    "message": "問題"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "キーボードショートカット"
+  },
+  "limitation1": {
+    "message": "OSのタイトルバーは意図的に表示されたままです。"
+  },
+  "limitation2": {
+    "message": "Chromium標準のタブグループは現在サポートされていません。"
+  },
+  "limitation3": {
+    "message": "重いWebアプリでは、Chromiumがライブタブをウィンドウ間で移動するときに一瞬再描画される場合があります。"
+  },
+  "limitation4": {
+    "message": "ChromiumまたはWindowsが画面端で指定ジオメトリをわずかに調整する場合があります。"
+  },
+  "limitation5": {
+    "message": "タイル型ウィンドウマネージャーでは、トップレベルのブラウザーウィンドウが現れたり消えたりすると、見た目上レイアウトが再配置される場合があります。"
+  },
+  "limitation6": {
+    "message": "ブラウザー予約済みショートカットや他の拡張機能との競合により、推奨ショートカットが未割り当てになる場合があります。"
+  },
+  "limitation7": {
+    "message": "NotF11はHyprlandのワークスペースを選択せず、FancyZonesも制御しません。"
+  },
+  "limitationsTitle": {
+    "message": "既知の動作と制限"
+  },
+  "manageShortcuts": {
+    "message": "ショートカットを管理"
+  },
+  "navFamilies": {
+    "message": "ソースファミリー"
+  },
+  "navGettingStarted": {
+    "message": "はじめに"
+  },
+  "navLimitations": {
+    "message": "制限事項"
+  },
+  "navNewTabs": {
+    "message": "新しいタブ"
+  },
+  "navPlacement": {
+    "message": "ウィンドウ配置"
+  },
+  "navPrivacy": {
+    "message": "プライバシー"
+  },
+  "navRecovery": {
+    "message": "復元"
+  },
+  "navSettings": {
+    "message": "設定"
+  },
+  "navShortcuts": {
+    "message": "ショートカット"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "新しいタブは、そのCleanファミリーの置き換えソースを作成できませんでした。"
+  },
+  "newTabsHelp": {
+    "message": "NotF11のCleanワークフローから作成された新しいタブだけを制御します。オフの場合、子タブは同じソースファミリーのRawのままです。オンの場合、子タブはそのファミリーの別のCleanウィンドウになります。"
+  },
+  "newTabsIntro": {
+    "message": "Cleanワークフローから作成された新しいタブは、ファミリーの系統を維持します。"
+  },
+  "newTabsOffCardTitle": {
+    "message": "新しいタブもCleanにする = オフ"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ Bを作成\n\nAはCleanのまま\nBはRawとしてAのファミリーに参加"
+  },
+  "newTabsOnCardTitle": {
+    "message": "新しいタブもCleanにする = オン"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ Bを作成\n\nAはCleanのまま\nBはCleanとしてAのファミリーに参加"
+  },
+  "newTabsP": {
+    "message": "この設定が変えるのは子タブの最初の表示形態であり、所属関係ではありません。通常のブラウザーウィンドウからのCtrl+Tは、通常のChromium動作のままです。"
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Cleanウィンドウから開いた新しいタブもCleanで開きます。"
+  },
+  "newTabsStayCleanTitle": {
+    "message": "新しいタブもCleanにする"
+  },
+  "newTabsTitle": {
+    "message": "Cleanウィンドウから開く新しいタブ"
+  },
+  "nextSourceTab": {
+    "message": "次のソースタブ"
+  },
+  "notWindowManagerText": {
+    "message": "物理的な配置が予想外でも、ブラウザー関係が間違っているとは限りません。"
+  },
+  "notWindowManagerTitle": {
+    "message": "NotF11はウィンドウマネージャーではありません。"
+  },
+  "openCurrentTabClean": {
+    "message": "現在のタブをCleanで開く"
+  },
+  "openHelpError": {
+    "message": "NotF11のヘルプを開けませんでした。"
+  },
+  "openShortcutsError": {
+    "message": "コマンドを割り当てるには、ブラウザーの拡張機能ショートカットページを開いてください。"
+  },
+  "placementTitle": {
+    "message": "ウィンドウ配置"
+  },
+  "popupRecoverySafe": {
+    "message": "このポップアップは安全に復元できます。"
+  },
+  "previousSourceTab": {
+    "message": "前のソースタブ"
+  },
+  "privacyCode": {
+    "message": "ライブタブ。\nローカル状態。\nページへのアクセスなし。"
+  },
+  "privacyNoAccount": {
+    "message": "アカウント不要"
+  },
+  "privacyNoAds": {
+    "message": "広告なし"
+  },
+  "privacyNoAnalytics": {
+    "message": "分析なし"
+  },
+  "privacyNoCloud": {
+    "message": "クラウドサービスなし"
+  },
+  "privacyNoContentScripts": {
+    "message": "コンテンツスクリプトなし"
+  },
+  "privacyNoHostPermissions": {
+    "message": "ホスト権限なし"
+  },
+  "privacyNoTelemetry": {
+    "message": "テレメトリなし"
+  },
+  "privacyNoTracking": {
+    "message": "追跡なし"
+  },
+  "privacyP1": {
+    "message": "NotF11はWebサイトへスクリプトを挿入せず、ページ内容を読み取ったり変更したりしません。"
+  },
+  "privacyP2": {
+    "message": "拡張機能は設定とNotF11の関係状態のために独自のローカル/セッションストレージを使用します。「サイズと位置を記憶」がオンの場合、ウィンドウのジオメトリを使用することがあります。"
+  },
+  "privacyTitle": {
+    "message": "小さく、集中し、プライバシー重視"
+  },
+  "recoverNormalBrowser": {
+    "message": "通常のブラウザーに復元"
+  },
+  "recoveryOneTabText": {
+    "message": "通常のブラウザーウィンドウは、唯一のタブがCleanへ移動すると自然に消えることがあります。その後、そのCleanワークフローから新しいRawタブが作られると、そのタブがそのファミリーの正規の置き換えソースになることがあります。"
+  },
+  "recoveryOneTabTitle": {
+    "message": "1タブだけのソース"
+  },
+  "recoveryRestartText": {
+    "message": "ChromiumのタブIDとウィンドウIDはブラウザーセッションごとに異なります。Chromiumが現在のNotF11関係記録を持たない古いポップアップを復元した場合、NotF11は古いソース関係を推測せず、通常のブラウザー表示面へ安全に復元できます。"
+  },
+  "recoveryRestartTitle": {
+    "message": "ブラウザー再起動後"
+  },
+  "recoverySourceExistsText": {
+    "message": "同じライブタブが、その通常のブラウザーソースへ戻ります。"
+  },
+  "recoverySourceExistsTitle": {
+    "message": "記憶したソースがまだ存在する場合"
+  },
+  "recoverySourceGoneText": {
+    "message": "NotF11は正規の通常ウィンドウを新しく作成し、ライブタブをそこへ移動します。無関係なブラウザーウィンドウへ勝手に接続することはありません。"
+  },
+  "recoverySourceGoneTitle": {
+    "message": "記憶したソースがなくなった場合"
+  },
+  "recoveryTitle": {
+    "message": "復元動作"
+  },
+  "rememberGeometryDescription": {
+    "message": "Cleanウィンドウを同じデスクトップ領域に保ちます。タイル型ウィンドウマネージャーではオフにしてください。"
+  },
+  "rememberGeometryHelp": {
+    "message": "有効にすると、NotF11はRaw ↔ Cleanの切り替え時に以前のデスクトップ領域を維持するようChromiumへ要求します。タイル型ウィンドウマネージャーやコンポジターに配置を完全に任せたい場合はオフにしてください。"
+  },
+  "rememberGeometryTitle": {
+    "message": "サイズと位置を記憶"
+  },
+  "replacementSourceFailed": {
+    "message": "置き換え用の通常ソースウィンドウを作成できませんでした。"
+  },
+  "reportIssue": {
+    "message": "問題を報告"
+  },
+  "requestFailed": {
+    "message": "NotF11のリクエストに失敗しました。"
+  },
+  "returnCurrentTab": {
+    "message": "現在のタブを戻す"
+  },
+  "sameLiveTabText": {
+    "message": "Chromiumが許可する範囲で、スクロール位置、入力済みテキスト、ログイン/セッション状態、ナビゲーション履歴、Webアプリの状態をタブと一緒に保持できます。"
+  },
+  "sameLiveTabTitle": {
+    "message": "同じライブタブです。"
+  },
+  "saved": {
+    "message": "保存しました。"
+  },
+  "settingsAria": {
+    "message": "NotF11の設定"
+  },
+  "settingsTitle": {
+    "message": "設定"
+  },
+  "shortcutNextHelp": {
+    "message": "次の対象ソースタブ"
+  },
+  "shortcutPreviousHelp": {
+    "message": "前の対象ソースタブ"
+  },
+  "shortcutToggleHelp": {
+    "message": "Cleanモードを開始または終了"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1個のキーボードショートカットが未割り当てです。"
+  },
+  "shortcutsAria": {
+    "message": "キーボードショートカット"
+  },
+  "shortcutsP1": {
+    "message": "「前へ」と「次へ」はブラウザー全体のタブ切り替えではありません。同じ記憶済みソースファミリー内の別の対象RawタブへCleanの役割を引き渡します。"
+  },
+  "shortcutsP2": {
+    "message": "ブラウザーのショートカットと競合する場合があります。NotF11ポップアップの「ショートカットを管理」で、Chromiumが実際に割り当てたコマンドを確認してください。"
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$個のキーボードショートカットが未割り当てです。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "ソース"
+  },
+  "temporaryBridgeFailed": {
+    "message": "一時的な通常ブリッジウィンドウを作成できませんでした。"
+  },
+  "toggleCleanMode": {
+    "message": "Cleanモードを切り替え"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "現在のタブを切り替え"
+  },
+  "toggleUnassignedNotice": {
+    "message": "Cleanモード切り替えのショートカットが未割り当てです。「起動時にClean」にはこのショートカットが必要です。"
+  },
+  "unassigned": {
+    "message": "未割り当て"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "追跡されていないポップアップを通常のブラウザーウィンドウに復元できませんでした。"
+  },
+  "windowsDesktopP1": {
+    "message": "ChromiumとOSが許す範囲でRaw ↔ Clean切り替え時に以前のデスクトップ領域を維持したい場合は、「サイズと位置を記憶」をオンにします。"
+  },
+  "windowsDesktopP2": {
+    "message": "通常のWindowsスナップやPowerToys FancyZonesなどのツールとも相性よく動作します。"
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / 通常のデスクトップ"
+  }
+}

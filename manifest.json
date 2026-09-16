@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "NotF11",
-  "version": "0.1.0",
+  "name": "__MSG_extensionName__",
+  "version": "0.1.1",
   "minimum_chrome_version": "102",
-  "description": "Any browser tab, toolbar-free. Turn it into a clean, resizable window.",
+  "default_locale": "en",
+  "description": "__MSG_extensionDescription__",
 
   "icons": {
     "16": "assets/icons/icon-16.png",
@@ -17,7 +18,7 @@
       "16": "assets/icons/icon-16.png",
       "32": "assets/icons/icon-32.png"
     },
-    "default_title": "NotF11",
+    "default_title": "__MSG_extensionName__",
     "default_popup": "popup.html"
   },
 
@@ -34,21 +35,21 @@
       "suggested_key": {
         "default": "Ctrl+Shift+F"
       },
-      "description": "Enter or exit clean-window mode for the focused tab"
+      "description": "__MSG_commandToggleDescription__"
     },
 
     "next-clean-tab": {
       "suggested_key": {
         "default": "Ctrl+Shift+Period"
       },
-      "description": "Show the next source tab in the focused clean window"
+      "description": "__MSG_commandNextDescription__"
     },
 
     "previous-clean-tab": {
       "suggested_key": {
         "default": "Ctrl+Shift+Comma"
       },
-      "description": "Show the previous source tab in the focused clean window"
+      "description": "__MSG_commandPreviousDescription__"
     }
   }
 }

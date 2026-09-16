@@ -1,0 +1,400 @@
+{
+  "appTagline": {
+    "message": "Qualquer aba, sem barra de ferramentas."
+  },
+  "assignToggleBeforeCleanLaunch": {
+    "message": "Atribua o atalho para alternar o modo Clean antes de ativar Clean ao iniciar."
+  },
+  "cleanLaunchDisabledNotice": {
+    "message": "Clean ao iniciar foi desativado porque o atalho para alternar o modo Clean não está atribuído."
+  },
+  "cleanLaunchHelp": {
+    "message": "Quando ativado, inicia a primeira superfície elegível do navegador no modo Clean. O NotF11 verifica se o atalho principal de alternância está realmente atribuído antes de permitir que esse recurso crie uma situação de recuperação insegura."
+  },
+  "cleanOnLaunchDescription": {
+    "message": "Inicie a primeira janela do navegador no modo Clean."
+  },
+  "cleanOnLaunchTitle": {
+    "message": "Clean ao iniciar"
+  },
+  "cleanWindowCreateFailed": {
+    "message": "Não foi possível criar a janela Clean."
+  },
+  "commandNextDescription": {
+    "message": "Mostrar a próxima aba de origem na janela Clean em foco"
+  },
+  "commandPreviousDescription": {
+    "message": "Mostrar a aba de origem anterior na janela Clean em foco"
+  },
+  "commandToggleDescription": {
+    "message": "Entrar ou sair do modo Clean para a aba em foco"
+  },
+  "defaultOff": {
+    "message": "Padrão: Desativado"
+  },
+  "defaultOn": {
+    "message": "Padrão: Ativado"
+  },
+  "extensionDescription": {
+    "message": "Qualquer aba do navegador, sem barra de ferramentas. Transforme-a em uma janela limpa e redimensionável."
+  },
+  "extensionName": {
+    "message": "NotF11"
+  },
+  "familiesDiagram": {
+    "message": "Família de origem\n├─ A → Clean\n├─ B → Raw\n└─ C → Raw"
+  },
+  "familiesP1": {
+    "message": "Quando uma aba sai de uma janela normal do navegador e se torna Clean, o NotF11 lembra a relação lógica do navegador de onde ela veio."
+  },
+  "familiesP2": {
+    "message": "Anterior / Próxima pode transferir o papel Clean entre membros Raw elegíveis da mesma família. Se outra janela do navegador representar uma família diferente, o NotF11 não cruza para ela."
+  },
+  "familiesP3": {
+    "message": "Várias janelas Clean são compatíveis. Membros da família que já estão Clean normalmente são ignorados durante a navegação porque já ocupam suas próprias superfícies Clean."
+  },
+  "familiesQuote": {
+    "message": "Clean muda a superfície, não a família."
+  },
+  "familiesTitle": {
+    "message": "Famílias de origem"
+  },
+  "footerPrivacy": {
+    "message": "Abas ativas. Estado local. Sem acesso à página."
+  },
+  "gettingStartedP1After": {
+    "message": "O NotF11 move essa mesma aba ativa para uma janela pop-up no estilo Clean sem reabrir a página."
+  },
+  "gettingStartedP1Before": {
+    "message": "Coloque o foco em qualquer aba do Chromium que não esteja agrupada e pressione"
+  },
+  "gettingStartedP2": {
+    "message": "Pressione o mesmo atalho novamente para retornar a aba à sua origem normal no navegador. Ao contrário do F11 em tela cheia, a janela Clean continua sendo uma janela normal da área de trabalho que pode ser movida, redimensionada, maximizada, encaixada ou organizada em mosaico."
+  },
+  "gettingStartedTitle": {
+    "message": "Primeiros passos"
+  },
+  "groupedTabNotSupportedButton": {
+    "message": "Aba agrupada não compatível"
+  },
+  "groupedTabsUnsupported": {
+    "message": "Abas agrupadas não são compatíveis."
+  },
+  "helpDocumentation": {
+    "message": "Ajuda e documentação"
+  },
+  "helpDocumentationLabel": {
+    "message": "Ajuda e documentação"
+  },
+  "helpSectionsAria": {
+    "message": "Seções de ajuda"
+  },
+  "helpTitle": {
+    "message": "Ajuda do NotF11"
+  },
+  "heroAction": {
+    "message": "Clean ↔ normal"
+  },
+  "heroEyebrow": {
+    "message": "QUALQUER ABA, SEM BARRA DE FERRAMENTAS."
+  },
+  "heroLede": {
+    "message": "O NotF11 move a aba ativa do Chromium que já está aberta para uma janela de desktop limpa e depois permite que essa mesma aba volte para uma origem normal do navegador."
+  },
+  "heroTitle": {
+    "message": "Mantenha a página. Remova a interface do navegador."
+  },
+  "hyprlandP1": {
+    "message": "Desative Lembrar tamanho e posição quando o compositor deve controlar o posicionamento, mosaico, áreas de trabalho e comportamento do scratchpad."
+  },
+  "hyprlandP2": {
+    "message": "O NotF11 continua controlando as relações do navegador, a representação Raw / Clean e a transferência dentro da família — não a topologia da área de trabalho."
+  },
+  "hyprlandTitle": {
+    "message": "Hyprland / compositor em mosaico"
+  },
+  "invalidSetting": {
+    "message": "Configuração do NotF11 inválida."
+  },
+  "issuesLink": {
+    "message": "Problemas"
+  },
+  "keyboardShortcutsTitle": {
+    "message": "Atalhos de teclado"
+  },
+  "limitation1": {
+    "message": "A barra de título do sistema operacional permanece visível de propósito."
+  },
+  "limitation2": {
+    "message": "Grupos de abas nativos do Chromium não são compatíveis no momento."
+  },
+  "limitation3": {
+    "message": "Aplicativos web pesados podem redesenhar brevemente enquanto o Chromium move a aba ativa entre janelas."
+  },
+  "limitation4": {
+    "message": "O Chromium ou o Windows pode ajustar ligeiramente a geometria solicitada nas bordas da tela."
+  },
+  "limitation5": {
+    "message": "Gerenciadores de janelas em mosaico podem reorganizar visivelmente o layout quando janelas de navegador de nível superior aparecem ou desaparecem."
+  },
+  "limitation6": {
+    "message": "Atalhos reservados pelo navegador ou conflitos com outras extensões podem deixar atalhos sugeridos sem atribuição."
+  },
+  "limitation7": {
+    "message": "O NotF11 não escolhe áreas de trabalho do Hyprland nem controla o FancyZones."
+  },
+  "limitationsTitle": {
+    "message": "Comportamentos conhecidos e limitações"
+  },
+  "manageShortcuts": {
+    "message": "Gerenciar atalhos"
+  },
+  "navFamilies": {
+    "message": "Famílias de origem"
+  },
+  "navGettingStarted": {
+    "message": "Primeiros passos"
+  },
+  "navLimitations": {
+    "message": "Limitações"
+  },
+  "navNewTabs": {
+    "message": "Novas abas"
+  },
+  "navPlacement": {
+    "message": "Posicionamento de janelas"
+  },
+  "navPrivacy": {
+    "message": "Privacidade"
+  },
+  "navRecovery": {
+    "message": "Recuperação"
+  },
+  "navSettings": {
+    "message": "Configurações"
+  },
+  "navShortcuts": {
+    "message": "Atalhos"
+  },
+  "newTabReplacementSourceFailed": {
+    "message": "A nova aba não conseguiu criar a origem substituta de sua família Clean."
+  },
+  "newTabsHelp": {
+    "message": "Controla apenas novas abas criadas a partir de um fluxo Clean do NotF11. Desativado, o filho permanece Raw na mesma família de origem. Ativado, o filho se torna outra janela Clean dessa família."
+  },
+  "newTabsIntro": {
+    "message": "Novas abas criadas a partir de um fluxo Clean preservam a linhagem da família."
+  },
+  "newTabsOffCardTitle": {
+    "message": "Novas abas continuam Clean = Desativado"
+  },
+  "newTabsOffDiagram": {
+    "message": "A Clean\n  └─ cria B\n\nA permanece Clean\nB entra na família de A como Raw"
+  },
+  "newTabsOnCardTitle": {
+    "message": "Novas abas continuam Clean = Ativado"
+  },
+  "newTabsOnDiagram": {
+    "message": "A Clean\n  └─ cria B\n\nA permanece Clean\nB entra na família de A como Clean"
+  },
+  "newTabsP": {
+    "message": "A configuração altera a representação inicial da aba filha, não sua origem. Ctrl+T comum em uma janela normal do navegador continua sendo o comportamento normal do Chromium."
+  },
+  "newTabsStayCleanDescription": {
+    "message": "Novas abas abertas a partir de uma janela Clean também abrem em Clean."
+  },
+  "newTabsStayCleanTitle": {
+    "message": "Novas abas continuam Clean"
+  },
+  "newTabsTitle": {
+    "message": "Novas abas a partir de uma janela Clean"
+  },
+  "nextSourceTab": {
+    "message": "Próxima aba de origem"
+  },
+  "notWindowManagerText": {
+    "message": "Um posicionamento físico inesperado não significa automaticamente que a relação do navegador esteja errada."
+  },
+  "notWindowManagerTitle": {
+    "message": "O NotF11 não é um gerenciador de janelas."
+  },
+  "openCurrentTabClean": {
+    "message": "Abrir aba atual em Clean"
+  },
+  "openHelpError": {
+    "message": "Não foi possível abrir a ajuda do NotF11."
+  },
+  "openShortcutsError": {
+    "message": "Abra a página de atalhos de extensões do navegador para atribuir comandos."
+  },
+  "placementTitle": {
+    "message": "Posicionamento de janelas"
+  },
+  "popupRecoverySafe": {
+    "message": "Esta janela pop-up pode ser recuperada com segurança."
+  },
+  "previousSourceTab": {
+    "message": "Aba de origem anterior"
+  },
+  "privacyCode": {
+    "message": "Abas ativas.\nEstado local.\nSem acesso à página."
+  },
+  "privacyNoAccount": {
+    "message": "Sem conta"
+  },
+  "privacyNoAds": {
+    "message": "Sem anúncios"
+  },
+  "privacyNoAnalytics": {
+    "message": "Sem analytics"
+  },
+  "privacyNoCloud": {
+    "message": "Sem serviço em nuvem"
+  },
+  "privacyNoContentScripts": {
+    "message": "Sem scripts de conteúdo"
+  },
+  "privacyNoHostPermissions": {
+    "message": "Sem permissões de host"
+  },
+  "privacyNoTelemetry": {
+    "message": "Sem telemetria"
+  },
+  "privacyNoTracking": {
+    "message": "Sem rastreamento"
+  },
+  "privacyP1": {
+    "message": "O NotF11 não injeta scripts em sites e não lê nem modifica o conteúdo das páginas."
+  },
+  "privacyP2": {
+    "message": "A extensão usa seu próprio armazenamento local/de sessão para configurações e estado de relacionamento do NotF11. A geometria da janela pode ser usada quando Lembrar tamanho e posição estiver ativado."
+  },
+  "privacyTitle": {
+    "message": "Pequeno, focado e privado"
+  },
+  "recoverNormalBrowser": {
+    "message": "Recuperar navegador normal"
+  },
+  "recoveryOneTabText": {
+    "message": "Uma janela normal do navegador pode desaparecer naturalmente quando sua única aba é movida para Clean. Se uma nova aba Raw for criada depois a partir desse fluxo Clean, ela pode se tornar a origem substituta legítima dessa família."
+  },
+  "recoveryOneTabTitle": {
+    "message": "Origem com uma única aba"
+  },
+  "recoveryRestartText": {
+    "message": "Os IDs de abas e janelas do Chromium são específicos de cada sessão do navegador. Se o Chromium restaurar um pop-up antigo sem um registro atual de relacionamento do NotF11, o NotF11 pode recuperá-lo em uma superfície normal do navegador em vez de tentar adivinhar uma relação de origem antiga."
+  },
+  "recoveryRestartTitle": {
+    "message": "Após reiniciar o navegador"
+  },
+  "recoverySourceExistsText": {
+    "message": "A mesma aba ativa retorna para essa origem normal do navegador."
+  },
+  "recoverySourceExistsTitle": {
+    "message": "Se a origem memorizada ainda existir"
+  },
+  "recoverySourceGoneText": {
+    "message": "O NotF11 cria uma substituição normal real e move a aba ativa para ela. Ele não conecta silenciosamente a aba a uma janela de navegador não relacionada."
+  },
+  "recoverySourceGoneTitle": {
+    "message": "Se a origem memorizada não existir mais"
+  },
+  "recoveryTitle": {
+    "message": "Comportamento de recuperação"
+  },
+  "rememberGeometryDescription": {
+    "message": "Mantenha as janelas Clean na mesma área da área de trabalho. Desative para gerenciadores de janelas em mosaico."
+  },
+  "rememberGeometryHelp": {
+    "message": "Quando ativado, o NotF11 pede ao Chromium para preservar a área anterior ocupada na área de trabalho durante transições Raw ↔ Clean. Desative quando quiser que um gerenciador de janelas em mosaico ou compositor controle totalmente o posicionamento."
+  },
+  "rememberGeometryTitle": {
+    "message": "Lembrar tamanho e posição"
+  },
+  "replacementSourceFailed": {
+    "message": "Não foi possível criar uma janela normal de origem substituta."
+  },
+  "reportIssue": {
+    "message": "Relatar um problema"
+  },
+  "requestFailed": {
+    "message": "A solicitação do NotF11 falhou."
+  },
+  "returnCurrentTab": {
+    "message": "Retornar aba atual"
+  },
+  "sameLiveTabText": {
+    "message": "A posição de rolagem, o texto digitado, o estado de login/sessão, o histórico de navegação e o estado ativo do aplicativo web podem permanecer com a aba quando o Chromium permitir."
+  },
+  "sameLiveTabTitle": {
+    "message": "A mesma aba ativa."
+  },
+  "saved": {
+    "message": "Salvo."
+  },
+  "settingsAria": {
+    "message": "Configurações do NotF11"
+  },
+  "settingsTitle": {
+    "message": "Configurações"
+  },
+  "shortcutNextHelp": {
+    "message": "Próxima aba de origem elegível"
+  },
+  "shortcutPreviousHelp": {
+    "message": "Aba de origem elegível anterior"
+  },
+  "shortcutToggleHelp": {
+    "message": "Entrar ou sair do modo Clean"
+  },
+  "shortcutUnassignedSingular": {
+    "message": "1 atalho de teclado não está atribuído."
+  },
+  "shortcutsAria": {
+    "message": "Atalhos de teclado"
+  },
+  "shortcutsP1": {
+    "message": "Anterior e Próxima não percorrem globalmente as abas do navegador. Eles transferem o papel Clean para outra aba Raw elegível da mesma família de origem memorizada."
+  },
+  "shortcutsP2": {
+    "message": "Podem ocorrer conflitos de atalhos no navegador. Use Gerenciar atalhos no pop-up do NotF11 para revisar os comandos que o Chromium realmente atribuiu."
+  },
+  "shortcutsUnassignedPlural": {
+    "message": "$COUNT$ atalhos de teclado não estão atribuídos.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceLink": {
+    "message": "Código-fonte"
+  },
+  "temporaryBridgeFailed": {
+    "message": "Não foi possível criar a janela normal temporária de transição."
+  },
+  "toggleCleanMode": {
+    "message": "Alternar modo Clean"
+  },
+  "toggleCurrentTabDefault": {
+    "message": "Alternar aba atual"
+  },
+  "toggleUnassignedNotice": {
+    "message": "O atalho para alternar o modo Clean não está atribuído. Clean ao iniciar exige esse atalho."
+  },
+  "unassigned": {
+    "message": "Não atribuído"
+  },
+  "untrackedPopupRecoveryFailed": {
+    "message": "Não foi possível recuperar o pop-up não rastreado em uma janela normal do navegador."
+  },
+  "windowsDesktopP1": {
+    "message": "Mantenha Lembrar tamanho e posição ativado quando quiser que Raw ↔ Clean preserve a área anterior da janela na área de trabalho onde o Chromium e o sistema operacional permitirem."
+  },
+  "windowsDesktopP2": {
+    "message": "Isso também funciona bem com o encaixe normal do Windows e ferramentas como PowerToys FancyZones."
+  },
+  "windowsDesktopTitle": {
+    "message": "Windows / desktop comum"
+  }
+}
