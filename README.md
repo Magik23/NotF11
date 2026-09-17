@@ -92,7 +92,7 @@ The extension icon opens NotF11's settings and help popup. Keyboard shortcuts re
 
 ## Settings
 
-NotF11 v0.1.1 exposes three local preferences.
+NotF11 exposes three local preferences.
 
 ### Clean on launch
 
@@ -312,7 +312,7 @@ See the full [Privacy Policy](PRIVACY.md).
 
 ## Localization
 
-NotF11 v0.1.1 includes **16 Chromium locales**.
+NotF11 currently includes **16 Chromium locales**.
 
 The localized surface includes:
 
